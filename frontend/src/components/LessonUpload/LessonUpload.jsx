@@ -286,24 +286,6 @@ const LessonUpload = ({ onAnalysisComplete }) => {
         </div>
       )}
 
-      {/* Framework Info */}
-      <div className="mt-6 bg-blue-50 p-4 rounded-lg">
-        <h3 className="font-semibold text-blue-800 mb-2">AI Analysis Includes:</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-          <div>
-            <h4 className="font-medium text-blue-700">Teaching & Learning Cycle</h4>
-            <p className="text-blue-600">Field Building → Supported Reading → Genre Learning → Supported Writing → Independent Writing</p>
-          </div>
-          <div>
-            <h4 className="font-medium text-blue-700">High Impact Teaching</h4>
-            <p className="text-blue-600">Explicit Instruction, Explaining/Modelling, Checking Understanding</p>
-          </div>
-          <div>
-            <h4 className="font-medium text-blue-700">Critical Thinking</h4>
-            <p className="text-blue-600">Analysis, Evaluation, Synthesis, Application</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

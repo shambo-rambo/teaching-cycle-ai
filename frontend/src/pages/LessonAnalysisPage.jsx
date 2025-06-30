@@ -12,12 +12,8 @@ const LessonAnalysisPage = () => {
   const handleAnalysisComplete = (analysis) => {
     setLessonAnalysis(analysis);
     
-    // Determine next step based on whether there are questions
-    if (analysis.questions && analysis.questions.length > 0) {
-      setCurrentStep('questions');
-    } else {
-      setCurrentStep('suggestions');
-    }
+    // Always go to questions step first to get contextual AI questions
+    setCurrentStep('questions');
   };
 
   const handleResponseComplete = (responses) => {
@@ -34,9 +30,8 @@ const LessonAnalysisPage = () => {
   const getStepNumber = (step) => {
     switch (step) {
       case 'upload': return 1;
-      case 'analysis': return 2;
-      case 'questions': return 3;
-      case 'suggestions': return 4;
+      case 'questions': return 2;
+      case 'suggestions': return 3;
       default: return 1;
     }
   };
@@ -44,9 +39,8 @@ const LessonAnalysisPage = () => {
   const getStepTitle = (step) => {
     switch (step) {
       case 'upload': return 'Upload Lesson';
-      case 'analysis': return 'Framework Analysis';
-      case 'questions': return 'Clarifying Questions';
-      case 'suggestions': return 'Improvement Suggestions';
+      case 'questions': return 'Contextual Questions';
+      case 'suggestions': return 'AI Improvements';
       default: return 'Upload Lesson';
     }
   };
@@ -57,7 +51,7 @@ const LessonAnalysisPage = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            AI Lesson Analyzer
+            AI Lesson Analyser
           </h1>
           <p className="text-xl text-gray-600 mb-6">
             Framework-based lesson analysis with supportive questioning and improvement suggestions
@@ -81,7 +75,7 @@ const LessonAnalysisPage = () => {
         {lessonAnalysis && (
           <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
             <div className="flex items-center justify-between">
-              {['upload', 'analysis', 'questions', 'suggestions'].map((step, index) => {
+              {['upload', 'questions', 'suggestions'].map((step, index) => {
                 const stepNum = index + 1;
                 const isActive = currentStep === step;
                 const isCompleted = getStepNumber(currentStep) > stepNum;
@@ -107,7 +101,7 @@ const LessonAnalysisPage = () => {
                         {getStepTitle(step)}
                       </span>
                     </div>
-                    {index < 3 && (
+                    {index < 2 && (
                       <div className={`w-8 h-1 mx-4 
                         ${getStepNumber(currentStep) > stepNum ? 'bg-green-600' : 'bg-gray-200'}
                       `}></div>
@@ -126,16 +120,14 @@ const LessonAnalysisPage = () => {
             <LessonUpload onAnalysisComplete={handleAnalysisComplete} />
           )}
 
-          {/* Step 2: Analysis Results */}
-          {lessonAnalysis && currentStep !== 'upload' && (
-            <FrameworkDisplay analysis={lessonAnalysis} />
-          )}
+          {/* Framework analysis hidden to reduce clutter - focus on questions and suggestions */}
 
           {/* Step 3: Questions */}
           {currentStep === 'questions' && lessonAnalysis && (
             <QuestionInterface
               questions={lessonAnalysis.questions}
               lessonId={lessonAnalysis.lessonId}
+              lessonContent={lessonAnalysis.originalContent}
               onResponseComplete={handleResponseComplete}
             />
           )}

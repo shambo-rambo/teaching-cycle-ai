@@ -1,19 +1,31 @@
 import React, { useState } from 'react';
-import { Lightbulb, ThumbsUp, ThumbsDown, CheckCircle, ArrowRight, BookOpen, Target, Brain } from 'lucide-react';
+import { Lightbulb, ThumbsUp, ThumbsDown, CheckCircle, ArrowRight, BookOpen, Target, Brain, Wand2 } from 'lucide-react';
 
-const SuggestionCard = ({ suggestion, onFeedback }) => {
+const SuggestionCard = ({ suggestion, onFeedback, onApplySuggestion }) => {
   const [feedback, setFeedback] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showImplementationOption, setShowImplementationOption] = useState(false);
 
   const handleFeedback = async (rating) => {
     setIsSubmitting(true);
     try {
-      await onFeedback(suggestion.id, rating);
+      const response = await onFeedback(suggestion.id, rating);
       setFeedback(rating);
+      
+      // Show implementation option if rating was helpful and API supports it
+      if (rating === 'helpful' && response?.data?.implementationOption?.available) {
+        setShowImplementationOption(true);
+      }
     } catch (error) {
       console.error('Error submitting feedback:', error);
     } finally {
       setIsSubmitting(false);
+    }
+  };
+
+  const handleApplySuggestion = () => {
+    if (onApplySuggestion) {
+      onApplySuggestion(suggestion);
     }
   };
 
@@ -147,15 +159,26 @@ const SuggestionCard = ({ suggestion, onFeedback }) => {
                 ? 'Thank you! Your feedback helps us improve.' 
                 : 'Thank you for your feedback. We\'ll work on better suggestions.'}
             </p>
-            {feedback === 'helpful' && (
-              <button
-                onClick={() => handleFeedback('implemented')}
-                className="flex items-center space-x-1 px-3 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors text-sm"
-              >
-                <CheckCircle className="w-4 h-4" />
-                <span>Mark as implemented</span>
-              </button>
-            )}
+            <div className="flex items-center space-x-2">
+              {feedback === 'helpful' && showImplementationOption && (
+                <button
+                  onClick={handleApplySuggestion}
+                  className="flex items-center space-x-1 px-3 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors text-sm font-medium"
+                >
+                  <Wand2 className="w-4 h-4" />
+                  <span>Apply Suggestion</span>
+                </button>
+              )}
+              {feedback === 'helpful' && (
+                <button
+                  onClick={() => handleFeedback('implemented')}
+                  className="flex items-center space-x-1 px-3 py-2 text-green-600 hover:bg-green-50 rounded-lg transition-colors text-sm"
+                >
+                  <CheckCircle className="w-4 h-4" />
+                  <span>Mark as implemented</span>
+                </button>
+              )}
+            </div>
           </div>
         </div>
       )}

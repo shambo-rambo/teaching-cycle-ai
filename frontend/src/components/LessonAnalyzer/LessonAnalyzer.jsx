@@ -91,7 +91,7 @@ const LessonAnalyzer = () => {
       <div className="bg-white rounded-lg shadow-lg p-6">
         <div className="flex items-center space-x-3 mb-6">
           <Brain className="w-8 h-8 text-blue-600" />
-          <h1 className="text-3xl font-bold text-gray-800">Lesson Analyzer</h1>
+          <h1 className="text-3xl font-bold text-gray-800">Lesson Analyser</h1>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
