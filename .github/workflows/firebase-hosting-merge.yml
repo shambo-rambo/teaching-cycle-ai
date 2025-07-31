@@ -28,7 +28,6 @@ jobs:
         working-directory: ./frontend
         env:
           VITE_FIREBASE_API_KEY: AIzaSyBvLQyoAzKZYPGGHfOOQgaAT2C5TKQlGj4
-          VITE_FIREBASE_AUTH_DOMAIN: learning-cycle-95ee7.firebaseapp.com
           VITE_FIREBASE_PROJECT_ID: learning-cycle-95ee7
           VITE_FIREBASE_STORAGE_BUCKET: learning-cycle-95ee7.appspot.com
           VITE_FIREBASE_MESSAGING_SENDER_ID: 531124404080
