@@ -239,5 +239,36 @@ All components aligned:
 4. ✅ **Client ID alignment** - Frontend and backend now match
 5. ✅ **CORS policies** - Both allow OAuth popups
 
+#### 🚨 **SESSION 3 - NEW CORS ISSUE DISCOVERED**:
+**Latest Firefox logs show major progress but new problem**:
+```
+🔑 Starting Google OAuth token exchange...
+Token length: 1196
+API URL: https://teaching-cycle-backend-708925310405.us-central1.run.app
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://teaching-cycle-backend-708925310405.us-central1.run.app/api/auth/google. (Reason: CORS header 'Access-Control-Allow-Origin' missing)
+```
+
+#### **Current Status**:
+1. ✅ **OAuth Popup Fixed**: No more popup blocking errors
+2. ✅ **Token Generation**: Valid 1196-character tokens
+3. ✅ **Correct Project Setup**: Frontend points to correct backend URL
+4. ❌ **Backend Missing**: URL `708925310405.us-central1.run.app` has hello-world service, not our auth backend
+
+#### **Root Cause**: 
+- Frontend expects backend at `https://teaching-cycle-backend-708925310405.us-central1.run.app`
+- But we only deployed a test service there, not the actual backend with OAuth/CORS
+- Our working backend is still at the old URL (`531124404080.us-central1.run.app`)
+
+#### **Cloud Console Visibility Issue**:
+User reports not seeing Cloud Run/Storage in console - likely viewing wrong project:
+- **Frontend project**: `learning-cycle-v2` (940623387842) 
+- **Backend project**: `learning-cycle-v2-467610` (708925310405)
+- Need to switch to `learning-cycle-v2-467610` project to see backend resources
+
+#### **Next Steps**:
+1. Deploy actual backend (with OAuth/CORS) to correct project URL
+2. Verify user is viewing correct project in console
+3. Set up Firebase Storage/Firestore in correct project for conversations
+
 ### Key Insight:
-The CORS header alignment was necessary but the **real issue** was browser security blocking multiple simultaneous popup attempts. Added debouncing and processing states to ensure only one OAuth popup at a time. Backend and frontend configs are working correctly.
+OAuth popup and token generation completely fixed. Issue now is backend deployment - we have correct project setup but need to deploy the actual backend service (not hello-world) to make OAuth token exchange work.
