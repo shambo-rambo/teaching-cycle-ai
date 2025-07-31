@@ -180,7 +180,7 @@ const AppRoutes = () => {
 
 function App() {
   // Use global config instead of environment variables
-  const clientId = window.APP_CONFIG?.GOOGLE_CLIENT_ID || '531124404080-uk3pq4aajr0p4u7vifuer18ab2cuol1p.apps.googleusercontent.com';
+  const clientId = window.APP_CONFIG?.GOOGLE_CLIENT_ID || '708925310405-81ev12htr3c4neq6nan9abkm3oeisn0s.apps.googleusercontent.com';
   
   console.log('🚀 FINAL FIX - Using global config clientId:', clientId);
   console.log('Global config loaded:', !!window.APP_CONFIG);

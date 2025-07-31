@@ -9,7 +9,7 @@
     <p>This bypasses all cache issues</p>
     
     <div id="g_id_onload"
-         data-client_id="531124404080-uk3pq4aajr0p4u7vifuer18ab2cuol1p.apps.googleusercontent.com"
+         data-client_id="708925310405-81ev12htr3c4neq6nan9abkm3oeisn0s.apps.googleusercontent.com"
          data-callback="handleCredentialResponse">
     </div>
     
@@ -19,6 +19,12 @@
         function handleCredentialResponse(response) {
             console.log('✅ Google Login Success!');
             console.log('Token:', response.credential);
+            
+            console.log('Token details:', {
+                token: response.credential,
+                length: response.credential.length,
+                prefix: response.credential.substring(0, 20) + '...'
+            });
             
             // Send to your backend
             fetch('https://teaching-cycle-backend-531124404080.us-central1.run.app/api/auth/google', {

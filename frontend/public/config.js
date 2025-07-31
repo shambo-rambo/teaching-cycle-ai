@@ -1,6 +1,6 @@
 // Global configuration - no environment variables needed
 window.APP_CONFIG = {
-  GOOGLE_CLIENT_ID: '531124404080-uk3pq4aajr0p4u7vifuer18ab2cuol1p.apps.googleusercontent.com',
+  GOOGLE_CLIENT_ID: '708925310405-81ev12htr3c4neq6nan9abkm3oeisn0s.apps.googleusercontent.com',
   API_BASE_URL: 'https://teaching-cycle-backend-531124404080.us-central1.run.app',
   FIREBASE_CONFIG: {
     apiKey: 'AIzaSyCS2Xo951MdmkH-IlaTXuHGz35y82tIzxo',
