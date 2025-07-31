@@ -12,7 +12,22 @@
       "Bash(node:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(git checkout:*)",
+      "Bash(git commit:*)",
+      "Bash(killall:*)",
+      "Bash(rg:*)",
+      "Bash(rg -n \"}\" /Users/simonhamblin/teaching-cycle-ai/backend/src/services/aiAnalysisService.js)",
+      "Bash(find:*)",
+      "Bash(npm start)",
+      "Bash(npm run:*)",
+      "Bash(pkill:*)",
+      "Bash(curl:*)",
+      "Bash(lsof:*)",
+      "Bash(grep:*)",
+      "Bash(kill:*)",
+      "Bash(# Test all demo account logins\necho \"🧪 Testing all demo account logins...\"\n\necho \"1. Testing Admin login:\"\ncurl -s -X POST http://localhost:3001/api/auth/login \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"email\": \"admin@school.edu\", \"password\": \"admin123\"}' | jq '.user.role // .error'\n\necho \"2. Testing Head of Teaching login:\"\ncurl -s -X POST http://localhost:3001/api/auth/login \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"email\": \"head.teaching@school.edu\", \"password\": \"password123\"}' | jq '.user.role // .error'\n\necho \"3. Testing Head of Learning Support login:\"\ncurl -s -X POST http://localhost:3001/api/auth/login \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"email\": \"head.support@school.edu\", \"password\": \"password123\"}' | jq '.user.role // .error'\n\necho \"4. Testing History Teacher login:\"\ncurl -s -X POST http://localhost:3001/api/auth/login \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"email\": \"teacher.history@school.edu\", \"password\": \"password123\"}' | jq '.user.role // .error')",
+      "Bash(chmod:*)"
     ],
     "deny": []
   }

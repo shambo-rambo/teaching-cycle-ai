@@ -1,0 +1,801 @@
+{
+  "assessment_informed_learning_methodologies": {
+    "formative_assessment_integration": {
+      "theoretical_foundation": {
+        "source": "Black & Wiliam (1998) - Assessment for Learning",
+        "description": "Assessment activities that provide feedback to modify teaching and learning activities",
+        "key_principle": "Formative assessment is about assessment for learning, rather than simply assessment of learning"
+      },
+      "activity_structure": {
+        "name": "Continuous Learning Feedback Cycles",
+        "description": "Systematic integration of formative assessment to enhance learning in real-time",
+        "implementation_phases": [
+          {
+            "phase": "learning_intention_and_success_criteria_establishment",
+            "description": "Establish clear learning intentions and success criteria with students",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "intention_clarifier",
+            "student_role": "criteria_understander"
+          },
+          {
+            "phase": "ongoing_formative_assessment_implementation",
+            "description": "Implement continuous formative assessment during learning",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "formative_assessor",
+            "student_role": "learning_demonstrator"
+          },
+          {
+            "phase": "immediate_feedback_provision_and_adjustment",
+            "description": "Provide immediate feedback and adjust learning activities accordingly",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "feedback_provider",
+            "student_role": "feedback_integrator"
+          },
+          {
+            "phase": "student_self_monitoring_and_adjustment",
+            "description": "Students monitor their own learning and make adjustments",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "self_monitoring_facilitator",
+            "student_role": "self_monitor"
+          },
+          {
+            "phase": "formative_process_reflection_and_improvement",
+            "description": "Reflect on formative assessment process and plan improvements",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "process_reflector",
+            "student_role": "assessment_process_evaluator"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["self_management_skills", "thinking_skills", "communication_skills"],
+        "learner_profile": ["reflective", "thinkers", "balanced"],
+        "tok_links": ["ways_of_knowing", "knowledge_validation", "learning_process"],
+        "international_mindedness": "diverse_assessment_approaches_and_feedback_systems"
+      },
+      "specific_strategies": {
+        "formative_techniques": [
+          "exit_tickets_and_learning_logs",
+          "think_pair_share_assessments",
+          "traffic_light_self_assessment",
+          "one_minute_papers",
+          "questioning_for_understanding"
+        ],
+        "feedback_mechanisms": [
+          "immediate_verbal_feedback",
+          "written_feedback_during_work",
+          "peer_feedback_protocols",
+          "digital_feedback_tools",
+          "visual_and_gestural_feedback"
+        ],
+        "adjustment_strategies": [
+          "flexible_grouping_based_on_assessment",
+          "differentiated_task_modification",
+          "additional_scaffolding_provision",
+          "enrichment_activity_addition",
+          "pace_adjustment_and_re_teaching"
+        ],
+        "student_involvement": [
+          "self_assessment_rubrics",
+          "peer_assessment_activities",
+          "learning_goal_co_creation",
+          "success_criteria_development",
+          "reflection_and_goal_setting"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [30, 45, 60, 90],
+        "assessment_frequency": ["continuous", "frequent_checkpoints", "strategic_moments"],
+        "feedback_immediacy": ["instant_feedback", "same_session", "next_day", "weekly"],
+        "student_agency": ["teacher_directed", "collaborative", "student_led"],
+        "technology_integration": ["minimal_tech", "digital_tools", "advanced_platforms"]
+      },
+      "assessment_integration": {
+        "formative": "continuous_learning_progress_monitoring_and_real_time_adjustment",
+        "summative": "formative_assessment_skill_development_and_learning_improvement_evidence",
+        "self_assessment": "self_monitoring_skill_development_and_learning_ownership_reflection",
+        "peer_assessment": "peer_feedback_quality_and_collaborative_assessment_effectiveness"
+      },
+      "differentiation_strategies": {
+        "content": "assessment_responsive_content_complexity_and_focus_adjustment",
+        "process": "varied_formative_assessment_approaches_and_feedback_modalities",
+        "product": "diverse_formative_demonstration_and_evidence_collection_methods",
+        "learning_environment": "feedback_rich_and_assessment_integrated_learning_spaces"
+      }
+    },
+    "feedback_driven_learning_cycles": {
+      "theoretical_foundation": {
+        "source": "Hattie (2009) - Visible Learning Research",
+        "description": "Learning cycles driven by high-quality feedback that enhances student achievement",
+        "key_principle": "Effective feedback is one of the most powerful influences on student learning"
+      },
+      "activity_structure": {
+        "name": "High-Impact Feedback Learning System",
+        "description": "Systematic use of research-based feedback principles to drive learning improvement",
+        "implementation_phases": [
+          {
+            "phase": "baseline_performance_establishment",
+            "description": "Establish baseline performance and identify feedback targets",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "baseline_assessor",
+            "student_role": "performance_demonstrator"
+          },
+          {
+            "phase": "high_quality_feedback_provision",
+            "description": "Provide feedback that addresses where students are going, how they are going, and where to next",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "feedback_provider",
+            "student_role": "feedback_receiver"
+          },
+          {
+            "phase": "feedback_processing_and_understanding",
+            "description": "Students process and understand feedback for learning improvement",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "understanding_facilitator",
+            "student_role": "feedback_processor"
+          },
+          {
+            "phase": "feedback_implementation_and_practice",
+            "description": "Implement feedback through targeted practice and improvement efforts",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "implementation_supporter",
+            "student_role": "feedback_implementer"
+          },
+          {
+            "phase": "feedback_impact_evaluation_and_next_steps",
+            "description": "Evaluate feedback impact and plan next learning steps",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "impact_evaluator",
+            "student_role": "learning_progress_evaluator"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["self_management_skills", "thinking_skills", "communication_skills"],
+        "learner_profile": ["reflective", "thinkers", "risk_takers"],
+        "tok_links": ["ways_of_knowing", "evidence_evaluation", "learning_process"],
+        "international_mindedness": "global_feedback_cultures_and_learning_improvement"
+      },
+      "specific_strategies": {
+        "feedback_quality_principles": [
+          "specific_and_actionable_feedback",
+          "timely_and_relevant_information",
+          "focused_on_learning_goals",
+          "growth_oriented_messaging"
+        ],
+        "feedback_components": [
+          "feed_up_where_am_i_going",
+          "feed_back_how_am_i_going",
+          "feed_forward_where_to_next",
+          "self_regulation_promotion"
+        ],
+        "feedback_delivery_methods": [
+          "written_detailed_comments",
+          "verbal_conference_feedback",
+          "audio_video_feedback",
+          "peer_collaborative_feedback"
+        ],
+        "feedback_utilization_support": [
+          "feedback_processing_time",
+          "revision_and_improvement_opportunities",
+          "feedback_implementation_guidance",
+          "progress_monitoring_systems"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90, 120],
+        "feedback_focus": ["content_knowledge", "skill_development", "process_improvement", "metacognitive_awareness"],
+        "feedback_complexity": ["simple_corrections", "detailed_guidance", "comprehensive_analysis"],
+        "feedback_source": ["teacher_only", "peer_included", "self_assessment", "multiple_sources"],
+        "implementation_support": ["minimal_guidance", "structured_support", "intensive_coaching"]
+      },
+      "assessment_integration": {
+        "formative": "feedback_quality_and_learning_improvement_monitoring",
+        "summative": "feedback_utilization_effectiveness_and_achievement_growth_demonstration",
+        "self_assessment": "feedback_processing_and_self_regulation_development_reflection",
+        "peer_assessment": "collaborative_feedback_provision_and_learning_support_evaluation"
+      },
+      "differentiation_strategies": {
+        "content": "feedback_responsive_content_adjustment_and_personalized_targets",
+        "process": "varied_feedback_delivery_and_processing_approaches",
+        "product": "diverse_feedback_implementation_and_improvement_demonstration_methods",
+        "learning_environment": "feedback_rich_growth_oriented_learning_spaces"
+      }
+    },
+    "criterion_referenced_assessment_design": {
+      "theoretical_foundation": {
+        "source": "IB Assessment Principles - Criterion-Referenced Assessment",
+        "description": "Assessment that judges student work against identified levels of attainment rather than peer comparison",
+        "key_principle": "Students are assessed against clear criteria derived from course aims and objectives"
+      },
+      "activity_structure": {
+        "name": "Standards-Based Achievement System",
+        "description": "Design and implement criterion-referenced assessment that supports learning",
+        "implementation_phases": [
+          {
+            "phase": "learning_criteria_co_creation_and_understanding",
+            "description": "Co-create and understand clear assessment criteria with students",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "criteria_facilitator",
+            "student_role": "criteria_co_creator"
+          },
+          {
+            "phase": "criterion_focused_learning_and_practice",
+            "description": "Engage in learning activities explicitly focused on criteria achievement",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "criterion_coach",
+            "student_role": "criterion_focused_learner"
+          },
+          {
+            "phase": "self_assessment_against_criteria",
+            "description": "Students assess their own work against established criteria",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "self_assessment_facilitator",
+            "student_role": "self_assessor"
+          },
+          {
+            "phase": "peer_assessment_and_criteria_application",
+            "description": "Apply criteria through peer assessment and collaborative evaluation",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "peer_assessment_coordinator",
+            "student_role": "peer_assessor"
+          },
+          {
+            "phase": "criteria_achievement_reflection_and_goal_setting",
+            "description": "Reflect on criteria achievement and set improvement goals",
+            "duration_minutes": "{base_duration * 0.10}",
+            "teacher_role": "goal_setting_guide",
+            "student_role": "achievement_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "self_management_skills", "communication_skills"],
+        "learner_profile": ["thinkers", "reflective", "principled"],
+        "tok_links": ["ways_of_knowing", "criteria_and_standards", "knowledge_evaluation"],
+        "international_mindedness": "global_standards_and_diverse_achievement_pathways"
+      },
+      "specific_strategies": {
+        "criteria_development": [
+          "clear_performance_indicators",
+          "rubric_and_matrix_creation",
+          "exemplar_work_analysis",
+          "student_friendly_language_use"
+        ],
+        "criteria_transparency": [
+          "criteria_explanation_and_discussion",
+          "exemplar_demonstration",
+          "criteria_application_practice",
+          "student_criteria_interpretation"
+        ],
+        "assessment_implementation": [
+          "multiple_assessment_opportunities",
+          "authentic_performance_tasks",
+          "portfolio_based_evidence",
+          "self_paced_achievement_demonstration"
+        ],
+        "feedback_and_improvement": [
+          "criteria_specific_feedback",
+          "improvement_pathway_guidance",
+          "revision_and_resubmission_opportunities",
+          "progress_tracking_systems"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120, 180],
+        "criteria_complexity": ["simple_checklists", "detailed_rubrics", "comprehensive_standards"],
+        "assessment_frequency": ["single_assessment", "multiple_opportunities", "ongoing_demonstration"],
+        "student_involvement": ["teacher_created", "collaborative_development", "student_led"],
+        "achievement_demonstration": ["traditional_tasks", "authentic_performance", "portfolio_evidence"]
+      },
+      "assessment_integration": {
+        "formative": "criteria_understanding_and_progress_toward_standards_monitoring",
+        "summative": "criterion_referenced_achievement_and_standards_mastery_demonstration",
+        "self_assessment": "criteria_application_and_achievement_self_evaluation_reflection",
+        "peer_assessment": "collaborative_criteria_application_and_standards_understanding_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "criteria_appropriate_content_complexity_and_achievement_pathways",
+        "process": "varied_criteria_achievement_and_demonstration_approaches",
+        "product": "diverse_criterion_referenced_evidence_and_demonstration_methods",
+        "learning_environment": "standards_focused_achievement_oriented_learning_spaces"
+      }
+    },
+    "assessment_data_informed_instruction": {
+      "theoretical_foundation": {
+        "source": "IB Assessment for Learning - Data-Driven Decision Making",
+        "description": "Use of assessment data to inform and improve teaching and learning practices",
+        "key_principle": "Assessment data provides valuable insights for instructional decision-making and student support"
+      },
+      "activity_structure": {
+        "name": "Data-Informed Learning Optimization",
+        "description": "Systematic collection and use of assessment data to optimize learning experiences",
+        "implementation_phases": [
+          {
+            "phase": "assessment_data_collection_and_organization",
+            "description": "Collect and organize multiple sources of assessment data",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "data_collector",
+            "student_role": "evidence_provider"
+          },
+          {
+            "phase": "data_analysis_and_pattern_identification",
+            "description": "Analyze data to identify learning patterns and needs",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "data_analyst",
+            "student_role": "pattern_observer"
+          },
+          {
+            "phase": "instruction_adjustment_and_personalization",
+            "description": "Adjust instruction based on data insights and individual needs",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "instruction_adjuster",
+            "student_role": "personalized_learner"
+          },
+          {
+            "phase": "progress_monitoring_and_data_update",
+            "description": "Monitor progress and update assessment data continuously",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "progress_monitor",
+            "student_role": "progress_tracker"
+          },
+          {
+            "phase": "data_informed_reflection_and_planning",
+            "description": "Reflect on data insights and plan future learning",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "planning_facilitator",
+            "student_role": "data_informed_planner"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills", "self_management_skills"],
+        "learner_profile": ["thinkers", "reflective", "knowledgeable"],
+        "tok_links": ["ways_of_knowing", "data_interpretation", "evidence_analysis"],
+        "international_mindedness": "global_data_literacy_and_evidence_based_decision_making"
+      },
+      "specific_strategies": {
+        "data_collection_methods": [
+          "formative_assessment_data",
+          "summative_assessment_results",
+          "observational_evidence",
+          "student_self_assessment_data",
+          "portfolio_and_work_samples"
+        ],
+        "data_analysis_techniques": [
+          "learning_progression_tracking",
+          "strengths_and_needs_identification",
+          "pattern_and_trend_analysis",
+          "individual_and_group_comparisons"
+        ],
+        "instructional_adjustments": [
+          "differentiated_task_assignment",
+          "flexible_grouping_arrangements",
+          "scaffolding_and_support_modification",
+          "enrichment_and_extension_provision"
+        ],
+        "student_data_involvement": [
+          "data_sharing_and_discussion",
+          "goal_setting_based_on_data",
+          "progress_celebration_and_reflection",
+          "self_advocacy_and_support_requesting"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90, 120],
+        "data_complexity": ["simple_performance_indicators", "comprehensive_assessment_portfolios", "longitudinal_learning_analytics"],
+        "analysis_sophistication": ["basic_pattern_recognition", "detailed_diagnostic_analysis", "predictive_learning_modeling"],
+        "adjustment_responsiveness": ["weekly_modifications", "daily_adaptations", "real_time_adjustments"],
+        "student_data_access": ["teacher_only", "shared_with_students", "student_led_analysis"]
+      },
+      "assessment_integration": {
+        "formative": "data_collection_quality_and_analysis_accuracy_monitoring",
+        "summative": "data_informed_instruction_effectiveness_and_learning_improvement_demonstration",
+        "self_assessment": "data_interpretation_skill_development_and_learning_awareness_reflection",
+        "peer_assessment": "collaborative_data_analysis_and_learning_support_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "data_responsive_content_selection_and_complexity_adjustment",
+        "process": "varied_data_informed_learning_and_instruction_approaches",
+        "product": "diverse_data_driven_demonstration_and_evidence_methods",
+        "learning_environment": "data_rich_evidence_based_learning_spaces"
+      }
+    },
+    "student_self_assessment_and_reflection": {
+      "theoretical_foundation": {
+        "source": "Dweck (1999) - Self-Assessment for Learning",
+        "description": "Students develop ability to assess their own learning and set improvement goals",
+        "key_principle": "Self-assessment improves both self-confidence and self-motivation while developing learning autonomy"
+      },
+      "activity_structure": {
+        "name": "Autonomous Learning Assessment System",
+        "description": "Students develop sophisticated self-assessment and reflection capabilities",
+        "implementation_phases": [
+          {
+            "phase": "self_assessment_skill_development",
+            "description": "Develop self-assessment skills and criteria understanding",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "self_assessment_coach",
+            "student_role": "self_assessment_learner"
+          },
+          {
+            "phase": "learning_progress_self_monitoring",
+            "description": "Monitor own learning progress against established criteria",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "monitoring_facilitator",
+            "student_role": "self_monitor"
+          },
+          {
+            "phase": "reflection_and_metacognitive_analysis",
+            "description": "Engage in deep reflection and metacognitive analysis of learning",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "reflection_guide",
+            "student_role": "reflective_analyzer"
+          },
+          {
+            "phase": "goal_setting_and_improvement_planning",
+            "description": "Set learning goals and plan improvement strategies",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "goal_setting_supporter",
+            "student_role": "goal_setter_and_planner"
+          },
+          {
+            "phase": "self_assessment_effectiveness_evaluation",
+            "description": "Evaluate effectiveness of self-assessment and reflection processes",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "process_evaluator",
+            "student_role": "self_assessment_evaluator"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["self_management_skills", "thinking_skills", "communication_skills"],
+        "learner_profile": ["reflective", "thinkers", "balanced"],
+        "tok_links": ["ways_of_knowing", "personal_knowledge", "self_awareness"],
+        "international_mindedness": "global_self_directed_learning_and_personal_responsibility"
+      },
+      "specific_strategies": {
+        "self_assessment_tools": [
+          "rubric_based_self_evaluation",
+          "learning_portfolio_reflection",
+          "goal_achievement_tracking",
+          "strength_and_growth_identification"
+        ],
+        "reflection_techniques": [
+          "metacognitive_questioning",
+          "learning_journal_writing",
+          "video_reflection_recording",
+          "peer_dialogue_and_discussion"
+        ],
+        "self_monitoring_systems": [
+          "progress_tracking_charts",
+          "learning_milestone_checklists",
+          "digital_portfolio_platforms",
+          "self_assessment_conferences"
+        ],
+        "goal_setting_frameworks": [
+          "SMART_goal_establishment",
+          "learning_pathway_planning",
+          "improvement_strategy_selection",
+          "success_criteria_definition"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [30, 45, 60, 90],
+        "self_assessment_frequency": ["daily_reflection", "weekly_assessment", "unit_based_evaluation"],
+        "reflection_depth": ["surface_observation", "meaningful_analysis", "deep_metacognitive_insight"],
+        "goal_setting_scope": ["short_term_objectives", "medium_term_goals", "long_term_aspirations"],
+        "autonomy_level": ["guided_self_assessment", "supported_independence", "full_autonomy"]
+      },
+      "assessment_integration": {
+        "formative": "self_assessment_skill_development_and_reflection_quality_monitoring",
+        "summative": "autonomous_learning_capability_and_self_directed_improvement_demonstration",
+        "self_assessment": "meta_self_assessment_and_learning_autonomy_growth_reflection",
+        "peer_assessment": "collaborative_self_assessment_support_and_reflection_sharing_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "personalized_self_assessment_focus_and_reflection_topics",
+        "process": "varied_self_assessment_and_reflection_approaches",
+        "product": "diverse_self_assessment_evidence_and_reflection_demonstration_methods",
+        "learning_environment": "self_directed_reflection_supportive_learning_spaces"
+      }
+    },
+    "peer_assessment_and_feedback": {
+      "theoretical_foundation": {
+        "source": "Topping (1998) - Peer Assessment Research",
+        "description": "Students assess each other's work and provide constructive feedback for learning",
+        "key_principle": "Peer assessment enhances learning through collaborative evaluation and feedback exchange"
+      },
+      "activity_structure": {
+        "name": "Collaborative Assessment Learning Community",
+        "description": "Students develop peer assessment skills and provide meaningful feedback to enhance learning",
+        "implementation_phases": [
+          {
+            "phase": "peer_assessment_skill_and_criteria_development",
+            "description": "Develop peer assessment skills and understand evaluation criteria",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "peer_assessment_trainer",
+            "student_role": "assessment_skill_learner"
+          },
+          {
+            "phase": "collaborative_work_production_for_assessment",
+            "description": "Produce work specifically designed for peer assessment and feedback",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "work_production_facilitator",
+            "student_role": "collaborative_producer"
+          },
+          {
+            "phase": "structured_peer_assessment_and_feedback_exchange",
+            "description": "Engage in structured peer assessment and constructive feedback exchange",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "peer_assessment_coordinator",
+            "student_role": "peer_assessor_and_feedback_provider"
+          },
+          {
+            "phase": "feedback_integration_and_work_improvement",
+            "description": "Integrate peer feedback and improve work based on peer suggestions",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "improvement_supporter",
+            "student_role": "feedback_integrator_and_work_improver"
+          },
+          {
+            "phase": "peer_assessment_process_reflection",
+            "description": "Reflect on peer assessment process and learning benefits",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "process_reflector",
+            "student_role": "peer_assessment_evaluator"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["social_skills", "communication_skills", "thinking_skills"],
+        "learner_profile": ["caring", "open_minded", "communicators"],
+        "tok_links": ["ways_of_knowing", "perspective_taking", "collaborative_knowledge_construction"],
+        "international_mindedness": "global_collaborative_assessment_and_cross_cultural_feedback"
+      },
+      "specific_strategies": {
+        "peer_assessment_training": [
+          "assessment_criteria_understanding",
+          "constructive_feedback_skill_development",
+          "bias_recognition_and_mitigation",
+          "empathy_and_respect_cultivation"
+        ],
+        "assessment_structures": [
+          "rubric_guided_peer_evaluation",
+          "peer_review_protocols",
+          "anonymous_feedback_systems",
+          "face_to_face_assessment_conferences"
+        ],
+        "feedback_quality_improvement": [
+          "specific_and_actionable_feedback_training",
+          "strength_and_improvement_balance",
+          "question_based_feedback_approaches",
+          "multimedia_feedback_options"
+        ],
+        "collaborative_improvement": [
+          "peer_revision_partnerships",
+          "collaborative_editing_processes",
+          "group_feedback_synthesis",
+          "peer_mentoring_relationships"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "assessment_complexity": ["simple_checklists", "detailed_rubrics", "comprehensive_evaluation"],
+        "feedback_structure": ["guided_protocols", "open_ended_responses", "multimedia_feedback"],
+        "peer_pairing": ["random_partners", "ability_matched", "cross_cultural_pairs", "expert_novice"],
+        "anonymity_level": ["fully_anonymous", "semi_anonymous", "open_identification"]
+      },
+      "assessment_integration": {
+        "formative": "peer_assessment_skill_development_and_feedback_quality_monitoring",
+        "summative": "collaborative_assessment_competency_and_feedback_effectiveness_demonstration",
+        "self_assessment": "peer_assessment_contribution_and_feedback_integration_reflection",
+        "peer_assessment": "reciprocal_assessment_quality_and_collaborative_improvement_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "peer_assessment_complexity_and_cultural_responsiveness_adaptation",
+        "process": "varied_peer_assessment_and_feedback_approaches",
+        "product": "diverse_peer_assessment_evidence_and_collaborative_improvement_methods",
+        "learning_environment": "collaborative_assessment_supportive_and_respectful_spaces"
+      }
+    },
+    "assessment_as_learning_tool": {
+      "theoretical_foundation": {
+        "source": "Earl (2003) - Assessment AS Learning",
+        "description": "Assessment activities that are learning experiences in themselves, not separate from learning",
+        "key_principle": "Assessment and learning are integrated processes that mutually enhance each other"
+      },
+      "activity_structure": {
+        "name": "Assessment-Integrated Learning Experience",
+        "description": "Design assessment activities that are meaningful learning experiences",
+        "implementation_phases": [
+          {
+            "phase": "assessment_learning_integration_design",
+            "description": "Design assessment tasks that are authentic learning experiences",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "integration_designer",
+            "student_role": "learning_task_understander"
+          },
+          {
+            "phase": "authentic_assessment_learning_engagement",
+            "description": "Engage in assessment tasks that promote deep learning",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "authentic_learning_facilitator",
+            "student_role": "assessment_learner"
+          },
+          {
+            "phase": "assessment_process_learning_reflection",
+            "description": "Reflect on learning that occurs through the assessment process",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "process_learning_guide",
+            "student_role": "assessment_learning_reflector"
+          },
+          {
+            "phase": "assessment_learning_synthesis_and_application",
+            "description": "Synthesize and apply learning gained through assessment",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "synthesis_facilitator",
+            "student_role": "learning_synthesizer_and_applier"
+          },
+          {
+            "phase": "assessment_learning_value_evaluation",
+            "description": "Evaluate the learning value of assessment experiences",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "value_evaluator",
+            "student_role": "assessment_learning_evaluator"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "self_management_skills", "research_skills"],
+        "learner_profile": ["thinkers", "reflective", "inquirers"],
+        "tok_links": ["ways_of_knowing", "learning_through_assessment", "knowledge_construction"],
+        "international_mindedness": "global_assessment_approaches_and_authentic_learning_experiences"
+      },
+      "specific_strategies": {
+        "authentic_assessment_design": [
+          "real_world_problem_solving_assessments",
+          "performance_based_evaluation_tasks",
+          "portfolio_development_processes",
+          "community_connected_assessment_projects"
+        ],
+        "learning_through_assessment": [
+          "research_based_assessment_tasks",
+          "creative_production_assessments",
+          "collaborative_investigation_evaluations",
+          "interdisciplinary_synthesis_assessments"
+        ],
+        "assessment_learning_integration": [
+          "scaffolded_assessment_learning_progression",
+          "metacognitive_assessment_reflection",
+          "peer_learning_through_assessment",
+          "self_directed_assessment_exploration"
+        ],
+        "meaningful_assessment_experiences": [
+          "personally_relevant_assessment_topics",
+          "culturally_responsive_assessment_design",
+          "student_choice_in_assessment_format",
+          "authentic_audience_assessment_presentation"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180, 240],
+        "assessment_authenticity": ["school_based_tasks", "community_connected_projects", "real_world_applications"],
+        "learning_integration_depth": ["surface_integration", "meaningful_connection", "deep_synthesis"],
+        "student_agency": ["teacher_designed", "collaborative_creation", "student_led_development"],
+        "assessment_scope": ["individual_tasks", "collaborative_projects", "community_investigations"]
+      },
+      "assessment_integration": {
+        "formative": "assessment_learning_quality_and_integration_effectiveness_monitoring",
+        "summative": "assessment_as_learning_mastery_and_authentic_achievement_demonstration",
+        "self_assessment": "assessment_learning_value_and_personal_growth_reflection",
+        "peer_assessment": "collaborative_assessment_learning_and_mutual_support_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "assessment_learning_topic_relevance_and_cultural_responsiveness",
+        "process": "varied_assessment_learning_approaches_and_integration_methods",
+        "product": "diverse_assessment_learning_demonstration_and_synthesis_formats",
+        "learning_environment": "authentic_assessment_learning_and_real_world_connected_spaces"
+      }
+    },
+    "continuous_learning_improvement_systems": {
+      "theoretical_foundation": {
+        "source": "Improvement Science & IB Continuous Learning Philosophy",
+        "description": "Systematic approaches to continuous learning improvement based on assessment evidence",
+        "key_principle": "Learning improvement is an ongoing process informed by systematic assessment and reflection"
+      },
+      "activity_structure": {
+        "name": "Systematic Learning Improvement Cycle",
+        "description": "Implement systematic cycles of assessment, analysis, and learning improvement",
+        "implementation_phases": [
+          {
+            "phase": "learning_improvement_baseline_establishment",
+            "description": "Establish baseline learning data and improvement targets",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "baseline_establisher",
+            "student_role": "learning_data_provider"
+          },
+          {
+            "phase": "systematic_learning_assessment_and_monitoring",
+            "description": "Implement systematic learning assessment and progress monitoring",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "systematic_assessor",
+            "student_role": "progress_demonstrator"
+          },
+          {
+            "phase": "learning_data_analysis_and_improvement_planning",
+            "description": "Analyze learning data and plan targeted improvements",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "improvement_planner",
+            "student_role": "data_analyst_and_improvement_planner"
+          },
+          {
+            "phase": "improvement_strategy_implementation_and_testing",
+            "description": "Implement and test learning improvement strategies",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "implementation_supporter",
+            "student_role": "improvement_implementer"
+          },
+          {
+            "phase": "improvement_cycle_evaluation_and_refinement",
+            "description": "Evaluate improvement cycle effectiveness and plan refinements",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "cycle_evaluator",
+            "student_role": "improvement_cycle_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "self_management_skills", "research_skills"],
+        "learner_profile": ["reflective", "thinkers", "balanced"],
+        "tok_links": ["ways_of_knowing", "systematic_inquiry", "evidence_based_improvement"],
+        "international_mindedness": "global_continuous_improvement_culture_and_learning_excellence"
+      },
+      "specific_strategies": {
+        "improvement_cycle_design": [
+          "plan_do_study_act_cycles",
+          "data_driven_improvement_planning",
+          "systematic_intervention_testing",
+          "continuous_feedback_loop_creation"
+        ],
+        "learning_data_systems": [
+          "comprehensive_learning_analytics",
+          "progress_monitoring_dashboards",
+          "learning_portfolio_evidence_systems",
+          "peer_and_self_assessment_data_integration"
+        ],
+        "improvement_strategy_development": [
+          "evidence_based_intervention_selection",
+          "personalized_improvement_planning",
+          "collaborative_improvement_goal_setting",
+          "innovative_learning_approach_testing"
+        ],
+        "systemic_improvement_culture": [
+          "growth_mindset_cultivation",
+          "failure_as_learning_opportunity_framing",
+          "collaborative_improvement_community_building",
+          "celebration_of_learning_progress_and_effort"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [120, 180, 240],
+        "improvement_cycle_frequency": ["weekly_cycles", "bi_weekly_reviews", "monthly_improvements"],
+        "data_sophistication": ["simple_progress_indicators", "comprehensive_learning_analytics", "predictive_modeling"],
+        "improvement_scope": ["individual_learning", "collaborative_improvement", "classroom_community"],
+        "system_complexity": ["basic_improvement_tracking", "advanced_analytics_systems", "integrated_improvement_platforms"]
+      },
+      "assessment_integration": {
+        "formative": "improvement_cycle_effectiveness_and_learning_progress_acceleration",
+        "summative": "systematic_improvement_capability_and_learning_excellence_achievement",
+        "self_assessment": "improvement_mindset_development_and_learning_ownership_reflection",
+        "peer_assessment": "collaborative_improvement_contribution_and_mutual_support_evaluation"
+      },
+      "differentiation_strategies": {
+        "content": "personalized_improvement_focus_and_learning_target_adaptation",
+        "process": "varied_improvement_cycle_approaches_and_systematic_learning_methods",
+        "product": "diverse_improvement_evidence_and_learning_excellence_demonstration",
+        "learning_environment": "improvement_focused_data_rich_continuous_learning_spaces"
+      }
+    }
+  }
+}

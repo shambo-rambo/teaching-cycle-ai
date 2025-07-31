@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+import { studentPrivacyService } from './studentPrivacyService.js';
 
 dotenv.config();
 
@@ -50,7 +51,7 @@ Be supportive, not judgmental. Focus on helping teachers improve their practice 
     try {
       const anthropicClient = await initAnthropic();
       const response = await anthropicClient.messages.create({
-        model: process.env.CLAUDE_MODEL || 'claude-3-5-sonnet-20241022',
+        model: process.env.CLAUDE_MODEL || 'claude-sonnet-4-20250514',
         max_tokens: 4000,
         system: this.SYSTEM_PROMPT,
         messages: [
@@ -68,9 +69,51 @@ Be supportive, not judgmental. Focus on helping teachers improve their practice 
         ]
       });
 
+      // NEW: Handle refusal stop reason for Claude 4
+      if (response.stop_reason === 'refusal') {
+        console.log('Lesson analysis declined for safety reasons');
+        return {
+          error: true,
+          message: 'Unable to analyze this lesson content',
+          suggestion: 'Please review content for potentially sensitive material',
+          frameworkAnalysis: {
+            teachingLearningCycle: {},
+            highImpactTeaching: {},
+            criticalThinking: {}
+          },
+          questions: [],
+          suggestions: [],
+          overallAssessment: 'Analysis declined for safety reasons'
+        };
+      }
+
+      // Access extended thinking if available
+      if (response.thinking) {
+        console.log('AI reasoning process for lesson analysis:', response.thinking);
+      }
+
       return this.parseAnalysisResponse(response.content[0].text);
     } catch (error) {
       console.error('Error analyzing lesson:', error);
+      
+      // Enhanced error handling for Claude 4
+      if (error.message && error.message.includes('refusal')) {
+        console.log('Content analysis declined for safety reasons');
+        return {
+          error: true,
+          message: 'Unable to analyze this content',
+          suggestion: 'Please review content for potentially sensitive material',
+          frameworkAnalysis: {
+            teachingLearningCycle: {},
+            highImpactTeaching: {},
+            criticalThinking: {}
+          },
+          questions: [],
+          suggestions: [],
+          overallAssessment: 'Analysis declined for safety reasons'
+        };
+      }
+      
       throw new Error('Failed to analyze lesson content');
     }
   }
@@ -119,7 +162,7 @@ Be supportive, not judgmental. Focus on helping teachers improve their practice 
       Return updated analysis JSON with the teacher's explanation incorporated.`;
 
       const apiResponse = await anthropicClient.messages.create({
-        model: process.env.CLAUDE_MODEL || 'claude-3-5-sonnet-20241022',
+        model: process.env.CLAUDE_MODEL || 'claude-sonnet-4-20250514',
         max_tokens: 3000,
         system: this.SYSTEM_PROMPT,
         messages: [
@@ -129,6 +172,17 @@ Be supportive, not judgmental. Focus on helping teachers improve their practice 
           }
         ]
       });
+
+      // Handle refusal stop reason
+      if (apiResponse.stop_reason === 'refusal') {
+        console.log('Teacher response processing declined for safety reasons');
+        return originalAnalysis; // Return original analysis unchanged
+      }
+
+      // Access extended thinking if available
+      if (apiResponse.thinking) {
+        console.log('AI reasoning for teacher response processing:', apiResponse.thinking);
+      }
 
       return this.parseAnalysisResponse(apiResponse.content[0].text);
     } catch (error) {
@@ -159,7 +213,7 @@ Be supportive, not judgmental. Focus on helping teachers improve their practice 
       }`;
 
       const response = await anthropicClient.messages.create({
-        model: process.env.CLAUDE_MODEL || 'claude-3-5-sonnet-20241022',
+        model: process.env.CLAUDE_MODEL || 'claude-sonnet-4-20250514',
         max_tokens: 2000,
         system: this.SYSTEM_PROMPT,
         messages: [
@@ -170,6 +224,21 @@ Be supportive, not judgmental. Focus on helping teachers improve their practice 
         ]
       });
 
+      // Handle refusal stop reason
+      if (response.stop_reason === 'refusal') {
+        console.log('Suggestion generation declined for safety reasons');
+        return { 
+          suggestions: [],
+          error: true,
+          message: 'Unable to generate suggestions for this content'
+        };
+      }
+
+      // Access extended thinking if available
+      if (response.thinking) {
+        console.log('AI reasoning for suggestion generation:', response.thinking);
+      }
+
       const jsonMatch = response.content[0].text.match(/\{[\s\S]*\}/);
       if (jsonMatch) {
         return JSON.parse(jsonMatch[0]);
@@ -179,6 +248,201 @@ Be supportive, not judgmental. Focus on helping teachers improve their practice 
     } catch (error) {
       console.error('Error generating suggestions:', error);
       throw new Error('Failed to generate suggestions');
+    }
+  }
+
+  // Privacy-compliant lesson analysis with student differentiation
+  async analyzeLessonWithStudentContext(lessonData, classData, students, sessionId = null) {
+    try {
+      // Create privacy-compliant context
+      const privacyCompliantContext = studentPrivacyService.createPrivacyCompliantLessonContext(
+        lessonData, classData, students, sessionId
+      );
+
+      // Validate that no PII is present before sending to AI
+      const validation = studentPrivacyService.validateAISafeData(privacyCompliantContext);
+      if (!validation.isValid) {
+        throw new Error(`Privacy validation failed: ${validation.violations.join(', ')}`);
+      }
+
+      const anthropicClient = await initAnthropic();
+      
+      const prompt = `Analyze this lesson plan and provide personalized differentiation suggestions for each student based on their learning support needs. Remember that student identifiers are anonymized for privacy.
+
+Lesson Context: ${JSON.stringify(privacyCompliantContext, null, 2)}
+
+Provide analysis in this JSON format:
+{
+  "lessonAnalysis": {
+    "teachingLearningCycle": {
+      "fieldBuilding": { "present": true/false, "evidence": "...", "suggestions": "..." },
+      "supportedReading": { "present": true/false, "evidence": "...", "suggestions": "..." },
+      "genreLearning": { "present": true/false, "evidence": "...", "suggestions": "..." },
+      "supportedWriting": { "present": true/false, "evidence": "...", "suggestions": "..." },
+      "independentWriting": { "present": true/false, "evidence": "...", "suggestions": "..." }
+    },
+    "highImpactTeaching": {
+      "explicitInstruction": { "present": true/false, "evidence": "...", "suggestions": "..." },
+      "explainingModelling": { "present": true/false, "evidence": "...", "suggestions": "..." },
+      "checkingUnderstanding": { "present": true/false, "evidence": "...", "suggestions": "..." }
+    },
+    "criticalThinking": {
+      "analysis": { "present": true/false, "evidence": "...", "suggestions": "..." },
+      "evaluation": { "present": true/false, "evidence": "...", "suggestions": "..." },
+      "synthesis": { "present": true/false, "evidence": "...", "suggestions": "..." },
+      "application": { "present": true/false, "evidence": "...", "suggestions": "..." }
+    }
+  },
+  "studentDifferentiation": {
+    "Student_XXXX": {
+      "accommodations": ["specific recommendations based on their learning support needs"],
+      "activities": ["adapted activities for this student"],
+      "assessment": ["modified assessment approaches"]
+    }
+  },
+  "classWideAdaptations": [
+    "Suggestions that benefit multiple students or the whole class"
+  ]
+}
+
+Focus on practical, implementable suggestions that respect each student's learning needs while maintaining lesson quality.`;
+
+      const response = await anthropicClient.messages.create({
+        model: process.env.CLAUDE_MODEL || 'claude-sonnet-4-20250514',
+        max_tokens: 4000,
+        system: this.SYSTEM_PROMPT + `
+
+CRITICAL PRIVACY REQUIREMENT: You are receiving anonymized student data. Student identifiers like "Student_A7F9" are anonymous - never attempt to guess real names or identify students. Focus only on the learning support information provided.`,
+        messages: [
+          {
+            role: 'user',
+            content: prompt
+          }
+        ]
+      });
+
+      // Handle refusal stop reason
+      if (response.stop_reason === 'refusal') {
+        console.log('Lesson analysis with student context declined for safety reasons');
+        return {
+          success: false,
+          error: 'Analysis declined for safety reasons',
+          lessonAnalysis: null,
+          studentDifferentiation: {}
+        };
+      }
+
+      // Access extended thinking if available
+      if (response.thinking) {
+        console.log('AI reasoning for privacy-compliant lesson analysis:', response.thinking);
+      }
+
+      const analysisResult = this.parseAnalysisResponse(response.content[0].text);
+      
+      // Map AI recommendations back to real students for teacher interface
+      if (analysisResult.studentDifferentiation) {
+        const mappedRecommendations = studentPrivacyService.mapAIResponseToStudents(
+          analysisResult.studentDifferentiation, 
+          sessionId
+        );
+        analysisResult.studentDifferentiation = mappedRecommendations;
+      }
+
+      return {
+        success: true,
+        lessonAnalysis: analysisResult.lessonAnalysis,
+        studentDifferentiation: analysisResult.studentDifferentiation,
+        classWideAdaptations: analysisResult.classWideAdaptations,
+        sessionId: privacyCompliantContext.sessionId,
+        privacyCompliant: true
+      };
+
+    } catch (error) {
+      console.error('Error in privacy-compliant lesson analysis:', error);
+      throw new Error('Failed to analyze lesson with student context: ' + error.message);
+    }
+  }
+
+  // Generate personalized recommendations while maintaining privacy
+  async generatePersonalizedRecommendations(lessonContent, students, frameworkRequirements = [], sessionId = null) {
+    try {
+      // Prepare AI-safe student data
+      const aiSafeStudents = studentPrivacyService.prepareStudentDataForAI(students, sessionId);
+      
+      // Validate no PII present
+      const validation = studentPrivacyService.validateAISafeData(aiSafeStudents);
+      if (!validation.isValid) {
+        throw new Error(`Privacy validation failed: ${validation.violations.join(', ')}`);
+      }
+
+      const anthropicClient = await initAnthropic();
+      
+      const prompt = `Generate personalized teaching recommendations for this lesson content based on student learning support needs. Student identifiers are anonymized for privacy protection.
+
+Lesson Content: ${lessonContent}
+
+Student Profiles (Anonymized): ${JSON.stringify(aiSafeStudents, null, 2)}
+
+Framework Requirements: ${JSON.stringify(frameworkRequirements, null, 2)}
+
+Provide recommendations in this JSON format:
+{
+  "personalizedRecommendations": {
+    "Student_XXXX": {
+      "preLesson": ["preparation suggestions"],
+      "duringLesson": ["in-class adaptations"],
+      "postLesson": ["follow-up activities"],
+      "assessment": ["modified assessment approaches"]
+    }
+  },
+  "implementationTips": [
+    "Practical tips for implementing these recommendations"
+  ]
+}
+
+Focus on actionable strategies that teachers can easily implement.`;
+
+      const response = await anthropicClient.messages.create({
+        model: process.env.CLAUDE_MODEL || 'claude-sonnet-4-20250514',
+        max_tokens: 3000,
+        system: this.SYSTEM_PROMPT + `
+
+PRIVACY PROTECTION: Student data has been anonymized. Never attempt to identify real students. Focus only on learning support needs and educational recommendations.`,
+        messages: [
+          {
+            role: 'user',
+            content: prompt
+          }
+        ]
+      });
+
+      if (response.stop_reason === 'refusal') {
+        return {
+          success: false,
+          error: 'Recommendation generation declined for safety reasons'
+        };
+      }
+
+      const result = this.parseAnalysisResponse(response.content[0].text);
+      
+      // Map recommendations back to real students
+      if (result.personalizedRecommendations) {
+        const mappedRecommendations = studentPrivacyService.mapAIResponseToStudents(
+          result.personalizedRecommendations, 
+          sessionId
+        );
+        result.personalizedRecommendations = mappedRecommendations;
+      }
+
+      return {
+        success: true,
+        ...result,
+        privacyCompliant: true
+      };
+
+    } catch (error) {
+      console.error('Error generating personalized recommendations:', error);
+      throw new Error('Failed to generate personalized recommendations: ' + error.message);
     }
   }
 }

@@ -40,8 +40,9 @@ export const analyzeLesson = async (req, res) => {
     // Step 2: Generate AI-powered analysis
     const aiAnalysis = await aiAnalysisService.analyzeLesson(lessonContent);
 
-    // Step 3: Generate clarifying questions
-    const questions = frameworkDetectionService.generateQuestions(frameworkAnalysis, lessonContent);
+    // Step 3: Use AI analysis questions (which includes personalized question generation)
+    const questions = aiAnalysis.questions || [];
+    console.log('Questions from AI analysis:', questions);
 
     // Step 4: Combine results
     const lessonAnalysis = {
@@ -185,8 +186,7 @@ export const rateSuggestion = async (req, res) => {
       });
     }
 
-    // For MVP, just acknowledge the rating
-    // In full implementation, this would be stored in the database
+    // Record the rating
     const ratingRecord = {
       suggestionId,
       rating, // 'helpful' | 'unhelpful' | 'implemented'
@@ -194,16 +194,65 @@ export const rateSuggestion = async (req, res) => {
       timestamp: new Date().toISOString()
     };
 
+    // If rated as helpful, offer implementation option
+    let implementationOption = null;
+    if (rating === 'helpful') {
+      implementationOption = {
+        available: true,
+        message: 'Would you like me to implement this suggestion for you?',
+        actionText: 'Apply Suggestion',
+        actionEndpoint: '/api/analysis/suggestions/apply'
+      };
+    }
+
     res.json({
       success: true,
-      data: ratingRecord,
-      message: 'Thank you for your feedback! This helps us improve our suggestions.'
+      data: {
+        ...ratingRecord,
+        implementationOption
+      },
+      message: rating === 'helpful' 
+        ? 'Great! I can help implement this suggestion for you.'
+        : 'Thank you for your feedback! This helps us improve our suggestions.'
     });
   } catch (error) {
     console.error('Error in rateSuggestion:', error);
     res.status(500).json({
       success: false,
       error: 'Failed to record suggestion rating'
+    });
+  }
+};
+
+
+
+
+
+export const generatePersonalizedQuestions = async (req, res) => {
+  try {
+    const { lessonContent, lessonId } = req.body;
+
+    if (!lessonContent) {
+      return res.status(400).json({
+        success: false,
+        error: 'Lesson content is required'
+      });
+    }
+
+    // Generate personalized questions using AI
+    const questions = await aiAnalysisService.generatePersonalizedQuestions(lessonContent, {});
+
+    res.json({
+      success: true,
+      questions: questions,
+      lessonId: lessonId,
+      message: 'Personalized questions generated successfully'
+    });
+  } catch (error) {
+    console.error('Error in generatePersonalizedQuestions:', error);
+    res.status(500).json({
+      success: false,
+      error: 'Failed to generate personalized questions'
     });
   }
 };

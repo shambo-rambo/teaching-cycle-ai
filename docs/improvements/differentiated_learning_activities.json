@@ -1,0 +1,796 @@
+{
+  "differentiated_learning_methodologies": {
+    "identity_affirmation_and_self_esteem_building": {
+      "theoretical_foundation": {
+        "source": "IB Differentiated Learning Principles (Tomlinson & Allan 2000)",
+        "description": "Promote environments that welcome and embrace learners while building self-esteem",
+        "key_principle": "Learning is enhanced when students feel valued, welcomed, and confident in their abilities"
+      },
+      "activity_structure": {
+        "name": "Culturally Affirming Learning Community",
+        "description": "Create learning experiences that celebrate student identity and build confidence",
+        "implementation_phases": [
+          {
+            "phase": "identity_exploration_and_celebration",
+            "description": "Students explore and share their cultural identities and strengths",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "identity_celebrator",
+            "student_role": "identity_sharer"
+          },
+          {
+            "phase": "strength_identification_and_utilization",
+            "description": "Identify individual strengths and design learning through these strengths",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "strength_identifier",
+            "student_role": "strength_demonstrator"
+          },
+          {
+            "phase": "culturally_responsive_learning_activities",
+            "description": "Engage in learning activities that connect to diverse cultural perspectives",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "cultural_connector",
+            "student_role": "culturally_connected_learner"
+          },
+          {
+            "phase": "achievement_celebration_and_confidence_building",
+            "description": "Celebrate achievements and build learning confidence",
+            "duration_minutes": "{base_duration * 0.10}",
+            "teacher_role": "achievement_celebrator",
+            "student_role": "confident_achiever"
+          },
+          {
+            "phase": "inclusive_community_reflection",
+            "description": "Reflect on inclusive learning community and personal growth",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "community_reflector",
+            "student_role": "community_contributor"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["self_management_skills", "communication_skills", "social_skills"],
+        "learner_profile": ["open_minded", "caring", "reflective"],
+        "tok_links": ["personal_knowledge", "cultural_perspectives", "identity_and_knowledge"],
+        "international_mindedness": "cultural_identity_and_global_citizenship"
+      },
+      "specific_strategies": {
+        "welcoming_environments": [
+          "celebrate_cultural_diversity",
+          "use_culturally_relevant_examples",
+          "display_student_work_prominently",
+          "create_safe_spaces_for_sharing"
+        ],
+        "realistic_expectations": [
+          "set_high_but_achievable_goals",
+          "provide_scaffolding_for_success",
+          "differentiate_success_criteria",
+          "focus_on_growth_over_perfection"
+        ],
+        "cultural_perspectives_integration": [
+          "incorporate_diverse_worldviews",
+          "value_multilingual_knowledge",
+          "connect_learning_to_student_experiences",
+          "invite_community_knowledge_sharing"
+        ],
+        "parent_collaboration": [
+          "engage_families_in_learning_process",
+          "value_home_language_and_culture",
+          "create_partnership_opportunities",
+          "communicate_student_strengths"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90],
+        "cultural_diversity_scope": ["individual_identity", "classroom_diversity", "global_perspectives"],
+        "strength_focus": ["academic_strengths", "cultural_assets", "personal_talents", "learning_preferences"],
+        "celebration_format": ["individual_recognition", "peer_appreciation", "family_sharing", "community_presentation"],
+        "confidence_building_approach": ["incremental_success", "peer_support", "mentor_guidance", "self_advocacy_development"]
+      },
+      "assessment_integration": {
+        "formative": "identity_affirmation_evidence_and_confidence_growth",
+        "summative": "culturally_responsive_learning_demonstration",
+        "self_assessment": "cultural_identity_pride_and_learning_confidence_reflection",
+        "peer_assessment": "inclusive_community_contribution_and_cultural_appreciation_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "culturally_relevant_and_strength_based_content_selection",
+        "process": "multiple_cultural_expression_and_learning_approaches",
+        "product": "diverse_identity_affirming_demonstration_methods",
+        "learning_environment": "inclusive_culturally_responsive_spaces"
+      }
+    },
+    "prior_knowledge_activation_and_building": {
+      "theoretical_foundation": {
+        "source": "IB Differentiated Learning Principles - Valuing Prior Knowledge",
+        "description": "Identify and build upon existing knowledge including multilingual learning",
+        "key_principle": "New learning builds most effectively on existing knowledge and experience"
+      },
+      "activity_structure": {
+        "name": "Multilingual Knowledge Bridge Building",
+        "description": "Systematically activate and build upon prior knowledge including learning in other languages",
+        "implementation_phases": [
+          {
+            "phase": "comprehensive_prior_knowledge_assessment",
+            "description": "Assess prior knowledge including knowledge gained in other languages and cultures",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "knowledge_assessor",
+            "student_role": "knowledge_demonstrator"
+          },
+          {
+            "phase": "language_and_learning_profile_mapping",
+            "description": "Map individual language profiles and learning experiences",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "profile_mapper",
+            "student_role": "profile_contributor"
+          },
+          {
+            "phase": "bridge_building_to_new_knowledge",
+            "description": "Explicitly connect prior knowledge to new learning",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "bridge_builder",
+            "student_role": "connection_maker"
+          },
+          {
+            "phase": "multilingual_knowledge_integration",
+            "description": "Integrate knowledge from multiple languages and cultural contexts",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "integration_facilitator",
+            "student_role": "multilingual_integrator"
+          },
+          {
+            "phase": "knowledge_building_reflection",
+            "description": "Reflect on knowledge building process and multilingual assets",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "reflection_guide",
+            "student_role": "knowledge_building_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "communication_skills", "self_management_skills"],
+        "learner_profile": ["knowledgeable", "reflective", "open_minded"],
+        "tok_links": ["ways_of_knowing", "cultural_knowledge", "language_and_thought"],
+        "international_mindedness": "multilingual_and_multicultural_knowledge_appreciation"
+      },
+      "specific_strategies": {
+        "prior_knowledge_identification": [
+          "multilingual_knowledge_mapping",
+          "cultural_experience_activation",
+          "informal_assessment_techniques",
+          "family_knowledge_integration"
+        ],
+        "prior_learning_activation": [
+          "knowledge_webs_and_concept_maps",
+          "storytelling_and_narrative_sharing",
+          "visual_and_artistic_expression",
+          "peer_knowledge_sharing"
+        ],
+        "language_profile_mapping": [
+          "home_language_documentation",
+          "academic_language_assessment",
+          "cultural_communication_styles",
+          "multilingual_asset_recognition"
+        ],
+        "knowledge_building_strategies": [
+          "scaffolded_connection_making",
+          "comparative_analysis_across_cultures",
+          "translanguaging_opportunities",
+          "cultural_bridge_building"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "prior_knowledge_scope": ["academic_content", "cultural_knowledge", "life_experiences", "multilingual_learning"],
+        "assessment_methods": ["informal_conversations", "knowledge_webs", "portfolio_evidence", "peer_interviews"],
+        "bridge_building_approach": ["explicit_connections", "guided_discovery", "student_generated_links"],
+        "multilingual_integration": ["translanguaging_encouraged", "code_switching_valued", "multilingual_resources_provided"]
+      },
+      "assessment_integration": {
+        "formative": "prior_knowledge_activation_effectiveness_and_connection_quality",
+        "summative": "knowledge_building_and_multilingual_integration_demonstration",
+        "self_assessment": "prior_knowledge_recognition_and_learning_connection_reflection",
+        "peer_assessment": "multilingual_knowledge_sharing_and_cultural_bridge_building_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "prior_knowledge_responsive_content_selection_and_multilingual_resources",
+        "process": "varied_knowledge_activation_and_building_approaches",
+        "product": "diverse_prior_knowledge_integration_demonstration_methods",
+        "learning_environment": "multilingual_and_multicultural_knowledge_celebrating_spaces"
+      }
+    },
+    "scaffolded_learning_support": {
+      "theoretical_foundation": {
+        "source": "Vygotsky - Zone of Proximal Development & IB Scaffolding Principles",
+        "description": "Support new learning through systematic scaffolding approaches",
+        "key_principle": "Learning is optimized when appropriate support bridges the gap between current and potential ability"
+      },
+      "activity_structure": {
+        "name": "Multi-Modal Scaffolding System",
+        "description": "Provide varied scaffolding supports to enable successful learning for all students",
+        "implementation_phases": [
+          {
+            "phase": "learning_gap_identification_and_scaffold_selection",
+            "description": "Identify learning gaps and select appropriate scaffolding approaches",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "scaffold_designer",
+            "student_role": "learning_gap_identifier"
+          },
+          {
+            "phase": "graphic_organizer_and_visual_aid_implementation",
+            "description": "Implement visual scaffolds including graphic organizers and visual aids",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "visual_scaffold_provider",
+            "student_role": "visual_scaffold_user"
+          },
+          {
+            "phase": "collaborative_and_peer_support_engagement",
+            "description": "Engage in collaborative learning and peer support systems",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "collaboration_facilitator",
+            "student_role": "collaborative_learner_and_supporter"
+          },
+          {
+            "phase": "language_support_and_best_language_utilization",
+            "description": "Provide language support and utilize students' best language for learning",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "language_supporter",
+            "student_role": "multilingual_learner"
+          },
+          {
+            "phase": "scaffold_effectiveness_evaluation_and_adjustment",
+            "description": "Evaluate scaffold effectiveness and adjust support as needed",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "scaffold_evaluator",
+            "student_role": "scaffold_effectiveness_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "communication_skills", "self_management_skills"],
+        "learner_profile": ["thinkers", "balanced", "risk_takers"],
+        "tok_links": ["ways_of_knowing", "scaffolded_knowledge_construction", "collaborative_learning"],
+        "international_mindedness": "culturally_responsive_scaffolding_and_support"
+      },
+      "specific_strategies": {
+        "graphic_organizers": [
+          "writing_frames_and_templates",
+          "mind_maps_and_concept_maps",
+          "cause_effect_diagrams",
+          "compare_contrast_matrices"
+        ],
+        "visual_aids": [
+          "infographics_and_diagrams",
+          "pictorial_representations",
+          "video_demonstrations",
+          "interactive_visual_tools"
+        ],
+        "collaborative_support": [
+          "peer_tutoring_systems",
+          "collaborative_learning_groups",
+          "buddy_systems_and_partnerships",
+          "cooperative_learning_structures"
+        ],
+        "language_support": [
+          "multilingual_glossaries",
+          "translation_tools_and_resources",
+          "visual_vocabulary_supports",
+          "home_language_integration"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90, 120],
+        "scaffold_type": ["visual", "verbal", "collaborative", "technological", "linguistic"],
+        "support_intensity": ["minimal_scaffolding", "moderate_support", "intensive_scaffolding"],
+        "scaffold_duration": ["temporary_support", "extended_scaffolding", "gradual_release"],
+        "collaborative_configuration": ["peer_pairs", "small_groups", "cross_age_tutoring", "expert_mentoring"]
+      },
+      "assessment_integration": {
+        "formative": "scaffolding_effectiveness_and_learning_progress_monitoring",
+        "summative": "supported_learning_achievement_and_independence_development",
+        "self_assessment": "scaffold_utilization_and_learning_strategy_reflection",
+        "peer_assessment": "collaborative_support_quality_and_peer_assistance_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "scaffold_responsive_content_complexity_adjustment",
+        "process": "multiple_scaffolding_approaches_and_support_modalities",
+        "product": "diverse_scaffolded_demonstration_methods",
+        "learning_environment": "support_rich_and_culturally_responsive_spaces"
+      }
+    },
+    "extended_learning_opportunities": {
+      "theoretical_foundation": {
+        "source": "IB Differentiated Learning Principles - Extending Learning",
+        "description": "Combine high expectations with enriched learning experiences and technological enhancement",
+        "key_principle": "All learners benefit from cognitively rich experiences that extend and deepen learning"
+      },
+      "activity_structure": {
+        "name": "Enriched Learning Extension Program",
+        "description": "Provide cognitively rich extension opportunities with technology integration",
+        "implementation_phases": [
+          {
+            "phase": "high_expectation_goal_setting_and_enrichment_planning",
+            "description": "Set high expectations and plan cognitively rich learning extensions",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "enrichment_planner",
+            "student_role": "extension_goal_setter"
+          },
+          {
+            "phase": "learner_centered_experiential_practice_engagement",
+            "description": "Engage in learner-centered, experiential practice with rich materials",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "experiential_facilitator",
+            "student_role": "experiential_learner"
+          },
+          {
+            "phase": "technology_and_assistive_technology_integration",
+            "description": "Integrate technology and assistive technologies to enrich learning",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "technology_integrator",
+            "student_role": "technology_enhanced_learner"
+          },
+          {
+            "phase": "cognitively_rich_environment_exploration",
+            "description": "Explore cognitively rich materials, experiences, and environments",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "environment_curator",
+            "student_role": "cognitive_explorer"
+          },
+          {
+            "phase": "learning_extension_impact_reflection",
+            "description": "Reflect on learning extension impact and future opportunities",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "extension_reflector",
+            "student_role": "learning_extension_evaluator"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills", "self_management_skills"],
+        "learner_profile": ["inquirers", "risk_takers", "knowledgeable"],
+        "tok_links": ["ways_of_knowing", "knowledge_extension", "innovative_thinking"],
+        "international_mindedness": "global_perspective_enrichment_and_innovation"
+      },
+      "specific_strategies": {
+        "high_expectations_with_support": [
+          "challenging_yet_achievable_goals",
+          "growth_mindset_cultivation",
+          "excellence_standards_with_scaffolding",
+          "ambitious_project_opportunities"
+        ],
+        "experiential_practice": [
+          "hands_on_investigation_projects",
+          "real_world_problem_solving",
+          "community_based_learning",
+          "authentic_research_opportunities"
+        ],
+        "technology_integration": [
+          "digital_creation_tools",
+          "virtual_reality_experiences",
+          "online_collaboration_platforms",
+          "assistive_technology_supports"
+        ],
+        "cognitively_rich_materials": [
+          "complex_authentic_texts",
+          "primary_source_documents",
+          "multimedia_rich_resources",
+          "expert_knowledge_access"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180, 240],
+        "extension_complexity": ["moderate_enrichment", "substantial_extension", "advanced_acceleration"],
+        "technology_sophistication": ["basic_digital_tools", "advanced_software", "emerging_technologies"],
+        "experiential_scope": ["classroom_based", "school_wide", "community_connected", "globally_networked"],
+        "cognitive_challenge_level": ["moderate_complexity", "high_complexity", "expert_level_engagement"]
+      },
+      "assessment_integration": {
+        "formative": "learning_extension_engagement_and_cognitive_growth_monitoring",
+        "summative": "enriched_learning_achievement_and_innovation_demonstration",
+        "self_assessment": "learning_extension_impact_and_growth_reflection",
+        "peer_assessment": "collaborative_enrichment_contribution_and_innovation_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "enriched_content_complexity_and_authentic_materials",
+        "process": "multiple_extension_pathways_and_technology_integration",
+        "product": "diverse_advanced_demonstration_and_creation_methods",
+        "learning_environment": "technology_rich_cognitively_stimulating_spaces"
+      }
+    },
+    "universal_design_for_learning": {
+      "theoretical_foundation": {
+        "source": "CAST - Universal Design for Learning Framework",
+        "description": "Provide multiple means of representation, action, expression, and engagement",
+        "key_principle": "Learning environments should be designed to be accessible and effective for all learners"
+      },
+      "activity_structure": {
+        "name": "Universally Accessible Learning Experience",
+        "description": "Design learning experiences with multiple means of representation, engagement, and expression",
+        "implementation_phases": [
+          {
+            "phase": "multiple_representation_provision",
+            "description": "Provide information through multiple sensory modalities and formats",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "multi_modal_presenter",
+            "student_role": "multi_modal_learner"
+          },
+          {
+            "phase": "multiple_engagement_opportunity_creation",
+            "description": "Create multiple pathways for student engagement and motivation",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "engagement_diversifier",
+            "student_role": "personally_engaged_learner"
+          },
+          {
+            "phase": "multiple_action_and_expression_enablement",
+            "description": "Enable multiple ways for students to demonstrate knowledge and skills",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "expression_facilitator",
+            "student_role": "diverse_expresser"
+          },
+          {
+            "phase": "accessibility_barrier_removal",
+            "description": "Identify and remove barriers to learning accessibility",
+            "duration_minutes": "{base_duration * 0.10}",
+            "teacher_role": "barrier_remover",
+            "student_role": "accessibility_advocate"
+          },
+          {
+            "phase": "universal_design_effectiveness_evaluation",
+            "description": "Evaluate universal design effectiveness for all learners",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "design_evaluator",
+            "student_role": "accessibility_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["communication_skills", "self_management_skills", "thinking_skills"],
+        "learner_profile": ["balanced", "caring", "open_minded"],
+        "tok_links": ["ways_of_knowing", "diverse_learning_approaches", "inclusive_knowledge"],
+        "international_mindedness": "inclusive_global_learning_community"
+      },
+      "specific_strategies": {
+        "multiple_representation": [
+          "visual_auditory_and_tactile_information_presentation",
+          "multilingual_and_multicultural_examples",
+          "graphic_and_textual_information_combination",
+          "technology_enhanced_accessibility_features"
+        ],
+        "multiple_engagement": [
+          "interest_based_learning_pathways",
+          "culturally_relevant_engagement_strategies",
+          "choice_and_autonomy_in_learning",
+          "collaborative_and_individual_engagement_options"
+        ],
+        "multiple_expression": [
+          "written_verbal_visual_and_kinesthetic_demonstration_options",
+          "technology_supported_expression_tools",
+          "portfolio_and_performance_based_assessment",
+          "multilingual_and_multicultural_expression_opportunities"
+        ],
+        "barrier_removal": [
+          "physical_accessibility_ensuring",
+          "cognitive_load_management",
+          "language_and_cultural_barrier_reduction",
+          "assistive_technology_integration"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "accessibility_focus": ["physical_accessibility", "cognitive_accessibility", "linguistic_accessibility", "cultural_accessibility"],
+        "representation_variety": ["basic_multi_modal", "comprehensive_sensory", "technology_enhanced"],
+        "expression_options": ["limited_choice", "moderate_variety", "extensive_options"],
+        "engagement_personalization": ["general_interest", "individual_preference", "culturally_responsive"]
+      },
+      "assessment_integration": {
+        "formative": "universal_access_effectiveness_and_barrier_identification",
+        "summative": "inclusive_learning_achievement_across_diverse_learners",
+        "self_assessment": "personal_accessibility_needs_and_learning_preference_reflection",
+        "peer_assessment": "inclusive_learning_community_support_and_accessibility_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "universally_accessible_content_design_and_multiple_representation",
+        "process": "varied_learning_processes_accommodating_all_learners",
+        "product": "multiple_accessible_demonstration_and_expression_methods",
+        "learning_environment": "universally_designed_inclusive_and_barrier_free_spaces"
+      }
+    },
+    "language_profile_responsive_teaching": {
+      "theoretical_foundation": {
+        "source": "IB Language and Learning Framework",
+        "description": "Teaching that responds to diverse language profiles and supports multilingual learners",
+        "key_principle": "Language diversity is an asset that enhances learning when properly supported"
+      },
+      "activity_structure": {
+        "name": "Multilingual Asset-Based Learning",
+        "description": "Leverage diverse language profiles as learning assets while providing appropriate support",
+        "implementation_phases": [
+          {
+            "phase": "language_profile_assessment_and_asset_identification",
+            "description": "Assess language profiles and identify multilingual assets",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "language_assessor",
+            "student_role": "language_asset_demonstrator"
+          },
+          {
+            "phase": "translanguaging_and_code_switching_opportunities",
+            "description": "Provide opportunities for translanguaging and strategic code-switching",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "translanguaging_facilitator",
+            "student_role": "multilingual_communicator"
+          },
+          {
+            "phase": "academic_language_development_support",
+            "description": "Support academic language development in context",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "academic_language_coach",
+            "student_role": "academic_language_learner"
+          },
+          {
+            "phase": "cultural_and_linguistic_bridge_building",
+            "description": "Build bridges between home and school languages and cultures",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "cultural_bridge_builder",
+            "student_role": "cultural_linguistic_connector"
+          },
+          {
+            "phase": "multilingual_competence_celebration",
+            "description": "Celebrate multilingual competence and cultural linguistic diversity",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "multilingual_celebrator",
+            "student_role": "proud_multilingual_learner"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["communication_skills", "thinking_skills", "social_skills"],
+        "learner_profile": ["communicators", "open_minded", "knowledgeable"],
+        "tok_links": ["language_and_thought", "cultural_perspectives", "ways_of_knowing"],
+        "international_mindedness": "multilingual_global_citizenship_and_communication"
+      },
+      "specific_strategies": {
+        "language_assessment": [
+          "home_language_proficiency_recognition",
+          "academic_language_development_tracking",
+          "communicative_competence_evaluation",
+          "cultural_communication_style_appreciation"
+        ],
+        "translanguaging_support": [
+          "strategic_home_language_use",
+          "multilingual_resource_provision",
+          "code_switching_skill_development",
+          "cross_linguistic_transfer_facilitation"
+        ],
+        "academic_language_development": [
+          "content_embedded_language_instruction",
+          "vocabulary_development_in_context",
+          "discourse_pattern_explicit_teaching",
+          "genre_specific_language_support"
+        ],
+        "cultural_linguistic_bridging": [
+          "home_school_language_connection",
+          "cultural_communication_style_valuing",
+          "family_language_expertise_integration",
+          "community_linguistic_resource_utilization"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "language_diversity": ["bilingual_learners", "multilingual_learners", "emergent_bilinguals", "heritage_language_speakers"],
+        "language_support_intensity": ["minimal_support", "moderate_scaffolding", "intensive_language_development"],
+        "translanguaging_encouragement": ["strategic_use", "frequent_opportunities", "systematic_integration"],
+        "cultural_integration": ["surface_cultural_acknowledgment", "deep_cultural_integration", "cultural_expertise_sharing"]
+      },
+      "assessment_integration": {
+        "formative": "language_development_progress_and_multilingual_asset_utilization",
+        "summative": "academic_achievement_through_multilingual_competence",
+        "self_assessment": "multilingual_identity_pride_and_language_learning_reflection",
+        "peer_assessment": "multilingual_communication_effectiveness_and_cultural_sharing_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "multilingual_content_accessibility_and_cultural_relevance",
+        "process": "varied_language_development_and_multilingual_learning_approaches",
+        "product": "diverse_multilingual_demonstration_and_expression_methods",
+        "learning_environment": "multilingual_affirming_and_culturally_responsive_spaces"
+      }
+    },
+    "strength_based_learning_approaches": {
+      "theoretical_foundation": {
+        "source": "Gardner - Multiple Intelligences & Asset-Based Education",
+        "description": "Learning approaches that leverage and develop individual student strengths",
+        "key_principle": "All students have strengths that can be leveraged to enhance learning and build confidence"
+      },
+      "activity_structure": {
+        "name": "Individual Strength Leveraging System",
+        "description": "Identify, leverage, and develop individual student strengths for enhanced learning",
+        "implementation_phases": [
+          {
+            "phase": "comprehensive_strength_identification",
+            "description": "Identify individual strengths across multiple domains and intelligences",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "strength_identifier",
+            "student_role": "strength_demonstrator"
+          },
+          {
+            "phase": "strength_based_learning_pathway_design",
+            "description": "Design learning pathways that leverage identified strengths",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "pathway_designer",
+            "student_role": "strength_based_learner"
+          },
+          {
+            "phase": "strength_development_and_application",
+            "description": "Apply and further develop strengths through challenging activities",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "strength_developer",
+            "student_role": "strength_applier"
+          },
+          {
+            "phase": "peer_strength_sharing_and_collaboration",
+            "description": "Share individual strengths and collaborate using complementary abilities",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "collaboration_facilitator",
+            "student_role": "strength_contributor"
+          },
+          {
+            "phase": "strength_growth_celebration_and_reflection",
+            "description": "Celebrate strength growth and reflect on learning through strengths",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "growth_celebrator",
+            "student_role": "strength_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["self_management_skills", "thinking_skills", "social_skills"],
+        "learner_profile": ["balanced", "confident", "risk_takers"],
+        "tok_links": ["ways_of_knowing", "personal_knowledge", "multiple_intelligences"],
+        "international_mindedness": "diverse_global_strengths_and_talents_appreciation"
+      },
+      "specific_strategies": {
+        "strength_identification": [
+          "multiple_intelligence_assessment",
+          "learning_style_preference_identification",
+          "talent_and_interest_exploration",
+          "cultural_strength_recognition"
+        ],
+        "strength_leveraging": [
+          "learning_through_preferred_modalities",
+          "strength_based_project_opportunities",
+          "talent_showcasing_platforms",
+          "peer_tutoring_using_strengths"
+        ],
+        "strength_development": [
+          "advanced_skill_building_opportunities",
+          "mentor_pairing_for_talent_development",
+          "competition_and_performance_opportunities",
+          "leadership_role_assignments"
+        ],
+        "collaborative_strength_utilization": [
+          "complementary_team_formations",
+          "peer_teaching_through_strengths",
+          "group_project_role_assignments",
+          "community_contribution_opportunities"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120, 180],
+        "strength_domain": ["academic_strengths", "creative_talents", "social_skills", "cultural_assets", "leadership_abilities"],
+        "development_intensity": ["moderate_development", "intensive_cultivation", "expert_level_advancement"],
+        "collaboration_scope": ["peer_partnerships", "cross_age_mentoring", "community_connections", "expert_guidance"],
+        "showcase_opportunities": ["classroom_sharing", "school_presentation", "community_demonstration", "competition_participation"]
+      },
+      "assessment_integration": {
+        "formative": "strength_utilization_effectiveness_and_development_progress",
+        "summative": "strength_based_achievement_and_talent_demonstration",
+        "self_assessment": "strength_awareness_growth_and_confidence_building_reflection",
+        "peer_assessment": "collaborative_strength_contribution_and_talent_appreciation_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "strength_responsive_content_selection_and_challenge_level",
+        "process": "varied_strength_based_learning_and_development_approaches",
+        "product": "diverse_strength_showcasing_and_talent_demonstration_methods",
+        "learning_environment": "strength_celebrating_and_talent_nurturing_spaces"
+      }
+    },
+    "culturally_responsive_differentiation": {
+      "theoretical_foundation": {
+        "source": "Gay - Culturally Responsive Teaching & Banks - Multicultural Education",
+        "description": "Differentiation that honors and builds upon diverse cultural backgrounds and perspectives",
+        "key_principle": "Cultural diversity is an educational asset that enhances learning for all students"
+      },
+      "activity_structure": {
+        "name": "Cultural Asset Integration Learning System",
+        "description": "Systematically integrate cultural assets and perspectives into differentiated learning",
+        "implementation_phases": [
+          {
+            "phase": "cultural_asset_mapping_and_appreciation",
+            "description": "Map and appreciate diverse cultural assets and knowledge systems",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "cultural_asset_mapper",
+            "student_role": "cultural_knowledge_sharer"
+          },
+          {
+            "phase": "culturally_relevant_content_integration",
+            "description": "Integrate culturally relevant content and perspectives into learning",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "cultural_content_integrator",
+            "student_role": "culturally_connected_learner"
+          },
+          {
+            "phase": "diverse_cultural_perspective_exploration",
+            "description": "Explore diverse cultural perspectives on learning content",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "perspective_facilitator",
+            "student_role": "cultural_perspective_explorer"
+          },
+          {
+            "phase": "cross_cultural_bridge_building",
+            "description": "Build bridges between different cultural knowledge systems",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "bridge_builder",
+            "student_role": "cultural_connector"
+          },
+          {
+            "phase": "cultural_learning_celebration_and_reflection",
+            "description": "Celebrate cultural learning and reflect on multicultural understanding",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "cultural_celebrator",
+            "student_role": "multicultural_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["communication_skills", "social_skills", "thinking_skills"],
+        "learner_profile": ["open_minded", "caring", "principled"],
+        "tok_links": ["cultural_perspectives", "indigenous_knowledge", "ways_of_knowing"],
+        "international_mindedness": "cultural_diversity_appreciation_and_global_citizenship"
+      },
+      "specific_strategies": {
+        "cultural_asset_recognition": [
+          "cultural_knowledge_systems_valuing",
+          "community_expertise_integration",
+          "cultural_communication_style_appreciation",
+          "traditional_knowledge_honoring"
+        ],
+        "culturally_relevant_pedagogy": [
+          "cultural_examples_and_analogies_use",
+          "community_based_learning_opportunities",
+          "cultural_celebration_integration",
+          "family_knowledge_incorporation"
+        ],
+        "diverse_perspective_inclusion": [
+          "multiple_cultural_viewpoint_presentation",
+          "indigenous_knowledge_system_exploration",
+          "cultural_narrative_and_storytelling_integration",
+          "diverse_author_and_expert_voices_inclusion"
+        ],
+        "cross_cultural_understanding": [
+          "cultural_comparison_and_appreciation",
+          "bias_examination_and_critical_thinking",
+          "cultural_empathy_development",
+          "global_citizenship_cultivation"
+        ]
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180],
+        "cultural_diversity_scope": ["classroom_diversity", "community_diversity", "national_diversity", "global_diversity"],
+        "cultural_integration_depth": ["surface_cultural_acknowledgment", "meaningful_cultural_connection", "deep_cultural_integration"],
+        "perspective_variety": ["bicultural_perspectives", "multicultural_viewpoints", "indigenous_knowledge_systems"],
+        "community_engagement": ["family_involvement", "community_partnership", "elder_and_expert_consultation"]
+      },
+      "assessment_integration": {
+        "formative": "cultural_responsiveness_effectiveness_and_perspective_integration",
+        "summative": "multicultural_learning_achievement_and_cultural_competence_demonstration",
+        "self_assessment": "cultural_identity_pride_and_multicultural_understanding_reflection",
+        "peer_assessment": "cultural_appreciation_and_cross_cultural_learning_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "culturally_relevant_and_diverse_perspective_content_selection",
+        "process": "varied_culturally_responsive_learning_and_teaching_approaches",
+        "product": "diverse_cultural_expression_and_multicultural_demonstration_methods",
+        "learning_environment": "culturally_affirming_and_globally_minded_inclusive_spaces"
+      }
+    }
+  }
+}

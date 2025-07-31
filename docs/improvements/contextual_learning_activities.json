@@ -1,0 +1,581 @@
+{
+  "contextual_learning_methodologies": {
+    "local_global_context_exploration": {
+      "theoretical_foundation": {
+        "source": "IB International-mindedness Framework",
+        "description": "Learning through exploration of local and global contexts to develop international-mindedness",
+        "key_principle": "Understanding develops through examining concepts in both local and global contexts"
+      },
+      "activity_structure": {
+        "name": "Local-Global Context Investigation",
+        "description": "Students investigate concepts by examining local manifestations and global variations",
+        "implementation_phases": [
+          {
+            "phase": "local_context_investigation",
+            "description": "Investigate concept within immediate local community context",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "local_context_facilitator",
+            "student_role": "local_investigator"
+          },
+          {
+            "phase": "global_context_exploration",
+            "description": "Explore how concept manifests in different global contexts",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "global_perspective_guide",
+            "student_role": "global_explorer"
+          },
+          {
+            "phase": "comparison_analysis",
+            "description": "Compare and contrast local and global manifestations",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "comparison_facilitator",
+            "student_role": "analytical_comparator"
+          },
+          {
+            "phase": "universal_pattern_identification",
+            "description": "Identify universal patterns across contexts",
+            "duration_minutes": "{base_duration * 0.10}",
+            "teacher_role": "pattern_guide",
+            "student_role": "pattern_identifier"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["research_skills", "thinking_skills", "communication_skills"],
+        "learner_profile": ["open_minded", "knowledgeable", "caring"],
+        "tok_links": ["cultural_perspectives", "ways_of_knowing", "global_knowledge"],
+        "international_mindedness": "local_global_interconnections"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120, 180],
+        "local_scope": ["school_community", "neighborhood", "city", "region", "country"],
+        "global_scope": ["neighboring_countries", "regional_comparisons", "global_diversity", "international_examples"],
+        "investigation_methods": ["interviews", "observations", "research", "case_studies", "data_analysis"],
+        "comparison_frameworks": ["similarities_differences", "cause_effect", "patterns_variations", "historical_contemporary"]
+      },
+      "assessment_integration": {
+        "formative": "context_understanding_progression",
+        "summative": "local_global_perspective_demonstration",
+        "self_assessment": "international_mindedness_growth_reflection",
+        "peer_assessment": "context_investigation_quality_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_context_complexity",
+        "process": "multiple_investigation_approaches",
+        "product": "diverse_comparison_formats",
+        "learning_environment": "culturally_responsive_investigation_spaces"
+      }
+    },
+    "context_concept_integration": {
+      "theoretical_foundation": {
+        "source": "Johnson - Contextual Teaching and Learning",
+        "description": "Deep integration of concepts with meaningful contexts to enhance understanding",
+        "key_principle": "Concepts become meaningful when embedded in relevant contexts"
+      },
+      "activity_structure": {
+        "name": "Context-Embedded Concept Learning",
+        "description": "Students learn concepts through deep engagement with meaningful contexts",
+        "implementation_phases": [
+          {
+            "phase": "context_immersion",
+            "description": "Immerse students in rich, authentic context",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "context_curator",
+            "student_role": "context_explorer"
+          },
+          {
+            "phase": "concept_emergence",
+            "description": "Allow concepts to emerge naturally from context exploration",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "concept_emergence_facilitator",
+            "student_role": "concept_discoverer"
+          },
+          {
+            "phase": "concept_context_integration",
+            "description": "Explicitly integrate concept understanding with context",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "integration_guide",
+            "student_role": "meaning_integrator"
+          },
+          {
+            "phase": "contextual_application",
+            "description": "Apply integrated understanding to new contextual situations",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "application_facilitator",
+            "student_role": "contextual_applier"
+          },
+          {
+            "phase": "reflection_on_context_meaning",
+            "description": "Reflect on how context enhanced concept understanding",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "reflection_guide",
+            "student_role": "context_meaning_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills", "self_management_skills"],
+        "learner_profile": ["thinkers", "reflective", "knowledgeable"],
+        "tok_links": ["contextual_knowledge", "cultural_perspectives", "ways_of_knowing"],
+        "international_mindedness": "contextual_sensitivity_development"
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90, 120],
+        "context_types": ["historical", "contemporary", "cultural", "scientific", "artistic", "economic", "political"],
+        "immersion_depth": ["surface_exposure", "moderate_engagement", "deep_immersion"],
+        "concept_complexity": ["concrete", "abstract", "interdisciplinary"],
+        "integration_scaffolding": ["high_support", "moderate_guidance", "independent_integration"]
+      },
+      "assessment_integration": {
+        "formative": "context_concept_connection_quality",
+        "summative": "integrated_understanding_demonstration",
+        "self_assessment": "contextual_learning_effectiveness_reflection",
+        "peer_assessment": "context_exploration_depth_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "culturally_relevant_contexts",
+        "process": "varied_immersion_approaches",
+        "product": "multiple_integration_expression_formats",
+        "learning_environment": "authentic_contextual_spaces"
+      }
+    },
+    "multiple_perspective_analysis": {
+      "theoretical_foundation": {
+        "source": "Banks - Multicultural Education Framework",
+        "description": "Analysis of concepts from multiple cultural, social, and disciplinary perspectives",
+        "key_principle": "Understanding deepens through examination of multiple perspectives"
+      },
+      "activity_structure": {
+        "name": "Multi-Perspective Concept Investigation",
+        "description": "Students examine concepts through different cultural, historical, and disciplinary lenses",
+        "implementation_phases": [
+          {
+            "phase": "perspective_identification",
+            "description": "Identify different perspectives relevant to the concept",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "perspective_introducer",
+            "student_role": "perspective_identifier"
+          },
+          {
+            "phase": "individual_perspective_investigation",
+            "description": "Investigate concept from assigned perspective",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "investigation_supporter",
+            "student_role": "perspective_investigator"
+          },
+          {
+            "phase": "perspective_sharing_dialogue",
+            "description": "Share findings and engage in perspective dialogue",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "dialogue_facilitator",
+            "student_role": "perspective_communicator"
+          },
+          {
+            "phase": "synthesis_integration",
+            "description": "Synthesize insights from multiple perspectives",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "synthesis_guide",
+            "student_role": "multi_perspective_synthesizer"
+          },
+          {
+            "phase": "perspective_appreciation_reflection",
+            "description": "Reflect on value of multiple perspectives",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "appreciation_facilitator",
+            "student_role": "perspective_appreciator"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "communication_skills", "social_skills"],
+        "learner_profile": ["open_minded", "caring", "principled"],
+        "tok_links": ["cultural_perspectives", "ways_of_knowing", "indigenous_knowledge"],
+        "international_mindedness": "perspective_taking_and_empathy_development"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120, 180],
+        "perspective_types": ["cultural", "historical", "disciplinary", "socioeconomic", "generational", "gender"],
+        "perspective_quantity": ["two_perspectives", "three_perspectives", "multiple_perspectives"],
+        "investigation_depth": ["surface_overview", "detailed_analysis", "comprehensive_exploration"],
+        "dialogue_format": ["structured_discussion", "debate_format", "collaborative_dialogue", "fishbowl_conversation"]
+      },
+      "assessment_integration": {
+        "formative": "perspective_investigation_quality",
+        "summative": "multi_perspective_understanding_demonstration",
+        "self_assessment": "perspective_taking_growth_reflection",
+        "peer_assessment": "dialogue_contribution_quality_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_perspective_complexity",
+        "process": "multiple_investigation_approaches",
+        "product": "diverse_perspective_expression_formats",
+        "learning_environment": "inclusive_dialogue_spaces"
+      }
+    },
+    "cultural_context_comparison": {
+      "theoretical_foundation": {
+        "source": "Hofstede - Cultural Dimensions Theory",
+        "description": "Systematic comparison of how concepts manifest across different cultural contexts",
+        "key_principle": "Cultural context shapes concept expression and understanding"
+      },
+      "activity_structure": {
+        "name": "Cross-Cultural Concept Analysis",
+        "description": "Students compare how concepts are understood and expressed across cultures",
+        "implementation_phases": [
+          {
+            "phase": "cultural_context_selection",
+            "description": "Select diverse cultural contexts for comparison",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "culture_selector",
+            "student_role": "culture_chooser"
+          },
+          {
+            "phase": "culture_specific_investigation",
+            "description": "Investigate concept within specific cultural contexts",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "cultural_investigation_guide",
+            "student_role": "cultural_researcher"
+          },
+          {
+            "phase": "cross_cultural_comparison",
+            "description": "Compare concept manifestations across cultures",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "comparison_facilitator",
+            "student_role": "cultural_comparator"
+          },
+          {
+            "phase": "cultural_sensitivity_development",
+            "description": "Develop appreciation for cultural differences",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "sensitivity_facilitator",
+            "student_role": "cultural_appreciator"
+          },
+          {
+            "phase": "universal_patterns_identification",
+            "description": "Identify universal patterns across cultures",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "universality_guide",
+            "student_role": "pattern_identifier"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["research_skills", "thinking_skills", "communication_skills"],
+        "learner_profile": ["open_minded", "caring", "knowledgeable"],
+        "tok_links": ["cultural_perspectives", "indigenous_knowledge", "ways_of_knowing"],
+        "international_mindedness": "cultural_understanding_and_appreciation"
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180],
+        "cultural_range": ["local_cultures", "regional_cultures", "global_cultures", "historical_cultures"],
+        "comparison_framework": ["similarities_differences", "cultural_values", "historical_development", "contemporary_expressions"],
+        "investigation_methods": ["ethnographic_research", "case_studies", "interviews", "cultural_artifacts", "literature_analysis"],
+        "cultural_depth": ["surface_customs", "deep_values", "worldview_perspectives"]
+      },
+      "assessment_integration": {
+        "formative": "cultural_investigation_sensitivity",
+        "summative": "cross_cultural_understanding_demonstration",
+        "self_assessment": "cultural_awareness_growth_reflection",
+        "peer_assessment": "cultural_research_quality_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "culturally_responsive_selections",
+        "process": "varied_cultural_investigation_approaches",
+        "product": "diverse_cultural_expression_formats",
+        "learning_environment": "culturally_inclusive_research_spaces"
+      }
+    },
+    "authentic_real_world_application": {
+      "theoretical_foundation": {
+        "source": "Wiggins & McTighe - Authentic Assessment",
+        "description": "Application of concepts to genuine real-world situations and problems",
+        "key_principle": "Learning becomes meaningful through authentic real-world application"
+      },
+      "activity_structure": {
+        "name": "Real-World Problem Solving",
+        "description": "Students apply concepts to address authentic real-world challenges",
+        "implementation_phases": [
+          {
+            "phase": "real_world_problem_identification",
+            "description": "Identify authentic problems requiring concept application",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "problem_curator",
+            "student_role": "problem_identifier"
+          },
+          {
+            "phase": "stakeholder_perspective_analysis",
+            "description": "Analyze problem from multiple stakeholder perspectives",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "stakeholder_facilitator",
+            "student_role": "perspective_analyzer"
+          },
+          {
+            "phase": "concept_application_development",
+            "description": "Develop solutions using relevant concepts",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "application_guide",
+            "student_role": "solution_developer"
+          },
+          {
+            "phase": "authentic_audience_presentation",
+            "description": "Present solutions to authentic audience",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "presentation_facilitator",
+            "student_role": "solution_presenter"
+          },
+          {
+            "phase": "real_world_impact_reflection",
+            "description": "Reflect on potential real-world impact",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "impact_reflection_guide",
+            "student_role": "impact_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills", "communication_skills", "social_skills"],
+        "learner_profile": ["caring", "principled", "thinkers"],
+        "tok_links": ["practical_knowledge", "ethical_implications", "real_world_applications"],
+        "international_mindedness": "global_citizenship_action"
+      },
+      "adaptable_parameters": {
+        "base_duration": [120, 180, 240],
+        "problem_scope": ["local_community", "national_issues", "global_challenges"],
+        "problem_complexity": ["well_defined", "ill_structured", "wicked_problems"],
+        "stakeholder_diversity": ["few_stakeholders", "multiple_stakeholders", "complex_stakeholder_networks"],
+        "audience_authenticity": ["classroom_peers", "school_community", "external_experts", "real_stakeholders"]
+      },
+      "assessment_integration": {
+        "formative": "solution_development_process",
+        "summative": "authentic_application_quality",
+        "self_assessment": "real_world_readiness_reflection",
+        "peer_assessment": "collaborative_problem_solving_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_problem_complexity",
+        "process": "multiple_solution_development_approaches",
+        "product": "diverse_solution_presentation_formats",
+        "learning_environment": "authentic_problem_solving_contexts"
+      }
+    },
+    "service_learning_connection": {
+      "theoretical_foundation": {
+        "source": "Dewey - Learning through Service",
+        "description": "Integration of academic learning with community service for meaningful application",
+        "key_principle": "Service provides authentic context for concept application and civic engagement"
+      },
+      "activity_structure": {
+        "name": "Community Service Learning Project",
+        "description": "Students apply concepts through meaningful community service projects",
+        "implementation_phases": [
+          {
+            "phase": "community_need_identification",
+            "description": "Identify authentic community needs requiring concept application",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "community_connector",
+            "student_role": "need_identifier"
+          },
+          {
+            "phase": "service_project_design",
+            "description": "Design service project integrating concept application",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "project_design_facilitator",
+            "student_role": "service_designer"
+          },
+          {
+            "phase": "community_service_implementation",
+            "description": "Implement service project in community context",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "implementation_supporter",
+            "student_role": "service_provider"
+          },
+          {
+            "phase": "impact_assessment_analysis",
+            "description": "Assess and analyze service impact using concepts",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "assessment_guide",
+            "student_role": "impact_analyzer"
+          },
+          {
+            "phase": "civic_engagement_reflection",
+            "description": "Reflect on civic engagement and concept learning",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "civic_reflection_facilitator",
+            "student_role": "civic_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["social_skills", "communication_skills", "self_management_skills"],
+        "learner_profile": ["caring", "principled", "balanced"],
+        "tok_links": ["ethical_knowledge", "practical_application", "community_knowledge"],
+        "international_mindedness": "local_action_global_thinking"
+      },
+      "adaptable_parameters": {
+        "base_duration": [180, 240, 360],
+        "service_scope": ["school_community", "local_neighborhood", "broader_community", "regional_area"],
+        "service_types": ["direct_service", "indirect_service", "advocacy_service", "research_service"],
+        "concept_integration_depth": ["surface_application", "meaningful_integration", "deep_analysis"],
+        "community_partnership_level": ["minimal_partnership", "collaborative_partnership", "community_led_partnership"]
+      },
+      "assessment_integration": {
+        "formative": "service_learning_process_reflection",
+        "summative": "concept_application_through_service_evaluation",
+        "self_assessment": "civic_engagement_growth_reflection",
+        "peer_assessment": "collaborative_service_contribution_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_service_complexity",
+        "process": "multiple_service_approaches",
+        "product": "diverse_service_demonstration_formats",
+        "learning_environment": "authentic_community_contexts"
+      }
+    },
+    "personal_context_meaning_making": {
+      "theoretical_foundation": {
+        "source": "Freire - Critical Pedagogy",
+        "description": "Making learning personally meaningful by connecting to student identity and experience",
+        "key_principle": "Learning is most powerful when connected to personal identity and lived experience"
+      },
+      "activity_structure": {
+        "name": "Personal Relevance Connection Workshop",
+        "description": "Students connect concepts to their personal identity, interests, and future aspirations",
+        "implementation_phases": [
+          {
+            "phase": "personal_identity_exploration",
+            "description": "Explore personal identity, values, and experiences",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "identity_facilitator",
+            "student_role": "self_explorer"
+          },
+          {
+            "phase": "concept_personal_relevance_discovery",
+            "description": "Discover personal relevance of concepts",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "relevance_guide",
+            "student_role": "personal_connector"
+          },
+          {
+            "phase": "future_aspiration_connection",
+            "description": "Connect concepts to future goals and aspirations",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "aspiration_facilitator",
+            "student_role": "future_planner"
+          },
+          {
+            "phase": "personal_application_development",
+            "description": "Develop personal applications of concepts",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "application_supporter",
+            "student_role": "personal_applier"
+          },
+          {
+            "phase": "meaning_making_reflection",
+            "description": "Reflect on personal meaning and significance",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "meaning_reflection_guide",
+            "student_role": "meaning_maker"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["self_management_skills", "thinking_skills", "communication_skills"],
+        "learner_profile": ["reflective", "balanced", "principled"],
+        "tok_links": ["personal_knowledge", "emotion", "intuition"],
+        "international_mindedness": "personal_identity_global_perspective"
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90],
+        "personal_exploration_depth": ["surface_interests", "meaningful_connections", "deep_identity_exploration"],
+        "future_connection_scope": ["immediate_goals", "medium_term_aspirations", "life_long_vision"],
+        "sharing_comfort_level": ["private_reflection", "pair_sharing", "small_group", "class_sharing"],
+        "cultural_sensitivity_level": ["culturally_neutral", "culturally_responsive", "culturally_affirming"]
+      },
+      "assessment_integration": {
+        "formative": "personal_connection_authenticity",
+        "summative": "meaningful_personal_application_demonstration",
+        "self_assessment": "personal_learning_significance_reflection",
+        "peer_assessment": "supportive_personal_sharing_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "culturally_responsive_personal_connections",
+        "process": "varied_personal_exploration_approaches",
+        "product": "diverse_personal_expression_formats",
+        "learning_environment": "safe_personal_sharing_spaces"
+      }
+    },
+    "context_transfer_development": {
+      "theoretical_foundation": {
+        "source": "Perkins & Salomon - Teaching for Transfer",
+        "description": "Systematic development of ability to transfer learning across different contexts",
+        "key_principle": "Transfer ability develops through practice applying concepts across varied contexts"
+      },
+      "activity_structure": {
+        "name": "Progressive Context Transfer Practice",
+        "description": "Students practice applying concepts across increasingly diverse contexts",
+        "implementation_phases": [
+          {
+            "phase": "initial_context_mastery",
+            "description": "Master concept application in initial context",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "mastery_facilitator",
+            "student_role": "initial_learner"
+          },
+          {
+            "phase": "near_transfer_practice",
+            "description": "Practice application in similar contexts",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "near_transfer_guide",
+            "student_role": "similar_context_applier"
+          },
+          {
+            "phase": "far_transfer_challenge",
+            "description": "Challenge application in dissimilar contexts",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "far_transfer_facilitator",
+            "student_role": "diverse_context_applier"
+          },
+          {
+            "phase": "transfer_strategy_development",
+            "description": "Develop explicit transfer strategies",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "strategy_coach",
+            "student_role": "transfer_strategist"
+          },
+          {
+            "phase": "transfer_metacognition_reflection",
+            "description": "Reflect on transfer processes and strategies",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "metacognition_guide",
+            "student_role": "transfer_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "self_management_skills", "research_skills"],
+        "learner_profile": ["thinkers", "risk_takers", "reflective"],
+        "tok_links": ["ways_of_knowing", "knowledge_application", "areas_of_knowledge"],
+        "international_mindedness": "contextual_adaptability_development"
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180],
+        "transfer_distance": ["near_transfer", "moderate_transfer", "far_transfer", "creative_transfer"],
+        "context_variety": ["academic_contexts", "real_world_contexts", "cross_cultural_contexts", "hypothetical_contexts"],
+        "scaffolding_progression": ["high_support", "moderate_support", "minimal_support", "independent_transfer"],
+        "strategy_explicitness": ["implicit_practice", "guided_strategy_development", "explicit_strategy_instruction"]
+      },
+      "assessment_integration": {
+        "formative": "transfer_attempt_quality_progression",
+        "summative": "transfer_ability_demonstration",
+        "self_assessment": "transfer_confidence_and_strategy_reflection",
+        "peer_assessment": "transfer_creativity_and_effectiveness_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_context_complexity_and_familiarity",
+        "process": "multiple_transfer_practice_approaches",
+        "product": "diverse_transfer_demonstration_formats",
+        "learning_environment": "rich_contextual_transfer_opportunities"
+      }
+    }
+  }
+}

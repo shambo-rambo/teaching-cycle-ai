@@ -1,0 +1,588 @@
+{
+  "collaborative_learning_methodologies": {
+    "social_knowledge_construction": {
+      "theoretical_foundation": {
+        "source": "Vygotsky - Social Constructivism",
+        "description": "Knowledge is constructed through social interaction and collaborative dialogue",
+        "key_principle": "Learning occurs through social interaction and shared meaning-making"
+      },
+      "activity_structure": {
+        "name": "Collaborative Knowledge Building",
+        "description": "Students work together to construct understanding through structured social interaction",
+        "implementation_phases": [
+          {
+            "phase": "individual_preparation",
+            "description": "Individual preparation and initial thinking about topic",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "preparation_facilitator",
+            "student_role": "individual_preparer"
+          },
+          {
+            "phase": "small_group_dialogue",
+            "description": "Small group discussion and initial knowledge sharing",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "dialogue_facilitator",
+            "student_role": "collaborative_contributor"
+          },
+          {
+            "phase": "knowledge_building_negotiation",
+            "description": "Negotiate meaning and build shared understanding",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "negotiation_guide",
+            "student_role": "meaning_negotiator"
+          },
+          {
+            "phase": "collective_synthesis",
+            "description": "Create collective knowledge synthesis",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "synthesis_facilitator",
+            "student_role": "collective_synthesizer"
+          },
+          {
+            "phase": "reflection_on_collaborative_learning",
+            "description": "Reflect on collaborative learning process",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "reflection_guide",
+            "student_role": "collaboration_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["social_skills", "communication_skills", "thinking_skills"],
+        "learner_profile": ["communicators", "open_minded", "caring"],
+        "tok_links": ["shared_knowledge", "language_and_thought", "consensus_building"],
+        "international_mindedness": "collaborative_global_understanding"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "group_size": [3, 4, 5, 6],
+        "knowledge_complexity": ["concrete_information", "abstract_concepts", "complex_theories"],
+        "dialogue_structure": ["open_discussion", "structured_protocols", "rotating_roles"],
+        "synthesis_format": ["written_summary", "visual_representation", "presentation", "multimedia_creation"]
+      },
+      "assessment_integration": {
+        "formative": "collaborative_process_quality",
+        "summative": "collective_knowledge_construction_evaluation",
+        "self_assessment": "individual_contribution_reflection",
+        "peer_assessment": "collaborative_effectiveness_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_knowledge_complexity",
+        "process": "multiple_collaboration_approaches",
+        "product": "diverse_synthesis_formats",
+        "learning_environment": "flexible_collaborative_spaces"
+      }
+    },
+    "collaborative_goal_achievement": {
+      "theoretical_foundation": {
+        "source": "Johnson & Johnson - Cooperative Learning",
+        "description": "Groups work together toward shared learning goals with individual accountability",
+        "key_principle": "Positive interdependence and individual accountability drive collaborative success"
+      },
+      "activity_structure": {
+        "name": "Shared Goal Collaborative Project",
+        "description": "Students work in teams with shared goals and individual accountability",
+        "implementation_phases": [
+          {
+            "phase": "goal_setting_and_role_assignment",
+            "description": "Establish shared goals and assign individual roles",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "goal_facilitator",
+            "student_role": "goal_setter_and_role_acceptor"
+          },
+          {
+            "phase": "collaborative_planning",
+            "description": "Plan collaborative approach and individual contributions",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "planning_guide",
+            "student_role": "collaborative_planner"
+          },
+          {
+            "phase": "interdependent_work_phase",
+            "description": "Work on individual parts with group interdependence",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "interdependence_monitor",
+            "student_role": "interdependent_contributor"
+          },
+          {
+            "phase": "integration_and_synthesis",
+            "description": "Integrate individual contributions into collective product",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "integration_facilitator",
+            "student_role": "collective_integrator"
+          },
+          {
+            "phase": "goal_achievement_evaluation",
+            "description": "Evaluate goal achievement and individual accountability",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "achievement_evaluator",
+            "student_role": "goal_achievement_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["social_skills", "self_management_skills", "communication_skills"],
+        "learner_profile": ["balanced", "principled", "communicators"],
+        "tok_links": ["shared_knowledge", "collective_responsibility", "interdependence"],
+        "international_mindedness": "collaborative_global_citizenship"
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180, 240],
+        "goal_complexity": ["simple_tasks", "multi_step_projects", "complex_investigations"],
+        "role_specificity": ["general_roles", "specific_functions", "expert_roles"],
+        "interdependence_level": ["resource_interdependence", "task_interdependence", "goal_interdependence"],
+        "accountability_measures": ["peer_assessment", "individual_tests", "contribution_documentation", "role_evaluation"]
+      },
+      "assessment_integration": {
+        "formative": "collaborative_process_and_individual_contribution_monitoring",
+        "summative": "shared_goal_achievement_and_individual_accountability_evaluation",
+        "self_assessment": "individual_role_effectiveness_reflection",
+        "peer_assessment": "team_member_contribution_evaluation"
+      },
+      "differentiation_strategies": {
+        "content": "varied_goal_complexity_and_role_assignments",
+        "process": "flexible_collaboration_approaches",
+        "product": "multiple_goal_achievement_demonstration_methods",
+        "learning_environment": "adaptive_collaborative_configurations"
+      }
+    },
+    "peer_learning_partnerships": {
+      "theoretical_foundation": {
+        "source": "Topping - Peer Learning",
+        "description": "Students learn from and with peers through structured partnerships",
+        "key_principle": "Peer interaction enhances learning through teaching and learning from others"
+      },
+      "activity_structure": {
+        "name": "Structured Peer Learning Exchange",
+        "description": "Students engage in reciprocal teaching and learning partnerships",
+        "implementation_phases": [
+          {
+            "phase": "partnership_formation_and_goal_setting",
+            "description": "Form learning partnerships and establish learning goals",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "partnership_facilitator",
+            "student_role": "partnership_former"
+          },
+          {
+            "phase": "individual_preparation_for_teaching",
+            "description": "Prepare to teach specific content to partner",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "preparation_supporter",
+            "student_role": "teaching_preparer"
+          },
+          {
+            "phase": "reciprocal_peer_teaching",
+            "description": "Take turns teaching and learning from partner",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "peer_teaching_monitor",
+            "student_role": "peer_teacher_and_learner"
+          },
+          {
+            "phase": "collaborative_practice_and_feedback",
+            "description": "Practice together and provide mutual feedback",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "feedback_facilitator",
+            "student_role": "collaborative_practitioner"
+          },
+          {
+            "phase": "peer_learning_reflection",
+            "description": "Reflect on peer learning experience and effectiveness",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "reflection_guide",
+            "student_role": "peer_learning_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["communication_skills", "social_skills", "self_management_skills"],
+        "learner_profile": ["communicators", "caring", "open_minded"],
+        "tok_links": ["ways_of_knowing", "teaching_and_learning", "peer_knowledge"],
+        "international_mindedness": "collaborative_cross_cultural_learning"
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90, 120],
+        "partnership_type": ["same_ability", "mixed_ability", "cross_age", "expert_novice"],
+        "learning_content": ["factual_knowledge", "conceptual_understanding", "skill_development", "problem_solving"],
+        "teaching_structure": ["informal_explanation", "structured_tutoring", "reciprocal_teaching", "peer_assessment"],
+        "feedback_mechanisms": ["informal_feedback", "structured_protocols", "rubric_based", "peer_evaluation"]
+      },
+      "assessment_integration": {
+        "formative": "peer_teaching_quality_and_learning_progress",
+        "summative": "mutual_learning_achievement_evaluation",
+        "self_assessment": "teaching_and_learning_effectiveness_reflection",
+        "peer_assessment": "partner_teaching_quality_and_support_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_learning_content_complexity",
+        "process": "multiple_peer_learning_approaches",
+        "product": "diverse_peer_teaching_demonstration_methods",
+        "learning_environment": "flexible_partnership_configurations"
+      }
+    },
+    "collective_responsibility_development": {
+      "theoretical_foundation": {
+        "source": "Slavin - Cooperative Learning Research",
+        "description": "Development of shared responsibility for group learning and success",
+        "key_principle": "Collective responsibility enhances individual learning and group cohesion"
+      },
+      "activity_structure": {
+        "name": "Shared Responsibility Learning Community",
+        "description": "Students develop collective responsibility for group learning outcomes",
+        "implementation_phases": [
+          {
+            "phase": "community_formation_and_responsibility_establishment",
+            "description": "Form learning community and establish shared responsibility norms",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "community_facilitator",
+            "student_role": "community_member_and_responsibility_acceptor"
+          },
+          {
+            "phase": "collective_goal_setting",
+            "description": "Set shared learning goals and success criteria",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "goal_setting_guide",
+            "student_role": "collective_goal_setter"
+          },
+          {
+            "phase": "shared_responsibility_implementation",
+            "description": "Implement learning activities with shared responsibility",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "responsibility_monitor",
+            "student_role": "collectively_responsible_learner"
+          },
+          {
+            "phase": "mutual_support_and_accountability",
+            "description": "Provide mutual support and hold each other accountable",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "support_facilitator",
+            "student_role": "mutual_supporter_and_accountability_partner"
+          },
+          {
+            "phase": "collective_success_celebration_and_reflection",
+            "description": "Celebrate collective success and reflect on shared responsibility",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "celebration_and_reflection_facilitator",
+            "student_role": "collective_success_celebrator_and_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["social_skills", "self_management_skills", "communication_skills"],
+        "learner_profile": ["caring", "principled", "balanced"],
+        "tok_links": ["shared_knowledge", "community_knowledge", "collective_responsibility"],
+        "international_mindedness": "global_citizenship_and_collective_responsibility"
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180],
+        "community_size": [4, 5, 6, 8, 10],
+        "responsibility_scope": ["learning_outcomes", "process_quality", "peer_support", "resource_management"],
+        "accountability_mechanisms": ["peer_monitoring", "group_contracts", "collective_assessment", "shared_portfolios"],
+        "support_structures": ["peer_tutoring", "study_groups", "resource_sharing", "collaborative_problem_solving"]
+      },
+      "assessment_integration": {
+        "formative": "collective_responsibility_demonstration_and_mutual_support_quality",
+        "summative": "shared_learning_achievement_and_community_effectiveness_evaluation",
+        "self_assessment": "individual_contribution_to_collective_success_reflection",
+        "peer_assessment": "mutual_support_and_shared_responsibility_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_shared_responsibility_complexity",
+        "process": "multiple_collective_responsibility_approaches",
+        "product": "diverse_collective_success_demonstration_methods",
+        "learning_environment": "supportive_learning_community_configurations"
+      }
+    },
+    "teacher_student_collaborative_dialogue": {
+      "theoretical_foundation": {
+        "source": "McWilliam - Meddler-in-the-Middle Pedagogy",
+        "description": "Collaborative dialogue between teacher and students as co-learners",
+        "key_principle": "Teacher and students collaborate as partners in learning and knowledge construction"
+      },
+      "activity_structure": {
+        "name": "Co-Learning Dialogue Partnership",
+        "description": "Teacher and students engage in collaborative dialogue as learning partners",
+        "implementation_phases": [
+          {
+            "phase": "collaborative_relationship_establishment",
+            "description": "Establish collaborative teacher-student learning partnership",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "collaborative_partner",
+            "student_role": "learning_co_investigator"
+          },
+          {
+            "phase": "shared_inquiry_initiation",
+            "description": "Initiate shared inquiry with mutual questions and wonderings",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "co_inquirer",
+            "student_role": "inquiry_partner"
+          },
+          {
+            "phase": "collaborative_investigation_and_dialogue",
+            "description": "Engage in collaborative investigation with ongoing dialogue",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "investigation_collaborator",
+            "student_role": "co_investigator"
+          },
+          {
+            "phase": "mutual_learning_synthesis",
+            "description": "Synthesize learning together with mutual insights",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "synthesis_partner",
+            "student_role": "co_synthesizer"
+          },
+          {
+            "phase": "collaborative_relationship_reflection",
+            "description": "Reflect on collaborative learning relationship and process",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "relationship_reflector",
+            "student_role": "collaboration_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["communication_skills", "social_skills", "thinking_skills"],
+        "learner_profile": ["open_minded", "reflective", "communicators"],
+        "tok_links": ["shared_knowledge", "dialogue", "collaborative_inquiry"],
+        "international_mindedness": "collaborative_global_learning_partnerships"
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90, 120],
+        "dialogue_formality": ["informal_conversation", "structured_dialogue", "academic_discourse"],
+        "inquiry_complexity": ["simple_questions", "complex_investigations", "philosophical_inquiries"],
+        "collaboration_balance": ["teacher_guided", "equally_collaborative", "student_led"],
+        "relationship_development": ["establishing_partnership", "deepening_collaboration", "autonomous_co_learning"]
+      },
+      "assessment_integration": {
+        "formative": "collaborative_dialogue_quality_and_mutual_learning",
+        "summative": "co_learning_achievement_and_partnership_effectiveness",
+        "self_assessment": "collaborative_learning_relationship_reflection",
+        "peer_assessment": "mutual_learning_partnership_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_inquiry_complexity_and_cultural_responsiveness",
+        "process": "multiple_collaborative_dialogue_approaches",
+        "product": "diverse_co_learning_demonstration_methods",
+        "learning_environment": "flexible_collaborative_partnership_spaces"
+      }
+    },
+    "group_process_facilitation": {
+      "theoretical_foundation": {
+        "source": "Schwarz - Skilled Facilitator Approach",
+        "description": "Development of group process skills and collaborative facilitation abilities",
+        "key_principle": "Effective collaboration requires explicit attention to group process and facilitation skills"
+      },
+      "activity_structure": {
+        "name": "Collaborative Process Skills Development",
+        "description": "Students develop and practice group facilitation and collaborative process skills",
+        "implementation_phases": [
+          {
+            "phase": "group_process_skills_introduction",
+            "description": "Introduce group process skills and facilitation techniques",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "process_skills_instructor",
+            "student_role": "process_skills_learner"
+          },
+          {
+            "phase": "facilitation_role_rotation",
+            "description": "Rotate facilitation roles within collaborative groups",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "facilitation_coach",
+            "student_role": "peer_facilitator"
+          },
+          {
+            "phase": "group_process_observation_and_feedback",
+            "description": "Observe group processes and provide constructive feedback",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "process_observer",
+            "student_role": "process_observer_and_feedback_provider"
+          },
+          {
+            "phase": "collaborative_problem_solving_practice",
+            "description": "Practice collaborative problem-solving with process focus",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "problem_solving_supporter",
+            "student_role": "collaborative_problem_solver"
+          },
+          {
+            "phase": "group_process_effectiveness_reflection",
+            "description": "Reflect on group process effectiveness and improvement strategies",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "process_reflection_facilitator",
+            "student_role": "group_process_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["social_skills", "communication_skills", "self_management_skills"],
+        "learner_profile": ["communicators", "balanced", "caring"],
+        "tok_links": ["ways_of_knowing", "group_dynamics", "facilitation_knowledge"],
+        "international_mindedness": "cross_cultural_collaboration_skills"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "process_skills_focus": ["communication_skills", "conflict_resolution", "decision_making", "consensus_building"],
+        "facilitation_complexity": ["basic_facilitation", "advanced_techniques", "complex_group_dynamics"],
+        "group_composition": ["homogeneous_groups", "diverse_groups", "cross_cultural_groups"],
+        "feedback_mechanisms": ["peer_feedback", "self_reflection", "observer_feedback", "video_analysis"]
+      },
+      "assessment_integration": {
+        "formative": "group_process_skills_development_and_facilitation_quality",
+        "summative": "collaborative_facilitation_competency_demonstration",
+        "self_assessment": "facilitation_skills_and_group_process_awareness_reflection",
+        "peer_assessment": "facilitation_effectiveness_and_group_contribution_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_process_skills_complexity_and_cultural_adaptation",
+        "process": "multiple_facilitation_skill_development_approaches",
+        "product": "diverse_facilitation_competency_demonstration_methods",
+        "learning_environment": "supportive_skill_development_and_practice_spaces"
+      }
+    },
+    "international_collaborative_projects": {
+      "theoretical_foundation": {
+        "source": "UNESCO - Education for Global Citizenship",
+        "description": "Collaborative projects connecting students across international boundaries",
+        "key_principle": "International collaboration develops global citizenship and cross-cultural understanding"
+      },
+      "activity_structure": {
+        "name": "Global Collaborative Learning Partnership",
+        "description": "Students collaborate with international partners on shared learning projects",
+        "implementation_phases": [
+          {
+            "phase": "international_partnership_establishment",
+            "description": "Establish connections with international collaborative partners",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "international_connection_facilitator",
+            "student_role": "global_partnership_builder"
+          },
+          {
+            "phase": "cross_cultural_introduction_and_goal_setting",
+            "description": "Introduce cultures and establish shared project goals",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "cross_cultural_facilitator",
+            "student_role": "cultural_ambassador_and_goal_setter"
+          },
+          {
+            "phase": "collaborative_international_investigation",
+            "description": "Conduct collaborative investigation across international contexts",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "international_collaboration_supporter",
+            "student_role": "global_collaborative_investigator"
+          },
+          {
+            "phase": "cross_cultural_synthesis_and_presentation",
+            "description": "Synthesize findings and present to international audience",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "international_presentation_facilitator",
+            "student_role": "global_presenter_and_synthesizer"
+          },
+          {
+            "phase": "international_collaboration_reflection",
+            "description": "Reflect on international collaboration and global learning",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "global_learning_reflection_guide",
+            "student_role": "international_collaboration_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["communication_skills", "social_skills", "research_skills"],
+        "learner_profile": ["open_minded", "caring", "communicators"],
+        "tok_links": ["cultural_perspectives", "ways_of_knowing", "global_knowledge"],
+        "international_mindedness": "global_citizenship_and_cross_cultural_collaboration"
+      },
+      "adaptable_parameters": {
+        "base_duration": [180, 240, 360, 480],
+        "international_scope": ["bilateral_partnership", "multilateral_collaboration", "global_network"],
+        "collaboration_technology": ["video_conferencing", "collaborative_platforms", "shared_digital_workspaces"],
+        "project_complexity": ["simple_cultural_exchange", "joint_investigation", "global_problem_solving"],
+        "cultural_integration": ["surface_cultural_sharing", "deep_cultural_exploration", "cross_cultural_synthesis"]
+      },
+      "assessment_integration": {
+        "formative": "international_collaboration_quality_and_cross_cultural_communication",
+        "summative": "global_collaborative_project_achievement_and_cultural_understanding_demonstration",
+        "self_assessment": "international_collaboration_skills_and_global_awareness_reflection",
+        "peer_assessment": "cross_cultural_collaboration_effectiveness_and_global_partnership_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "culturally_responsive_international_collaboration_complexity",
+        "process": "multiple_cross_cultural_collaboration_approaches",
+        "product": "diverse_global_collaboration_demonstration_methods",
+        "learning_environment": "technology_enhanced_international_collaboration_spaces"
+      }
+    },
+    "collaborative_feedback_systems": {
+      "theoretical_foundation": {
+        "source": "Hattie - Feedback for Learning",
+        "description": "Systematic collaborative feedback processes that enhance learning for all participants",
+        "key_principle": "Effective feedback is collaborative, specific, and focused on learning improvement"
+      },
+      "activity_structure": {
+        "name": "Mutual Learning Feedback Exchange",
+        "description": "Students engage in structured collaborative feedback systems for mutual learning enhancement",
+        "implementation_phases": [
+          {
+            "phase": "feedback_system_establishment",
+            "description": "Establish collaborative feedback protocols and criteria",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "feedback_system_facilitator",
+            "student_role": "feedback_protocol_learner"
+          },
+          {
+            "phase": "collaborative_work_production",
+            "description": "Produce collaborative work for feedback exchange",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "work_production_supporter",
+            "student_role": "collaborative_producer"
+          },
+          {
+            "phase": "structured_peer_feedback_exchange",
+            "description": "Exchange structured feedback using established protocols",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "feedback_process_monitor",
+            "student_role": "feedback_provider_and_receiver"
+          },
+          {
+            "phase": "feedback_integration_and_improvement",
+            "description": "Integrate feedback and improve collaborative work",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "improvement_facilitator",
+            "student_role": "feedback_integrator_and_improver"
+          },
+          {
+            "phase": "feedback_system_effectiveness_reflection",
+            "description": "Reflect on feedback system effectiveness and learning enhancement",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "feedback_reflection_guide",
+            "student_role": "feedback_system_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["communication_skills", "social_skills", "thinking_skills"],
+        "learner_profile": ["caring", "reflective", "open_minded"],
+        "tok_links": ["ways_of_knowing", "justification", "perspective_taking"],
+        "international_mindedness": "collaborative_global_feedback_and_learning"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "feedback_structure": ["informal_feedback", "structured_rubrics", "protocol_based", "multimedia_feedback"],
+        "feedback_focus": ["content_quality", "process_effectiveness", "collaboration_skills", "learning_growth"],
+        "feedback_exchange_format": ["peer_pairs", "small_groups", "whole_class", "cross_group"],
+        "feedback_integration_approach": ["immediate_revision", "iterative_improvement", "portfolio_development", "reflection_based"]
+      },
+      "assessment_integration": {
+        "formative": "collaborative_feedback_quality_and_learning_enhancement",
+        "summative": "feedback_integration_effectiveness_and_collaborative_improvement_demonstration",
+        "self_assessment": "feedback_skills_and_learning_improvement_reflection",
+        "peer_assessment": "feedback_quality_and_collaborative_support_evaluation"
+      },
+      "differentiation_strategies": {
+        "content": "varied_feedback_complexity_and_cultural_responsiveness",
+        "process": "multiple_feedback_exchange_approaches",
+        "product": "diverse_feedback_integration_demonstration_methods",
+        "learning_environment": "supportive_collaborative_feedback_spaces"
+      }
+    }
+  }
+}

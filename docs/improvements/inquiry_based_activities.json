@@ -1,0 +1,640 @@
+{
+  "inquiry_based_methodologies": {
+    "inquiry_learning_cycle": {
+      "theoretical_foundation": {
+        "source": "IB Inquiry Learning Cycle (2015)",
+        "description": "Cyclical process of inquiry, action, and reflection that drives learning",
+        "key_principle": "Learning occurs through iterative cycles of questioning, doing, and reflecting"
+      },
+      "activity_structure": {
+        "name": "Inquiry-Action-Reflection Cycle",
+        "description": "Students engage in continuous cycles of inquiry, action, and reflection",
+        "implementation_phases": [
+          {
+            "phase": "inquiry_initiation",
+            "description": "Students formulate questions about real-world phenomena or problems",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "question_facilitator",
+            "student_role": "questioner_wonderer"
+          },
+          {
+            "phase": "action_exploration",
+            "description": "Students take action to investigate their questions through research, experimentation, or analysis",
+            "duration_minutes": "{base_duration * 0.50}",
+            "teacher_role": "resource_connector",
+            "student_role": "active_investigator"
+          },
+          {
+            "phase": "reflection_synthesis",
+            "description": "Students reflect on findings and generate new questions for next cycle",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "reflection_guide",
+            "student_role": "reflective_synthesizer"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills", "self_management_skills"],
+        "learner_profile": ["inquirers", "reflective", "thinkers"],
+        "tok_links": ["knowledge_questions", "ways_of_knowing", "knowledge_framework"],
+        "international_mindedness": "questioning_global_perspectives"
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90, 120],
+        "inquiry_focus": ["conceptual_questions", "practical_problems", "ethical_dilemmas", "scientific_phenomena"],
+        "action_types": ["research", "experimentation", "creation", "analysis", "field_work"],
+        "reflection_methods": ["journals", "discussions", "presentations", "mind_maps", "digital_portfolios"],
+        "cycle_iterations": [1, 2, 3, 4, 5]
+      },
+      "assessment_integration": {
+        "formative": "cycle_quality_feedback",
+        "summative": "inquiry_progression_evaluation",
+        "self_assessment": "learning_cycle_reflection",
+        "peer_assessment": "inquiry_process_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_inquiry_complexity",
+        "process": "multiple_action_pathways",
+        "product": "diverse_reflection_formats",
+        "learning_environment": "flexible_inquiry_spaces"
+      }
+    },
+    "structured_inquiry": {
+      "theoretical_foundation": {
+        "source": "Staver and Bay (1987) - Structured Inquiry Model",
+        "description": "Teacher-guided inquiry with predetermined structure and outcomes",
+        "key_principle": "Students follow structured pathway to discover predetermined concepts"
+      },
+      "activity_structure": {
+        "name": "Guided Independent Investigation",
+        "description": "Student-led inquiry with teacher-provided framework and checkpoints",
+        "implementation_phases": [
+          {
+            "phase": "question_formulation",
+            "description": "Students develop meaningful inquiry questions",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "question_facilitator",
+            "student_role": "question_developer"
+          },
+          {
+            "phase": "research_planning",
+            "description": "Design investigation methodology and identify resources",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "methodology_guide",
+            "student_role": "research_planner"
+          },
+          {
+            "phase": "evidence_gathering",
+            "description": "Collect and analyze relevant information",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "resource_supporter",
+            "student_role": "researcher_analyst"
+          },
+          {
+            "phase": "synthesis_conclusion",
+            "description": "Draw reasoned conclusions from evidence",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "critical_thinking_coach",
+            "student_role": "synthesizer"
+          },
+          {
+            "phase": "communication_sharing",
+            "description": "Present findings to authentic audience",
+            "duration_minutes": "{base_duration * 0.10}",
+            "teacher_role": "presentation_facilitator",
+            "student_role": "communicator"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["research_skills", "thinking_skills", "communication_skills"],
+        "learner_profile": ["inquirers", "knowledgeable", "thinkers"],
+        "tok_links": ["knowledge_questions", "ways_of_knowing", "areas_of_knowledge"],
+        "international_mindedness": "global_perspectives_integration"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120, 180, 240],
+        "inquiry_scope": ["narrow_focused", "broad_exploratory", "comparative", "longitudinal"],
+        "resource_types": ["primary_sources", "secondary_sources", "digital_tools", "expert_interviews", "field_work"],
+        "collaboration_level": ["individual", "pairs", "small_groups", "whole_class"],
+        "complexity_factors": ["question_sophistication", "source_diversity", "analysis_depth", "presentation_format"]
+      },
+      "assessment_integration": {
+        "formative": "checkpoint_conferences_feedback",
+        "summative": "final_presentation_evaluation", 
+        "self_assessment": "inquiry_process_reflection",
+        "peer_assessment": "research_quality_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_inquiry_complexity",
+        "process": "flexible_research_pathways",
+        "product": "multiple_presentation_options",
+        "learning_environment": "choice_in_research_settings"
+      }
+    },
+    "guided_inquiry": {
+      "theoretical_foundation": {
+        "source": "Staver and Bay (1987) - Guided Inquiry Model",
+        "description": "Teacher provides guidance and support while students direct their own learning path",
+        "key_principle": "Balance between student autonomy and teacher scaffolding"
+      },
+      "activity_structure": {
+        "name": "Teacher-Supported Student Investigation",
+        "description": "Students lead inquiry with strategic teacher guidance at key moments",
+        "implementation_phases": [
+          {
+            "phase": "problem_presentation",
+            "description": "Teacher presents authentic problem or phenomenon for investigation",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "problem_presenter",
+            "student_role": "problem_analyzer"
+          },
+          {
+            "phase": "hypothesis_formation",
+            "description": "Students develop hypotheses or investigation questions",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "hypothesis_facilitator",
+            "student_role": "hypothesis_developer"
+          },
+          {
+            "phase": "investigation_design",
+            "description": "Students plan investigation with teacher guidance on methodology",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "methodology_advisor",
+            "student_role": "investigation_planner"
+          },
+          {
+            "phase": "data_collection",
+            "description": "Students gather evidence with teacher support on techniques",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "technique_supporter",
+            "student_role": "data_collector"
+          },
+          {
+            "phase": "conclusion_drawing",
+            "description": "Students analyze findings and draw conclusions with teacher questioning",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "critical_questioner",
+            "student_role": "conclusion_drawer"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["research_skills", "thinking_skills", "communication_skills"],
+        "learner_profile": ["inquirers", "thinkers", "risk_takers"],
+        "tok_links": ["empirical_evidence", "reasoning", "methodology"],
+        "international_mindedness": "diverse_investigation_approaches"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120, 180],
+        "guidance_level": ["minimal", "moderate", "substantial"],
+        "problem_complexity": ["simple_single_variable", "multi_variable", "complex_real_world"],
+        "investigation_types": ["experimental", "observational", "analytical", "comparative"],
+        "documentation_methods": ["lab_reports", "digital_logs", "presentations", "peer_reviews"]
+      },
+      "assessment_integration": {
+        "formative": "investigation_process_feedback",
+        "summative": "inquiry_skills_evaluation",
+        "self_assessment": "methodology_reflection",
+        "peer_assessment": "investigation_quality_review"
+      },
+      "differentiation_strategies": {
+        "content": "varied_problem_complexity",
+        "process": "flexible_guidance_levels",
+        "product": "multiple_documentation_options",
+        "learning_environment": "choice_in_investigation_settings"
+      }
+    },
+    "open_inquiry": {
+      "theoretical_foundation": {
+        "source": "Staver and Bay (1987) - Open Inquiry Model",
+        "description": "Student-initiated and student-directed inquiry with minimal teacher intervention",
+        "key_principle": "Maximum student autonomy in question formation, methodology, and conclusion"
+      },
+      "activity_structure": {
+        "name": "Student-Driven Independent Investigation",
+        "description": "Students take full ownership of inquiry process from question to conclusion",
+        "implementation_phases": [
+          {
+            "phase": "interest_identification",
+            "description": "Students identify personal areas of curiosity or concern",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "interest_encourager",
+            "student_role": "self_reflector"
+          },
+          {
+            "phase": "question_development",
+            "description": "Students formulate their own investigable questions",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "question_refiner",
+            "student_role": "question_creator"
+          },
+          {
+            "phase": "methodology_design",
+            "description": "Students independently design investigation approach",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "resource_provider",
+            "student_role": "methodology_designer"
+          },
+          {
+            "phase": "independent_investigation",
+            "description": "Students conduct investigation with minimal teacher intervention",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "safety_monitor",
+            "student_role": "independent_researcher"
+          },
+          {
+            "phase": "self_directed_analysis",
+            "description": "Students analyze findings and draw personal conclusions",
+            "duration_minutes": "{base_duration * 0.10}",
+            "teacher_role": "validation_supporter",
+            "student_role": "independent_analyzer"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["self_management_skills", "research_skills", "thinking_skills"],
+        "learner_profile": ["inquirers", "risk_takers", "reflective"],
+        "tok_links": ["personal_knowledge", "intuition", "individual_perspectives"],
+        "international_mindedness": "autonomous_global_citizenship"
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180, 240],
+        "autonomy_level": ["guided_autonomy", "supported_independence", "full_independence"],
+        "scope_boundaries": ["subject_specific", "interdisciplinary", "unlimited"],
+        "timeline_flexibility": ["fixed_deadline", "flexible_pacing", "self_paced"],
+        "support_availability": ["on_demand", "scheduled_checkpoints", "peer_only"]
+      },
+      "assessment_integration": {
+        "formative": "self_monitoring_evidence",
+        "summative": "inquiry_authenticity_evaluation",
+        "self_assessment": "learning_ownership_reflection",
+        "peer_assessment": "inquiry_innovation_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "unlimited_topic_choice",
+        "process": "personalized_methodology_development",
+        "product": "individual_expression_formats",
+        "learning_environment": "self_selected_investigation_spaces"
+      }
+    },
+    "pogil_learning": {
+      "theoretical_foundation": {
+        "source": "Lee (2004) - Process-Oriented Guided-Inquiry Learning",
+        "description": "Structured group work combining inquiry with specific learning process focus",
+        "key_principle": "Students learn content through guided discovery while developing process skills"
+      },
+      "activity_structure": {
+        "name": "Process-Oriented Collaborative Inquiry",
+        "description": "Small groups work through structured activities focusing on both content and process",
+        "implementation_phases": [
+          {
+            "phase": "role_assignment",
+            "description": "Assign specific roles (manager, recorder, spokesperson, etc.) within groups",
+            "duration_minutes": "{base_duration * 0.10}",
+            "teacher_role": "role_coordinator",
+            "student_role": "role_adopter"
+          },
+          {
+            "phase": "guided_exploration",
+            "description": "Groups work through structured activity sequence with guiding questions",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "process_facilitator",
+            "student_role": "collaborative_explorer"
+          },
+          {
+            "phase": "concept_development",
+            "description": "Groups construct understanding through discussion and analysis",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "concept_guide",
+            "student_role": "concept_builder"
+          },
+          {
+            "phase": "application_practice",
+            "description": "Groups apply new understanding to novel situations",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "application_supporter",
+            "student_role": "concept_applier"
+          },
+          {
+            "phase": "process_reflection",
+            "description": "Groups reflect on both content learning and collaboration process",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "reflection_facilitator",
+            "student_role": "process_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["social_skills", "communication_skills", "thinking_skills"],
+        "learner_profile": ["communicators", "collaborators", "thinkers"],
+        "tok_links": ["shared_knowledge", "group_dynamics", "consensus_building"],
+        "international_mindedness": "collaborative_global_problem_solving"
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90],
+        "group_size": [3, 4, 5],
+        "role_types": ["functional_roles", "content_roles", "process_roles", "thinking_roles"],
+        "activity_structure": ["linear_sequence", "cyclical_process", "branching_pathways"],
+        "complexity_level": ["basic_concepts", "intermediate_connections", "advanced_applications"]
+      },
+      "assessment_integration": {
+        "formative": "group_process_observation",
+        "summative": "individual_concept_understanding",
+        "self_assessment": "role_effectiveness_reflection",
+        "peer_assessment": "group_contribution_evaluation"
+      },
+      "differentiation_strategies": {
+        "content": "varied_activity_complexity",
+        "process": "flexible_role_assignments",
+        "product": "multiple_demonstration_methods",
+        "learning_environment": "adaptive_group_configurations"
+      }
+    },
+    "experiential_learning": {
+      "theoretical_foundation": {
+        "source": "Kolb (1984) - Experiential Learning Theory",
+        "description": "Learning through direct experience, reflection, abstract conceptualization, and active experimentation",
+        "key_principle": "Knowledge is created through transformation of experience"
+      },
+      "activity_structure": {
+        "name": "Experience-Reflection-Conceptualization-Experimentation Cycle",
+        "description": "Students learn through concrete experience followed by reflective observation, abstract conceptualization, and active experimentation",
+        "implementation_phases": [
+          {
+            "phase": "concrete_experience",
+            "description": "Students engage in direct, hands-on experience or activity",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "experience_facilitator",
+            "student_role": "active_participant"
+          },
+          {
+            "phase": "reflective_observation",
+            "description": "Students reflect on experience and observe patterns and outcomes",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "reflection_guide",
+            "student_role": "reflective_observer"
+          },
+          {
+            "phase": "abstract_conceptualization",
+            "description": "Students develop theories or concepts to explain their experience",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "conceptual_facilitator",
+            "student_role": "theory_builder"
+          },
+          {
+            "phase": "active_experimentation",
+            "description": "Students test new concepts in different situations or contexts",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "experimentation_supporter",
+            "student_role": "hypothesis_tester"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "self_management_skills", "research_skills"],
+        "learner_profile": ["reflective", "risk_takers", "balanced"],
+        "tok_links": ["sense_perception", "emotion", "experience_as_knowledge"],
+        "international_mindedness": "experiential_cultural_learning"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120, 180],
+        "experience_types": ["simulations", "field_work", "experiments", "role_plays", "real_world_projects"],
+        "reflection_methods": ["individual_journaling", "group_discussion", "structured_protocols", "multimedia_documentation"],
+        "conceptualization_tools": ["concept_maps", "theoretical_frameworks", "model_building", "principle_extraction"],
+        "experimentation_scope": ["same_context", "varied_contexts", "transfer_applications", "innovative_applications"]
+      },
+      "assessment_integration": {
+        "formative": "cycle_progression_monitoring",
+        "summative": "experiential_learning_portfolio",
+        "self_assessment": "learning_style_awareness",
+        "peer_assessment": "experience_sharing_quality"
+      },
+      "differentiation_strategies": {
+        "content": "varied_experience_complexity",
+        "process": "multiple_reflection_modalities",
+        "product": "diverse_conceptualization_formats",
+        "learning_environment": "choice_in_experiential_settings"
+      }
+    },
+    "problem_based_learning": {
+      "theoretical_foundation": {
+        "source": "Prince (2004) - Problem-Based Learning",
+        "description": "Learning organized around investigation and resolution of authentic, ill-structured problems",
+        "key_principle": "Students learn by working on real-world problems that have no single correct answer"
+      },
+      "activity_structure": {
+        "name": "Authentic Problem Investigation",
+        "description": "Students work collaboratively to investigate and propose solutions to real-world problems",
+        "implementation_phases": [
+          {
+            "phase": "problem_encounter",
+            "description": "Students encounter authentic, complex problem scenario",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "problem_presenter",
+            "student_role": "problem_analyzer"
+          },
+          {
+            "phase": "knowledge_gap_identification",
+            "description": "Students identify what they need to learn to address the problem",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "learning_facilitator",
+            "student_role": "knowledge_gap_identifier"
+          },
+          {
+            "phase": "collaborative_research",
+            "description": "Students research and gather information needed for problem-solving",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "resource_connector",
+            "student_role": "collaborative_researcher"
+          },
+          {
+            "phase": "solution_development",
+            "description": "Students develop and justify potential solutions or recommendations",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "solution_guide",
+            "student_role": "solution_developer"
+          },
+          {
+            "phase": "solution_presentation",
+            "description": "Students present solutions to authentic audience for feedback",
+            "duration_minutes": "{base_duration * 0.10}",
+            "teacher_role": "presentation_facilitator",
+            "student_role": "solution_presenter"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills", "communication_skills", "social_skills"],
+        "learner_profile": ["thinkers", "communicators", "caring"],
+        "tok_links": ["practical_knowledge", "ethical_implications", "real_world_applications"],
+        "international_mindedness": "global_problem_awareness"
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180, 240],
+        "problem_complexity": ["well_defined", "ill_structured", "wicked_problems"],
+        "problem_scope": ["local_community", "national_issues", "global_challenges"],
+        "collaboration_size": ["individual", "pairs", "small_groups", "large_groups"],
+        "solution_requirements": ["single_solution", "multiple_options", "implementation_plan", "policy_recommendations"]
+      },
+      "assessment_integration": {
+        "formative": "problem_solving_process_evaluation",
+        "summative": "solution_quality_assessment",
+        "self_assessment": "learning_from_problems_reflection",
+        "peer_assessment": "collaborative_contribution_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_problem_complexity",
+        "process": "flexible_research_approaches",
+        "product": "multiple_solution_formats",
+        "learning_environment": "real_world_investigation_settings"
+      }
+    },
+    "case_based_learning": {
+      "theoretical_foundation": {
+        "source": "Fasko (2003) - Case-Based Learning",
+        "description": "Learning through analysis of real or realistic case studies that exemplify key concepts",
+        "key_principle": "Students learn by analyzing authentic cases and applying theoretical knowledge"
+      },
+      "activity_structure": {
+        "name": "Case Analysis and Application",
+        "description": "Students analyze detailed case studies to understand concepts and develop analytical skills",
+        "implementation_phases": [
+          {
+            "phase": "case_introduction",
+            "description": "Students receive and initially review complex case study materials",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "case_presenter",
+            "student_role": "case_reviewer"
+          },
+          {
+            "phase": "individual_analysis",
+            "description": "Students individually analyze case using provided analytical framework",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "analysis_supporter",
+            "student_role": "individual_analyst"
+          },
+          {
+            "phase": "collaborative_discussion",
+            "description": "Students share analyses and debate different interpretations",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "discussion_moderator",
+            "student_role": "collaborative_discussant"
+          },
+          {
+            "phase": "concept_application",
+            "description": "Students apply lessons learned to new scenarios or contexts",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "application_facilitator",
+            "student_role": "concept_applicator"
+          },
+          {
+            "phase": "reflection_synthesis",
+            "description": "Students reflect on learning and synthesize key insights",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "synthesis_guide",
+            "student_role": "insight_synthesizer"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "communication_skills", "research_skills"],
+        "learner_profile": ["thinkers", "knowledgeable", "principled"],
+        "tok_links": ["case_study_methodology", "evidence_interpretation", "multiple_perspectives"],
+        "international_mindedness": "diverse_cultural_case_examples"
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90, 120],
+        "case_complexity": ["simple_scenarios", "multi_faceted_cases", "complex_real_world_examples"],
+        "case_types": ["historical_events", "contemporary_issues", "hypothetical_scenarios", "personal_narratives"],
+        "analysis_frameworks": ["structured_protocols", "theoretical_lenses", "comparative_methods", "critical_thinking_tools"],
+        "discussion_formats": ["whole_class", "small_groups", "fishbowl", "debate_style"]
+      },
+      "assessment_integration": {
+        "formative": "case_analysis_quality",
+        "summative": "analytical_thinking_demonstration",
+        "self_assessment": "perspective_taking_reflection",
+        "peer_assessment": "discussion_contribution_evaluation"
+      },
+      "differentiation_strategies": {
+        "content": "varied_case_complexity_levels",
+        "process": "multiple_analysis_approaches",
+        "product": "diverse_response_formats",
+        "learning_environment": "flexible_discussion_arrangements"
+      }
+    },
+    "discovery_learning": {
+      "theoretical_foundation": {
+        "source": "Prince and Felder (2007) - Discovery Learning",
+        "description": "Students discover principles and concepts through minimal guidance and maximum exploration",
+        "key_principle": "Learning occurs through active exploration and discovery rather than direct instruction"
+      },
+      "activity_structure": {
+        "name": "Guided Discovery Exploration",
+        "description": "Students explore materials and phenomena to discover underlying principles independently",
+        "implementation_phases": [
+          {
+            "phase": "exploration_setup",
+            "description": "Teacher provides materials and minimal initial guidance for exploration",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "environment_preparer",
+            "student_role": "exploration_preparer"
+          },
+          {
+            "phase": "free_exploration",
+            "description": "Students freely explore materials and observe patterns or relationships",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "silent_observer",
+            "student_role": "active_explorer"
+          },
+          {
+            "phase": "pattern_identification",
+            "description": "Students identify patterns and formulate initial hypotheses",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "pattern_prompter",
+            "student_role": "pattern_identifier"
+          },
+          {
+            "phase": "principle_discovery",
+            "description": "Students articulate discovered principles or concepts",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "discovery_validator",
+            "student_role": "principle_discoverer"
+          },
+          {
+            "phase": "application_verification",
+            "description": "Students test discovered principles in new contexts",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "application_facilitator",
+            "student_role": "principle_tester"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills", "self_management_skills"],
+        "learner_profile": ["inquirers", "risk_takers", "open_minded"],
+        "tok_links": ["inductive_reasoning", "pattern_recognition", "intuitive_knowledge"],
+        "international_mindedness": "discovery_across_cultures"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "guidance_level": ["minimal_guidance", "strategic_hints", "structured_prompts"],
+        "exploration_materials": ["physical_manipulatives", "digital_simulations", "real_world_phenomena", "data_sets"],
+        "discovery_complexity": ["single_principle", "multiple_relationships", "complex_systems"],
+        "validation_methods": ["peer_discussion", "teacher_confirmation", "additional_testing", "research_verification"]
+      },
+      "assessment_integration": {
+        "formative": "discovery_process_observation",
+        "summative": "principle_understanding_evaluation",
+        "self_assessment": "discovery_confidence_reflection",
+        "peer_assessment": "exploration_collaboration_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_exploration_complexity",
+        "process": "flexible_discovery_pathways",
+        "product": "multiple_principle_expression_methods",
+        "learning_environment": "rich_exploration_materials"
+      }
+    }
+  }
+}

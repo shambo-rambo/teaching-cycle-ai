@@ -1,0 +1,515 @@
+{
+  "conceptual_understanding_methodologies": {
+    "concept_exploration_mapping": {
+      "theoretical_foundation": {
+        "source": "Wiggins & McTighe - Understanding by Design",
+        "description": "Visual and interactive exploration of concept relationships and characteristics",
+        "key_principle": "Concepts become clear through examination of attributes, examples, and connections"
+      },
+      "activity_structure": {
+        "name": "Interactive Concept Mapping",
+        "description": "Students collaboratively build visual representations of concept relationships",
+        "implementation_phases": [
+          {
+            "phase": "concept_introduction",
+            "description": "Introduce target concept with minimal definition",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "concept_introducer",
+            "student_role": "initial_explorer"
+          },
+          {
+            "phase": "attribute_identification",
+            "description": "Students identify key characteristics and attributes",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "attribute_facilitator",
+            "student_role": "characteristic_identifier"
+          },
+          {
+            "phase": "example_generation",
+            "description": "Generate examples and non-examples from multiple contexts",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "example_guide",
+            "student_role": "example_generator"
+          },
+          {
+            "phase": "relationship_mapping",
+            "description": "Map connections to other concepts and ideas",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "connection_facilitator",
+            "student_role": "relationship_mapper"
+          },
+          {
+            "phase": "synthesis_refinement",
+            "description": "Refine understanding and create final concept map",
+            "duration_minutes": "{base_duration * 0.10}",
+            "teacher_role": "synthesis_supporter",
+            "student_role": "understanding_synthesizer"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "communication_skills"],
+        "learner_profile": ["thinkers", "knowledgeable", "open_minded"],
+        "tok_links": ["concept_formation", "language_and_thought", "shared_knowledge"],
+        "international_mindedness": "cultural_concept_variations"
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90],
+        "concept_complexity": ["concrete_concepts", "abstract_concepts", "complex_interdisciplinary_concepts"],
+        "mapping_tools": ["physical_materials", "digital_platforms", "hybrid_approaches"],
+        "collaboration_level": ["individual", "pairs", "small_groups", "whole_class"],
+        "depth_focus": ["surface_attributes", "deep_relationships", "transfer_connections"]
+      },
+      "assessment_integration": {
+        "formative": "concept_map_quality_progression",
+        "summative": "conceptual_understanding_demonstration",
+        "self_assessment": "concept_clarity_reflection",
+        "peer_assessment": "collaborative_mapping_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_concept_complexity_levels",
+        "process": "multiple_mapping_approaches",
+        "product": "diverse_visual_representation_options",
+        "learning_environment": "flexible_mapping_spaces"
+      }
+    },
+    "synergistic_thinking_integration": {
+      "theoretical_foundation": {
+        "source": "Erickson - Concept-Based Curriculum",
+        "description": "Integration of factual and conceptual thinking to deepen understanding",
+        "key_principle": "Factual knowledge and conceptual understanding work synergistically"
+      },
+      "activity_structure": {
+        "name": "Fact-Concept Integration Workshop",
+        "description": "Students explicitly connect factual content to conceptual frameworks",
+        "implementation_phases": [
+          {
+            "phase": "fact_gathering",
+            "description": "Collect relevant factual information about topic",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "fact_facilitator",
+            "student_role": "information_gatherer"
+          },
+          {
+            "phase": "pattern_recognition",
+            "description": "Identify patterns and relationships within facts",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "pattern_guide",
+            "student_role": "pattern_identifier"
+          },
+          {
+            "phase": "concept_extraction",
+            "description": "Extract underlying concepts from factual patterns",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "concept_facilitator",
+            "student_role": "concept_extractor"
+          },
+          {
+            "phase": "synergistic_application",
+            "description": "Apply integrated understanding to new situations",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "application_supporter",
+            "student_role": "integrated_applier"
+          },
+          {
+            "phase": "reflection_synthesis",
+            "description": "Reflect on how facts and concepts enhanced each other",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "reflection_guide",
+            "student_role": "synergy_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills"],
+        "learner_profile": ["thinkers", "knowledgeable", "reflective"],
+        "tok_links": ["ways_of_knowing", "knowledge_framework", "justification"],
+        "international_mindedness": "universal_concepts_local_examples"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "fact_complexity": ["basic_information", "detailed_data", "complex_datasets"],
+        "concept_abstraction": ["concrete_concepts", "abstract_principles", "theoretical_frameworks"],
+        "integration_scaffolding": ["high_support", "moderate_guidance", "independent_work"],
+        "application_scope": ["same_context", "related_contexts", "novel_situations"]
+      },
+      "assessment_integration": {
+        "formative": "integration_quality_feedback",
+        "summative": "synergistic_thinking_evaluation",
+        "self_assessment": "fact_concept_connection_reflection",
+        "peer_assessment": "integration_clarity_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_factual_complexity",
+        "process": "multiple_integration_pathways",
+        "product": "diverse_application_formats",
+        "learning_environment": "flexible_research_arrangements"
+      }
+    },
+    "conceptual_transfer_application": {
+      "theoretical_foundation": {
+        "source": "Perkins & Salomon - Transfer of Learning",
+        "description": "Application of concepts across multiple contexts to develop transfer skills",
+        "key_principle": "Understanding deepens through application in diverse contexts"
+      },
+      "activity_structure": {
+        "name": "Multi-Context Concept Application",
+        "description": "Students apply same concept across increasingly diverse contexts",
+        "implementation_phases": [
+          {
+            "phase": "concept_establishment",
+            "description": "Establish clear understanding of target concept",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "concept_clarifier",
+            "student_role": "understanding_builder"
+          },
+          {
+            "phase": "near_transfer_practice",
+            "description": "Apply concept to similar, familiar contexts",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "near_transfer_guide",
+            "student_role": "familiar_applier"
+          },
+          {
+            "phase": "far_transfer_challenge",
+            "description": "Apply concept to dissimilar, unfamiliar contexts",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "far_transfer_facilitator",
+            "student_role": "creative_applier"
+          },
+          {
+            "phase": "creative_transfer_exploration",
+            "description": "Create novel applications of the concept",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "creativity_supporter",
+            "student_role": "innovative_creator"
+          },
+          {
+            "phase": "transfer_reflection",
+            "description": "Reflect on transfer process and concept universality",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "transfer_reflection_guide",
+            "student_role": "transfer_reflector"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "self_management_skills"],
+        "learner_profile": ["thinkers", "risk_takers", "open_minded"],
+        "tok_links": ["knowledge_application", "ways_of_knowing", "areas_of_knowledge"],
+        "international_mindedness": "universal_concepts_diverse_applications"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120, 180],
+        "transfer_distance": ["near_transfer", "moderate_transfer", "far_transfer", "creative_transfer"],
+        "context_variety": ["disciplinary", "interdisciplinary", "real_world", "hypothetical"],
+        "scaffolding_level": ["high_support", "moderate_guidance", "minimal_support"],
+        "creativity_emphasis": ["structured_application", "guided_innovation", "open_creativity"]
+      },
+      "assessment_integration": {
+        "formative": "transfer_attempt_quality",
+        "summative": "conceptual_transfer_mastery",
+        "self_assessment": "transfer_confidence_reflection",
+        "peer_assessment": "creative_application_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_context_complexity",
+        "process": "multiple_transfer_pathways",
+        "product": "diverse_application_demonstrations",
+        "learning_environment": "rich_context_resources"
+      }
+    },
+    "three_dimensional_learning": {
+      "theoretical_foundation": {
+        "source": "Erickson - Three-Dimensional Curriculum Model",
+        "description": "Simultaneous integration of concepts, content, and skills for deep learning",
+        "key_principle": "Concepts, content, and skills are equally important and mutually reinforcing"
+      },
+      "activity_structure": {
+        "name": "Integrated Concept-Content-Skills Workshop",
+        "description": "Students engage with concepts through content while developing skills",
+        "implementation_phases": [
+          {
+            "phase": "three_dimensional_introduction",
+            "description": "Introduce the concept, content, and skills to be integrated",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "integration_presenter",
+            "student_role": "three_dimensional_learner"
+          },
+          {
+            "phase": "content_exploration",
+            "description": "Explore factual content using target skills",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "content_facilitator",
+            "student_role": "skillful_explorer"
+          },
+          {
+            "phase": "concept_construction",
+            "description": "Build conceptual understanding from content patterns",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "concept_guide",
+            "student_role": "concept_builder"
+          },
+          {
+            "phase": "skill_application",
+            "description": "Apply and refine skills in conceptual context",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "skill_coach",
+            "student_role": "skill_practitioner"
+          },
+          {
+            "phase": "integration_synthesis",
+            "description": "Synthesize learning across all three dimensions",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "synthesis_facilitator",
+            "student_role": "integrated_synthesizer"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills", "communication_skills"],
+        "learner_profile": ["knowledgeable", "thinkers", "balanced"],
+        "tok_links": ["knowledge_construction", "ways_of_knowing", "interdisciplinary_connections"],
+        "international_mindedness": "integrated_global_perspectives"
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180],
+        "concept_complexity": ["concrete", "abstract", "theoretical"],
+        "content_richness": ["basic_facts", "detailed_information", "complex_datasets"],
+        "skill_sophistication": ["foundational", "intermediate", "advanced"],
+        "integration_scaffolding": ["structured_integration", "guided_integration", "independent_integration"]
+      },
+      "assessment_integration": {
+        "formative": "three_dimensional_progression_monitoring",
+        "summative": "integrated_learning_demonstration",
+        "self_assessment": "three_dimensional_learning_reflection",
+        "peer_assessment": "integration_quality_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_content_complexity",
+        "process": "multiple_integration_approaches",
+        "product": "diverse_demonstration_formats",
+        "learning_environment": "rich_three_dimensional_resources"
+      }
+    },
+    "concept_based_assessment": {
+      "theoretical_foundation": {
+        "source": "Wiggins & McTighe - Authentic Assessment",
+        "description": "Assessment designed to evaluate conceptual understanding rather than factual recall",
+        "key_principle": "Assessment reveals depth of conceptual understanding and transfer ability"
+      },
+      "activity_structure": {
+        "name": "Conceptual Understanding Evaluation",
+        "description": "Students demonstrate conceptual understanding through multiple assessment formats",
+        "implementation_phases": [
+          {
+            "phase": "assessment_design_introduction",
+            "description": "Understand assessment criteria focused on conceptual understanding",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "assessment_explainer",
+            "student_role": "criteria_understander"
+          },
+          {
+            "phase": "concept_application_task",
+            "description": "Apply concept to novel, authentic situation",
+            "duration_minutes": "{base_duration * 0.40}",
+            "teacher_role": "application_facilitator",
+            "student_role": "concept_applier"
+          },
+          {
+            "phase": "explanation_justification",
+            "description": "Explain reasoning and justify concept application",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "explanation_guide",
+            "student_role": "reasoning_explainer"
+          },
+          {
+            "phase": "self_assessment_reflection",
+            "description": "Self-assess conceptual understanding and identify growth areas",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "self_assessment_facilitator",
+            "student_role": "self_reflector"
+          },
+          {
+            "phase": "peer_feedback_exchange",
+            "description": "Provide and receive peer feedback on conceptual applications",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "peer_feedback_coordinator",
+            "student_role": "peer_assessor"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "communication_skills", "self_management_skills"],
+        "learner_profile": ["thinkers", "reflective", "principled"],
+        "tok_links": ["knowledge_evaluation", "justification", "certainty"],
+        "international_mindedness": "global_concept_applications"
+      },
+      "adaptable_parameters": {
+        "base_duration": [60, 90, 120],
+        "assessment_format": ["performance_tasks", "portfolio_entries", "presentations", "written_responses"],
+        "authenticity_level": ["school_based", "community_connected", "real_world_applications"],
+        "complexity_level": ["single_concept", "multiple_concepts", "concept_systems"],
+        "feedback_mechanisms": ["self_only", "peer_included", "expert_feedback", "authentic_audience"]
+      },
+      "assessment_integration": {
+        "formative": "conceptual_thinking_process_feedback",
+        "summative": "conceptual_understanding_mastery_evaluation",
+        "self_assessment": "conceptual_learning_confidence_reflection",
+        "peer_assessment": "concept_application_quality_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_application_contexts",
+        "process": "multiple_demonstration_methods",
+        "product": "choice_in_response_formats",
+        "learning_environment": "authentic_assessment_settings"
+      }
+    },
+    "personal_meaning_construction": {
+      "theoretical_foundation": {
+        "source": "Constructivist Learning Theory",
+        "description": "Students build personal understanding by connecting concepts to their own experience",
+        "key_principle": "Learning is meaningful when concepts connect to personal experience and identity"
+      },
+      "activity_structure": {
+        "name": "Personal Concept Connection Workshop",
+        "description": "Students connect abstract concepts to personal experiences and cultural contexts",
+        "implementation_phases": [
+          {
+            "phase": "personal_experience_activation",
+            "description": "Activate relevant personal experiences and cultural knowledge",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "experience_activator",
+            "student_role": "experience_reflector"
+          },
+          {
+            "phase": "concept_personal_connection",
+            "description": "Connect target concept to personal experiences",
+            "duration_minutes": "{base_duration * 0.30}",
+            "teacher_role": "connection_facilitator",
+            "student_role": "meaning_maker"
+          },
+          {
+            "phase": "cultural_context_exploration",
+            "description": "Explore how concept manifests in different cultural contexts",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "cultural_guide",
+            "student_role": "cultural_explorer"
+          },
+          {
+            "phase": "meaning_articulation",
+            "description": "Articulate personal understanding of concept",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "articulation_supporter",
+            "student_role": "meaning_articulator"
+          },
+          {
+            "phase": "shared_meaning_construction",
+            "description": "Share and build collective understanding",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "sharing_facilitator",
+            "student_role": "collective_contributor"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "communication_skills", "social_skills"],
+        "learner_profile": ["reflective", "open_minded", "caring"],
+        "tok_links": ["personal_knowledge", "cultural_perspectives", "emotion"],
+        "international_mindedness": "cultural_identity_and_global_concepts"
+      },
+      "adaptable_parameters": {
+        "base_duration": [45, 60, 90],
+        "personal_connection_depth": ["surface_connections", "meaningful_connections", "transformative_connections"],
+        "cultural_exploration_scope": ["own_culture", "multiple_cultures", "global_perspectives"],
+        "sharing_format": ["individual_reflection", "pair_sharing", "group_discussion", "class_presentation"],
+        "concept_relevance": ["immediately_relevant", "indirectly_relevant", "abstractly_relevant"]
+      },
+      "assessment_integration": {
+        "formative": "personal_connection_quality",
+        "summative": "meaningful_understanding_demonstration",
+        "self_assessment": "personal_learning_significance_reflection",
+        "peer_assessment": "cultural_perspective_appreciation_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "culturally_responsive_concept_examples",
+        "process": "multiple_connection_pathways",
+        "product": "diverse_meaning_expression_formats",
+        "learning_environment": "culturally_inclusive_spaces"
+      }
+    },
+    "interdisciplinary_concept_connections": {
+      "theoretical_foundation": {
+        "source": "Gardner - Multiple Intelligences & Interdisciplinary Learning",
+        "description": "Exploration of how concepts appear and function across different disciplines",
+        "key_principle": "Concepts gain depth and universality through interdisciplinary exploration"
+      },
+      "activity_structure": {
+        "name": "Cross-Disciplinary Concept Investigation",
+        "description": "Students investigate how same concept operates across multiple disciplines",
+        "implementation_phases": [
+          {
+            "phase": "concept_identification_in_primary_discipline",
+            "description": "Establish understanding of concept within primary subject",
+            "duration_minutes": "{base_duration * 0.20}",
+            "teacher_role": "primary_discipline_guide",
+            "student_role": "primary_investigator"
+          },
+          {
+            "phase": "discipline_expansion_exploration",
+            "description": "Explore how concept appears in other disciplines",
+            "duration_minutes": "{base_duration * 0.35}",
+            "teacher_role": "interdisciplinary_facilitator",
+            "student_role": "cross_disciplinary_explorer"
+          },
+          {
+            "phase": "comparison_analysis",
+            "description": "Compare and contrast concept across disciplines",
+            "duration_minutes": "{base_duration * 0.25}",
+            "teacher_role": "comparison_guide",
+            "student_role": "analytical_comparator"
+          },
+          {
+            "phase": "universal_principle_identification",
+            "description": "Identify universal principles underlying the concept",
+            "duration_minutes": "{base_duration * 0.15}",
+            "teacher_role": "universality_facilitator",
+            "student_role": "principle_identifier"
+          },
+          {
+            "phase": "interdisciplinary_synthesis",
+            "description": "Synthesize interdisciplinary understanding",
+            "duration_minutes": "{base_duration * 0.05}",
+            "teacher_role": "synthesis_supporter",
+            "student_role": "interdisciplinary_synthesizer"
+          }
+        ]
+      },
+      "ib_connections": {
+        "atl_skills": ["thinking_skills", "research_skills", "communication_skills"],
+        "learner_profile": ["knowledgeable", "thinkers", "open_minded"],
+        "tok_links": ["areas_of_knowledge", "knowledge_framework", "interdisciplinary_connections"],
+        "international_mindedness": "universal_concepts_diverse_expressions"
+      },
+      "adaptable_parameters": {
+        "base_duration": [90, 120, 180],
+        "discipline_range": ["two_disciplines", "three_disciplines", "multiple_disciplines", "unlimited_exploration"],
+        "concept_complexity": ["concrete_concepts", "abstract_concepts", "theoretical_frameworks"],
+        "exploration_depth": ["surface_connections", "detailed_analysis", "deep_theoretical_exploration"],
+        "collaboration_scope": ["individual_investigation", "disciplinary_teams", "interdisciplinary_groups"]
+      },
+      "assessment_integration": {
+        "formative": "interdisciplinary_connection_quality",
+        "summative": "universal_concept_understanding_demonstration",
+        "self_assessment": "interdisciplinary_thinking_growth_reflection",
+        "peer_assessment": "cross_disciplinary_insight_feedback"
+      },
+      "differentiation_strategies": {
+        "content": "varied_disciplinary_complexity",
+        "process": "multiple_investigation_approaches",
+        "product": "diverse_synthesis_formats",
+        "learning_environment": "interdisciplinary_resource_rich_spaces"
+      }
+    }
+  }
+}

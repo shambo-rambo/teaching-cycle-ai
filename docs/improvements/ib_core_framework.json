@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "version": "6.0 - ENHANCED",
+    "description": "Core IB Diploma Programme framework including metadata, principles, and foundational elements",
+    "target_audience": "AI systems for lesson planning and activity generation",
+    "scope": "Foundational framework for IB DP lesson generation",
+    "last_updated": "2025-07-25",
+    "enhancement_notes": "Integrated official IB differentiated learning principles and assessment-informed learning research"
+  },
+  "theoretical_foundations": [
+    "IB Approaches to Teaching and Learning - COMPLETE Framework",
+    "IB Differentiated Learning Principles (Tomlinson & Allan 2000)",
+    "IB Assessment for Learning Framework (Black & Wiliam 1998)",
+    "Visible Learning Research (Hattie 2009)",
+    "Universal Design for Learning (CAST)",
+    "Criterion-Referenced Assessment Principles",
+    "Formative Assessment Research Foundation",
+    "Student Self-Assessment Theory (Dweck 1999)",
+    "Three-Dimensional Curriculum Model (Erickson)",
+    "Inquiry Learning Cycle",
+    "Conceptual Understanding Framework (Wiggins & McTighe)",
+    "Synergistic Thinking Theory",
+    "Contextual Teaching and Learning (Johnson)",
+    "Collaborative Learning Theory (Vygotsky & Piaget)",
+    "Social Knowledge Construction (Lai)",
+    "Meddler-in-the-Middle Model (McWilliam)",
+    "Vygotsky's Zone of Proximal Development",
+    "IB International-mindedness Framework",
+    "IB Learning Diversity and Language Learning Frameworks"
+  ],
+  "ib_teaching_principles": {
+    "inquiry_based": {
+      "description": "Teaching and learning focused on student questions, investigations, and discovery",
+      "core_principle": "Students construct learning through questioning and investigation"
+    },
+    "conceptual_understanding": {
+      "description": "Focus on big ideas that are transferable across contexts and disciplines",
+      "core_principle": "Concepts provide framework for factual knowledge and skill development"
+    },
+    "local_global_contexts": {
+      "description": "Learning connected to relevant local and global contexts",
+      "core_principle": "Context makes learning meaningful and promotes international-mindedness"
+    },
+    "teamwork_collaboration": {
+      "description": "Learning through social interaction and collaborative knowledge construction",
+      "core_principle": "Knowledge is enhanced through collaborative dialogue and shared responsibility"
+    },
+    "differentiated_learning": {
+      "description": "Teaching that actively plans for student differences and promotes equal access",
+      "core_principle": "All learners can achieve success through appropriately differentiated approaches"
+    },
+    "assessment_informed": {
+      "description": "Assessment as integral part of learning process that informs teaching and student progress",
+      "core_principle": "Assessment supports learning and provides feedback for continuous improvement"
+    }
+  },
+  "three_dimensional_curriculum": {
+    "description": "IB curriculum based on interrelationship of concepts, content, and skills as equally critical to learning",
+    "components": {
+      "concepts": {
+        "definition": "Big ideas that are enduring, abstract, and transferable across disciplines",
+        "characteristics": [
+          "valued_and_meaningful_across_time_place_space",
+          "abstract_beyond_specific_examples",
+          "concise_one_or_two_words_or_short_phrase",
+          "common_attributes_expressing_shared_features",
+          "transferable_across_disciplines_and_contexts",
+          "enduring_significance_beyond_origins_or_time"
+        ]
+      },
+      "content": {
+        "definition": "Critical factual knowledge that makes concepts concrete",
+        "purpose": "Provides concrete foundation for conceptual understanding"
+      },
+      "skills": {
+        "definition": "Abilities that give access to conceptual understanding and enable engagement with content",
+        "purpose": "Tools for accessing and applying concepts and content"
+      }
+    },
+    "integration_principle": "Learning is most powerful when concepts, content, and skills occur concurrently"
+  },
+  "atl_categories": {
+    "thinking_skills": {
+      "description": "Skills for effective thinking and reasoning",
+      "examples": ["critical_thinking", "creative_thinking", "transfer_skills", "metacognition"]
+    },
+    "communication_skills": {
+      "description": "Skills for effective interaction and expression",
+      "examples": ["reading_writing_speaking_listening", "language_use", "media_literacy"]
+    },
+    "social_skills": {
+      "description": "Skills for effective collaboration and social interaction",
+      "examples": ["collaboration", "conflict_resolution", "group_decision_making"]
+    },
+    "self_management_skills": {
+      "description": "Skills for effective learning and personal management",
+      "examples": ["organization", "time_management", "safety", "emotional_management"]
+    },
+    "research_skills": {
+      "description": "Skills for effective investigation and information processing",
+      "examples": ["information_literacy", "media_literacy", "ethical_use_of_information"]
+    }
+  },
+  "learner_profile_attributes": {
+    "inquirers": "Develop natural curiosity and skills for inquiry and research",
+    "knowledgeable": "Explore concepts and engage with significant content",
+    "thinkers": "Exercise initiative in applying thinking skills critically and creatively",
+    "communicators": "Understand and express ideas confidently in multiple languages",
+    "principled": "Act with integrity, honesty, fairness and respect",
+    "open_minded": "Understand and appreciate own cultures and others",
+    "caring": "Show empathy, compassion and respect",
+    "risk_takers": "Approach uncertainty with forethought and determination",
+    "balanced": "Understand importance of intellectual, physical and emotional balance",
+    "reflective": "Give thoughtful consideration to learning and experience"
+  },
+  "ib_differentiation_principles": {
+    "affirming_identity_building_self_esteem": {
+      "description": "Promote environments that welcome and embrace learners",
+      "strategies": [
+        "promote_environments_that_welcome_and_embrace_learners",
+        "foster_high_but_realistic_expectations",
+        "value_and_use_diversity_of_cultural_perspectives",
+        "liaise_and_collaborate_with_parents",
+        "understand_student_learning_preferences_and_interests",
+        "identify_and_teach_through_student_strengths"
+      ]
+    },
+    "valuing_prior_knowledge": {
+      "description": "Identify and build upon existing knowledge including multilingual learning",
+      "strategies": [
+        "identify_prior_knowledge_and_activate_prior_learning_including_other_languages",
+        "map_language_and_learning_profiles",
+        "build_new_knowledge_onto_existing_knowledge"
+      ]
+    },
+    "scaffolding_learning": {
+      "description": "Support new learning through structured support systems",
+      "strategies": [
+        "support_through_graphic_organizers_writing_frames_mind_maps",
+        "use_visual_aids_drama_demonstrations",
+        "encourage_collaborative_learning_groups_peer_support",
+        "support_and_use_best_language"
+      ]
+    },
+    "extending_learning": {
+      "description": "Combine high expectations with rich learning opportunities",
+      "strategies": [
+        "combine_high_expectations_with_learner_centred_experiential_practice",
+        "provide_interaction_with_cognitively_rich_materials_experiences_environments",
+        "use_technology_and_assistive_technologies_to_enrich_learning",
+        "level_playing_field_for_all_learners"
+      ]
+    }
+  },
+  "universal_design_for_learning": {
+    "description": "Framework providing multiple means of representation, action, expression, and engagement",
+    "principles": {
+      "multiple_means_of_representation": "Present information in diverse ways",
+      "multiple_means_of_action_and_expression": "Provide learners alternatives for demonstrating knowledge",
+      "multiple_means_of_engagement": "Tap into learner interests and motivation"
+    },
+    "goal": "Equal opportunities to learn for all students"
+  }
+}

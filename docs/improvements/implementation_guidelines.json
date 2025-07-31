@@ -1,0 +1,385 @@
+{
+  "implementation_guidelines": {
+    "activity_selection_criteria": [
+      "alignment_with_learning_objectives",
+      "student_readiness_level",
+      "available_time_resources",
+      "cultural_context_appropriateness",
+      "technology_infrastructure",
+      "assessment_requirements",
+      "inquiry_complexity_match",
+      "teacher_facilitation_capacity",
+      "conceptual_understanding_goals",
+      "three_dimensional_integration_opportunity",
+      "concept_transfer_potential",
+      "personal_relevance_connection_possibilities",
+      "contextual_relevance_and_meaning_potential",
+      "local_global_context_accessibility",
+      "community_engagement_opportunities",
+      "international_mindedness_development_potential",
+      "collaboration_skill_development_needs",
+      "social_skill_readiness_and_growth_opportunities",
+      "group_dynamics_and_cultural_collaboration_considerations",
+      "peer_learning_and_knowledge_construction_potential",
+      "collective_responsibility_development_opportunities",
+      "international_collaboration_possibilities",
+      "student_learning_differences_and_diverse_needs",
+      "language_profiles_and_multilingual_support_requirements",
+      "cultural_backgrounds_and_responsive_teaching_needs",
+      "prior_knowledge_diversity_and_activation_opportunities",
+      "scaffolding_and_extension_requirements",
+      "universal_design_and_accessibility_considerations",
+      "identity_affirmation_and_strength_building_potential",
+      "parent_and_community_collaboration_opportunities",
+      "formative_assessment_integration_possibilities",
+      "summative_assessment_alignment_requirements",
+      "feedback_and_improvement_cycle_potential",
+      "student_self_assessment_development_opportunities",
+      "peer_assessment_and_collaborative_evaluation_readiness"
+    ],
+    "teacher_role_transformation": {
+      "from_answer_provider_to_question_promoter": {
+        "traditional_role": "supply_answers_transmit_knowledge",
+        "inquiry_based_role": "promote_questions_facilitate_discovery",
+        "practical_strategies": [
+          "posing_questions_outlining_problems_setting_challenges",
+          "putting_students_into_small_groups_with_clear_roles",
+          "enabling_students_to_connect_to_best_resources",
+          "focusing_on_both_answers_and_research_skills",
+          "viewing_role_as_facilitator_of_student_journeys"
+        ]
+      },
+      "from_knowledge_transmitter_to_learning_facilitator": {
+        "traditional_role": "deliver_content_and_information",
+        "conceptual_understanding_role": "facilitate_meaning_making_and_concept_construction",
+        "practical_strategies": [
+          "guide_concept_exploration_rather_than_explanation",
+          "facilitate_connections_between_facts_and_concepts",
+          "support_transfer_application_across_contexts",
+          "promote_synergistic_thinking_development",
+          "encourage_personal_meaning_construction"
+        ]
+      },
+      "from_content_provider_to_context_connector": {
+        "traditional_role": "provide_academic_content_in_isolation",
+        "contextual_learning_role": "connect_learning_to_meaningful_local_and_global_contexts",
+        "practical_strategies": [
+          "identify_relevant_local_and_global_contexts",
+          "facilitate_multiple_perspective_exploration",
+          "support_authentic_real_world_applications",
+          "encourage_cultural_context_comparisons",
+          "promote_international_mindedness_development"
+        ]
+      },
+      "from_individual_instructor_to_collaboration_facilitator": {
+        "traditional_role": "teach_individual_students_separately",
+        "collaborative_learning_role": "facilitate_social_knowledge_construction_and_teamwork",
+        "practical_strategies": [
+          "design_meaningful_collaborative_learning_experiences",
+          "teach_and_support_social_skills_development",
+          "facilitate_peer_learning_and_knowledge_sharing",
+          "promote_collective_responsibility_and_shared_goals",
+          "create_inclusive_collaborative_learning_communities"
+        ]
+      },
+      "from_standardized_instructor_to_differentiation_specialist": {
+        "traditional_role": "teach_all_students_the_same_way",
+        "differentiated_learning_role": "provide_multiple_pathways_and_support_diverse_learners",
+        "practical_strategies": [
+          "affirm_student_identities_and_build_self_esteem",
+          "activate_and_build_upon_prior_knowledge_including_multilingual_assets",
+          "provide_appropriate_scaffolding_and_support_systems",
+          "create_extension_and_enrichment_opportunities",
+          "implement_universal_design_for_learning_principles"
+        ]
+      },
+      "from_evaluation_judge_to_learning_partner": {
+        "traditional_role": "judge_and_grade_student_performance",
+        "assessment_informed_role": "partner_in_learning_improvement_and_growth",
+        "practical_strategies": [
+          "integrate_formative_assessment_into_learning_process",
+          "provide_high_quality_feedback_for_improvement",
+          "teach_self_assessment_and_reflection_skills",
+          "facilitate_peer_assessment_and_collaborative_evaluation",
+          "use_assessment_data_to_inform_instruction_and_support"
+        ]
+      },
+      "responsibility_shift": {
+        "from": "teacher_responsibility_for_learning",
+        "to": "shared_student_teacher_responsibility",
+        "implementation": "students_find_information_and_process_conclusions_with_teacher_support"
+      }
+    },
+    "inquiry_based_principles": {
+      "principle_1": {
+        "description": "Learning constructed from real-world examples to concepts, ideas, theories and facts",
+        "implementation": "start_with_concrete_experiences_build_to_abstract_concepts"
+      },
+      "principle_2": {
+        "description": "Students responsible for finding information and processing to draw conclusions",
+        "implementation": "provide_frameworks_and_support_but_student_drives_investigation"
+      },
+      "principle_3": {
+        "description": "Questions drive learning rather than predetermined answers",
+        "implementation": "promote_authentic_questions_and_sustained_inquiry_processes"
+      }
+    },
+    "conceptual_understanding_principles": {
+      "principle_1": {
+        "description": "Concepts are abstract, enduring, and transferable across contexts",
+        "implementation": "identify_big_ideas_that_transcend_specific_examples_and_situations"
+      },
+      "principle_2": {
+        "description": "Factual knowledge and conceptual understanding work synergistically",
+        "implementation": "integrate_facts_and_concepts_simultaneously_for_deeper_understanding"
+      },
+      "principle_3": {
+        "description": "Transfer is the goal of conceptual learning",
+        "implementation": "provide_multiple_opportunities_to_apply_concepts_across_varied_contexts"
+      }
+    },
+    "contextual_learning_principles": {
+      "principle_1": {
+        "description": "Context makes learning meaningful and relevant",
+        "implementation": "connect_all_learning_to_authentic_local_and_global_contexts"
+      },
+      "principle_2": {
+        "description": "Multiple perspectives enrich understanding",
+        "implementation": "explore_concepts_through_diverse_cultural_and_disciplinary_lenses"
+      },
+      "principle_3": {
+        "description": "Real-world application demonstrates learning value",
+        "implementation": "provide_opportunities_for_authentic_application_and_community_engagement"
+      }
+    },
+    "collaborative_learning_principles": {
+      "principle_1": {
+        "description": "Knowledge is socially constructed through interaction",
+        "implementation": "design_learning_experiences_that_require_collaborative_knowledge_building"
+      },
+      "principle_2": {
+        "description": "Positive interdependence enhances individual learning",
+        "implementation": "create_shared_goals_and_mutual_accountability_in_collaborative_work"
+      },
+      "principle_3": {
+        "description": "Social skills must be explicitly taught and practiced",
+        "implementation": "integrate_social_skill_development_into_collaborative_learning_activities"
+      }
+    },
+    "differentiated_learning_principles": {
+      "principle_1": {
+        "description": "All students can learn when provided appropriate support and challenge",
+        "implementation": "design_multiple_pathways_to_learning_with_varied_support_and_extension"
+      },
+      "principle_2": {
+        "description": "Student diversity is an educational asset",
+        "implementation": "leverage_cultural_linguistic_and_experiential_diversity_for_enhanced_learning"
+      },
+      "principle_3": {
+        "description": "Learning environments must be universally accessible",
+        "implementation": "implement_universal_design_principles_and_remove_learning_barriers"
+      }
+    },
+    "assessment_informed_learning_principles": {
+      "principle_1": {
+        "description": "Assessment and learning are integrated processes",
+        "implementation": "design_assessment_experiences_that_enhance_learning_rather_than_interrupt_it"
+      },
+      "principle_2": {
+        "description": "Feedback drives learning improvement",
+        "implementation": "provide_high_quality_timely_feedback_focused_on_learning_advancement"
+      },
+      "principle_3": {
+        "description": "Students must be partners in assessment process",
+        "implementation": "develop_student_self_assessment_and_peer_evaluation_capabilities"
+      }
+    },
+    "adaptation_strategies": {
+      "subject_contextualization": "Insert subject-specific content into generic frameworks",
+      "cultural_responsiveness": "Adapt examples and contexts to local culture and student backgrounds",
+      "language_accommodation": "Modify language complexity for diverse language profiles and multilingual learners",
+      "technology_integration": "Incorporate available digital tools and assistive technologies",
+      "time_flexibility": "Scale activities to available class time and scheduling constraints",
+      "resource_adaptation": "Modify based on available materials and learning resources",
+      "inquiry_depth_adjustment": "Match inquiry complexity to student developmental level and experience",
+      "collaboration_optimization": "Adjust group dynamics for cultural and individual preferences and readiness",
+      "conceptual_complexity_scaling": "Adjust concept abstraction level for student readiness and background",
+      "three_dimensional_balance": "Ensure appropriate balance of concepts, content, and skills integration",
+      "transfer_opportunity_creation": "Build in meaningful transfer possibilities across contexts and disciplines",
+      "personal_relevance_enhancement": "Connect concepts to student experience, identity, and future aspirations",
+      "synergistic_thinking_scaffolding": "Support integration of factual and conceptual thinking processes",
+      "contextual_relevance_optimization": "Select contexts that relate to learner identity, interests, and community",
+      "local_global_balance": "Balance local relevance with global perspective development opportunities",
+      "cultural_perspective_inclusion": "Incorporate diverse cultural perspectives and indigenous knowledge systems",
+      "authentic_application_design": "Create genuine real-world application and community engagement opportunities",
+      "community_connection_facilitation": "Build meaningful connections to local and global communities",
+      "international_mindedness_integration": "Embed opportunities for global awareness and citizenship development",
+      "collaboration_structure_adaptation": "Adjust group sizes and collaboration formats for optimal learning",
+      "social_skill_scaffolding": "Provide appropriate support for social skill development and practice",
+      "assessment_approach_balancing": "Balance individual and group assessment as appropriate for learning goals",
+      "peer_learning_optimization": "Structure peer learning for maximum effectiveness and mutual support",
+      "collective_responsibility_cultivation": "Build activities that encourage shared accountability and success",
+      "international_collaboration_facilitation": "Enable meaningful cross-cultural collaborative opportunities",
+      "teacher_student_dialogue_enhancement": "Create regular opportunities for collaborative teacher-student feedback",
+      "identity_affirmation_integration": "Embed opportunities for cultural identity celebration and self-esteem building",
+      "prior_knowledge_activation_optimization": "Design systematic prior knowledge activation including multilingual knowledge",
+      "scaffolding_differentiation": "Provide varied scaffolding approaches for diverse learning needs and styles",
+      "extension_enrichment_provision": "Create multiple pathways for learning extension and enrichment opportunities",
+      "universal_design_implementation": "Ensure multiple means of representation, engagement, and expression",
+      "language_profile_responsiveness": "Adapt activities to support diverse language profiles and multilingual learners",
+      "strength_based_adaptation": "Modify activities to leverage and develop individual and cultural strengths",
+      "culturally_responsive_modification": "Ensure activities honor and build upon diverse cultural perspectives and practices",
+      "formative_assessment_embedding": "Integrate continuous formative assessment into all learning activities",
+      "feedback_quality_enhancement": "Ensure feedback is specific, timely, and focused on learning improvement",
+      "self_assessment_skill_development": "Build student capacity for accurate self-assessment and reflection",
+      "peer_assessment_capability_building": "Develop student skills in providing constructive peer feedback",
+      "assessment_data_utilization": "Use assessment information to inform and adjust teaching and learning",
+      "criterion_referenced_focus": "Emphasize achievement against clear criteria rather than peer comparison",
+      "assessment_learning_integration": "Design assessments that are meaningful learning experiences themselves"
+    ],
+    "quality_indicators": [
+      "active_student_engagement_and_ownership_of_learning",
+      "meaningful_learning_outcomes_and_conceptual_understanding_development",
+      "comprehensive_ib_principle_integration_across_all_five_teaching_approaches",
+      "atl_skill_development_and_application_in_authentic_contexts",
+      "assessment_alignment_and_learning_improvement_evidence",
+      "differentiation_effectiveness_and_inclusive_learning_success",
+      "international_mindedness_promotion_and_global_citizenship_development",
+      "authentic_inquiry_experiences_and_student_question_generation",
+      "student_ownership_of_learning_and_autonomous_learning_development",
+      "real_world_connection_strength_and_community_engagement_quality",
+      "conceptual_understanding_development_and_transfer_demonstration",
+      "three_dimensional_learning_integration_and_synergistic_thinking_evidence",
+      "successful_concept_transfer_evidence_across_contexts_and_disciplines",
+      "personal_meaning_construction_quality_and_relevance_connection",
+      "interdisciplinary_connection_recognition_and_application",
+      "contextual_relevance_and_connection_quality_to_student_lives",
+      "local_global_perspective_integration_and_international_mindedness",
+      "cultural_sensitivity_and_appreciation_demonstration",
+      "authentic_real_world_application_evidence_and_community_impact",
+      "multiple_perspective_engagement_quality_and_empathy_development",
+      "community_engagement_and_service_connection_meaningfulness",
+      "effective_collaboration_and_teamwork_demonstration_and_skill_development",
+      "social_skill_development_and_application_in_diverse_contexts",
+      "collective_responsibility_and_shared_goal_achievement_evidence",
+      "peer_learning_and_knowledge_co_construction_quality",
+      "teacher_student_collaborative_relationship_quality_and_mutual_respect",
+      "international_collaboration_and_global_perspective_development_success",
+      "identity_affirmation_and_self_esteem_building_evidence_and_cultural_pride",
+      "prior_knowledge_activation_and_building_effectiveness_including_multilingual_assets",
+      "scaffolding_appropriateness_and_learning_support_quality_responsiveness",
+      "learning_extension_and_enrichment_opportunities_and_challenge_provision",
+      "universal_design_for_learning_implementation_success_and_accessibility",
+      "language_profile_responsiveness_and_multilingual_support_effectiveness",
+      "strength_based_learning_and_asset_recognition_demonstration",
+      "cultural_responsiveness_and_inclusive_practice_demonstration_excellence",
+      "formative_assessment_integration_quality_and_learning_enhancement",
+      "feedback_effectiveness_and_learning_improvement_demonstration",
+      "student_self_assessment_development_and_learning_autonomy_growth",
+      "peer_assessment_quality_and_collaborative_evaluation_effectiveness",
+      "assessment_data_informed_instruction_and_personalized_learning_support",
+      "criterion_referenced_achievement_and_standards_mastery_evidence",
+      "assessment_as_learning_integration_and_meaningful_evaluation_experiences"
+    ],
+    "inquiry_scaffolding_strategies": {
+      "for_novice_inquirers": [
+        "structured_inquiry_with_clear_guidelines_and_frameworks",
+        "teacher_modeling_of_inquiry_process_and_thinking_strategies",
+        "collaborative_inquiry_with_peer_support_and_shared_responsibility",
+        "frequent_check_ins_and_formative_feedback_during_inquiry_process"
+      ],
+      "for_developing_inquirers": [
+        "guided_inquiry_with_strategic_support_and_flexible_frameworks",
+        "choice_in_inquiry_methods_and_topics_with_teacher_consultation",
+        "peer_teaching_opportunities_and_inquiry_skill_sharing",
+        "reflection_on_inquiry_effectiveness_and_process_improvement"
+      ],
+      "for_advanced_inquirers": [
+        "open_inquiry_with_minimal_guidance_and_autonomous_direction",
+        "self_directed_learning_projects_and_independent_investigation",
+        "mentoring_novice_inquirers_and_peer_coaching_responsibilities",
+        "innovation_in_inquiry_approaches_and_methodology_development"
+      ]
+    },
+    "conceptual_understanding_scaffolding_strategies": {
+      "for_concrete_thinkers": [
+        "multiple_concrete_examples_before_concept_introduction",
+        "visual_and_tactile_concept_exploration_activities",
+        "step_by_step_concept_building_with_frequent_connections",
+        "real_world_applications_to_make_concepts_tangible"
+      ],
+      "for_abstract_thinkers": [
+        "concept_exploration_through_theoretical_frameworks",
+        "complex_concept_relationships_and_systems_thinking",
+        "philosophical_and_theoretical_concept_applications",
+        "creative_and_innovative_concept_transfer_opportunities"
+      ],
+      "for_transfer_development": [
+        "progressive_transfer_practice_from_near_to_far_contexts",
+        "explicit_transfer_strategy_instruction_and_metacognition",
+        "cross_disciplinary_concept_application_opportunities",
+        "creative_and_innovative_concept_application_challenges"
+      ]
+    },
+    "collaborative_learning_scaffolding_strategies": {
+      "for_individual_learners": [
+        "gradual_introduction_to_collaborative_work_with_clear_structures",
+        "social_skill_instruction_and_practice_in_safe_environments",
+        "choice_in_collaboration_level_and_group_size_preferences",
+        "individual_accountability_within_collaborative_frameworks"
+      ],
+      "for_collaborative_learners": [
+        "complex_collaborative_projects_with_interdependent_roles",
+        "leadership_opportunities_in_collaborative_settings",
+        "cross_cultural_and_international_collaborative_experiences",
+        "collaborative_facilitation_and_conflict_resolution_skill_development"
+      ],
+      "for_global_collaborators": [
+        "international_partnership_and_cross_cultural_collaboration_opportunities",
+        "global_problem_solving_and_community_action_projects",
+        "intercultural_communication_and_empathy_development",
+        "global_citizenship_and_social_responsibility_demonstration"
+      ]
+    },
+    "differentiation_scaffolding_strategies": {
+      "for_learning_differences": [
+        "multiple_learning_pathway_options_and_choice_provision",
+        "assistive_technology_integration_and_accessibility_support",
+        "flexible_pacing_and_timeline_accommodation",
+        "strength_based_learning_design_and_asset_recognition"
+      ],
+      "for_language_diversity": [
+        "multilingual_resource_provision_and_translanguaging_support",
+        "visual_and_graphic_communication_support_tools",
+        "peer_translation_and_interpretation_assistance",
+        "home_language_integration_and_cultural_bridge_building"
+      ],
+      "for_cultural_responsiveness": [
+        "culturally_relevant_content_and_example_integration",
+        "diverse_perspective_inclusion_and_worldview_appreciation",
+        "community_knowledge_and_expertise_incorporation",
+        "cultural_celebration_and_identity_affirmation_opportunities"
+      ]
+    },
+    "assessment_scaffolding_strategies": {
+      "for_assessment_novices": [
+        "clear_criteria_explanation_and_exemplar_demonstration",
+        "guided_self_assessment_practice_with_teacher_support",
+        "structured_peer_assessment_protocols_and_feedback_frameworks",
+        "frequent_low_stakes_formative_assessment_opportunities"
+      ],
+      "for_assessment_developers": [
+        "collaborative_criteria_development_and_rubric_creation",
+        "peer_assessment_leadership_and_feedback_coaching_roles",
+        "portfolio_development_and_reflective_assessment_practice",
+        "assessment_data_analysis_and_improvement_planning_involvement"
+      ],
+      "for_assessment_experts": [
+        "assessment_design_participation_and_innovative_format_development",
+        "peer_assessment_training_and_feedback_quality_coaching",
+        "assessment_research_and_effectiveness_evaluation_projects",
+        "assessment_advocacy_and_learning_improvement_leadership"
+      ]
+    }
+  }
+}

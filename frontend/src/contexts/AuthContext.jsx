@@ -1,16 +1,5 @@
-// src/context/AuthContext.jsx
-
-import React, { createContext, useContext, useEffect, useState } from 'react';
-import { 
-  signInWithPopup, 
-  signOut, 
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword 
-} from 'firebase/auth';
-import { doc, getDoc, setDoc } from 'firebase/firestore';
-import { auth, googleProvider, db } from '../services/firebase';
-import toast from 'react-hot-toast';
+// JWT-based Authentication Context for School Intelligence System
+import { createContext, useContext, useState, useEffect } from 'react';
 
 const AuthContext = createContext();
 
@@ -23,145 +12,354 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
-  const [userProfile, setUserProfile] = useState(null);
+  const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-
-  // Create or update user profile in Firestore
-  const createUserProfile = async (user, additionalData = {}) => {
-    const userRef = doc(db, 'users', user.uid);
-    const userSnap = await getDoc(userRef);
-
-    if (!userSnap.exists()) {
-      const { displayName, email } = user;
-      const defaultRole = email?.includes('@admin') || email?.includes('@exec') ? 'executive' : 'teacher';
-      
-      try {
-        await setDoc(userRef, {
-          displayName,
-          email,
-          role: additionalData.role || defaultRole,
-          school: additionalData.school || '',
-          subject: additionalData.subject || '',
-          createdAt: new Date(),
-          ...additionalData
-        });
-      } catch (error) {
-        console.error('Error creating user profile:', error);
-      }
-    }
-
-    return userRef;
-  };
-
-  // Fetch user profile data
-  const fetchUserProfile = async (userId) => {
-    try {
-      const userRef = doc(db, 'users', userId);
-      const userSnap = await getDoc(userRef);
-      
-      if (userSnap.exists()) {
-        setUserProfile(userSnap.data());
-        return userSnap.data();
-      }
-    } catch (error) {
-      console.error('Error fetching user profile:', error);
-    }
-    return null;
-  };
-
-  // Sign in with Google
-  const signInWithGoogle = async () => {
-    try {
-      const result = await signInWithPopup(auth, googleProvider);
-      await createUserProfile(result.user);
-      toast.success('Successfully signed in!');
-      return result;
-    } catch (error) {
-      console.error('Error signing in with Google:', error);
-      toast.error('Failed to sign in with Google');
-      throw error;
-    }
-  };
-
-  // Sign in with email and password
-  const signInWithEmail = async (email, password) => {
-    try {
-      const result = await signInWithEmailAndPassword(auth, email, password);
-      toast.success('Successfully signed in!');
-      return result;
-    } catch (error) {
-      console.error('Error signing in:', error);
-      toast.error('Failed to sign in');
-      throw error;
-    }
-  };
-
-  // Sign up with email and password
-  const signUpWithEmail = async (email, password, additionalData = {}) => {
-    try {
-      const result = await createUserWithEmailAndPassword(auth, email, password);
-      await createUserProfile(result.user, additionalData);
-      toast.success('Account created successfully!');
-      return result;
-    } catch (error) {
-      console.error('Error signing up:', error);
-      toast.error('Failed to create account');
-      throw error;
-    }
-  };
-
-  // Sign out
-  const logout = async () => {
-    try {
-      await signOut(auth);
-      setUserProfile(null);
-      toast.success('Successfully signed out');
-    } catch (error) {
-      console.error('Error signing out:', error);
-      toast.error('Failed to sign out');
-    }
-  };
-
-  // Check if user has required role
-  const hasRole = (requiredRole) => {
-    if (!userProfile) return false;
-    if (requiredRole === 'executive') {
-      return userProfile.role === 'executive' || userProfile.role === 'admin';
-    }
-    return userProfile.role === requiredRole;
-  };
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      setCurrentUser(user);
-      
-      if (user) {
-        await fetchUserProfile(user.uid);
-      } else {
-        setUserProfile(null);
-      }
-      
-      setLoading(false);
-    });
-
-    return unsubscribe;
+    checkAuthStatus();
   }, []);
 
+  const checkAuthStatus = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      const storedUser = localStorage.getItem('user');
+
+      if (token && storedUser) {
+        // Verify token is still valid
+        const response = await fetch('http://localhost:3001/api/auth/verify', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Token verification successful:', data);
+          setUser(data.user);
+        } else {
+          // Token is invalid, clear storage
+          console.log('Token verification failed:', response.status);
+          clearAuth();
+        }
+      }
+    } catch (error) {
+      console.error('Auth check error:', error);
+      clearAuth();
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const login = async (email, password) => {
+    try {
+      setLoading(true);
+      setError('');
+
+      const response = await fetch('http://localhost:3001/api/auth/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        console.log('Login successful:', data);
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('user', JSON.stringify(data.user));
+        setUser(data.user);
+        return { success: true, user: data.user };
+      } else {
+        console.log('Login failed:', data);
+        setError(data.error);
+        return { success: false, error: data.error };
+      }
+    } catch (error) {
+      const errorMessage = 'Network error. Please check if the server is running.';
+      setError(errorMessage);
+      return { success: false, error: errorMessage };
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const register = async (userData) => {
+    try {
+      setLoading(true);
+      setError('');
+
+      const response = await fetch('http://localhost:3001/api/auth/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('user', JSON.stringify(data.user));
+        setUser(data.user);
+        return { success: true, user: data.user };
+      } else {
+        setError(data.error);
+        return { success: false, error: data.error };
+      }
+    } catch (error) {
+      const errorMessage = 'Network error. Please check if the server is running.';
+      setError(errorMessage);
+      return { success: false, error: errorMessage };
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const logout = () => {
+    clearAuth();
+    // Optional: Call logout endpoint to log the action
+    const token = localStorage.getItem('token');
+    if (token) {
+      fetch('http://localhost:3001/api/auth/logout', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        }
+      }).catch(console.error);
+    }
+  };
+
+  const clearAuth = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    setUser(null);
+    setError('');
+  };
+
+  const updateUser = (updatedUser) => {
+    setUser(updatedUser);
+    localStorage.setItem('user', JSON.stringify(updatedUser));
+  };
+
+  const googleLogin = async (googleToken) => {
+    try {
+      setError('');
+      setLoading(true);
+
+      const response = await fetch('http://localhost:3001/api/auth/google', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ token: googleToken })
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        console.log('Google login successful:', data);
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('user', JSON.stringify(data.user));
+        setUser(data.user);
+        return { success: true, user: data.user, isNewUser: data.isNewUser };
+      } else {
+        setError(data.error || 'Google login failed');
+        return { success: false, error: data.error };
+      }
+    } catch (error) {
+      console.error('Google login error:', error);
+      const errorMessage = 'Google login failed. Please try again.';
+      setError(errorMessage);
+      return { success: false, error: errorMessage };
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getToken = () => {
+    return localStorage.getItem('token');
+  };
+
+  const isAuthenticated = () => {
+    return !!user && !!localStorage.getItem('token');
+  };
+
+  const hasRole = (role) => {
+    return user && user.role === role;
+  };
+
+  const hasAnyRole = (roles) => {
+    return user && roles.includes(user.role);
+  };
+
+  const hasPermission = (permission) => {
+    if (!user) return false;
+    if (user.role === 'Admin') return true;
+    return user.permissions && user.permissions.includes(permission);
+  };
+
+  // API helper function with automatic token handling
+  const apiCall = async (url, options = {}) => {
+    const token = getToken();
+    const headers = {
+      'Content-Type': 'application/json',
+      ...options.headers
+    };
+
+    if (token) {
+      headers.Authorization = `Bearer ${token}`;
+    }
+
+    try {
+      const response = await fetch(url, {
+        ...options,
+        headers
+      });
+
+      // Handle token expiration
+      if (response.status === 401 || response.status === 403) {
+        clearAuth();
+        throw new Error('Authentication required');
+      }
+
+      return response;
+    } catch (error) {
+      console.error('API call error:', error);
+      throw error;
+    }
+  };
+
   const value = {
-    currentUser,
-    userProfile,
-    signInWithGoogle,
-    signInWithEmail,
-    signUpWithEmail,
+    // State
+    user,
+    loading,
+    error,
+    
+    // Auth methods
+    login,
+    register,
+    googleLogin,
     logout,
+    updateUser,
+    
+    // Utility methods
+    isAuthenticated,
     hasRole,
-    loading
+    hasAnyRole,
+    hasPermission,
+    getToken,
+    apiCall,
+    
+    // Clear error
+    clearError: () => setError(''),
+
+    // Legacy compatibility (for existing components)
+    currentUser: user,
+    userProfile: user
   };
 
   return (
     <AuthContext.Provider value={value}>
-      {!loading && children}
+      {children}
     </AuthContext.Provider>
   );
+};
+
+// HOC for components that require authentication
+export const withAuth = (Component) => {
+  return function AuthenticatedComponent(props) {
+    const { isAuthenticated, loading } = useAuth();
+
+    if (loading) {
+      return (
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-16 w-16 border-4 border-blue-600 border-t-transparent mx-auto mb-4"></div>
+            <p className="text-gray-600">Loading...</p>
+          </div>
+        </div>
+      );
+    }
+
+    if (!isAuthenticated()) {
+      return (
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Authentication Required</h2>
+            <p className="text-gray-600 mb-4">Please log in to access this page.</p>
+            <a 
+              href="/login"
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            >
+              Go to Login
+            </a>
+          </div>
+        </div>
+      );
+    }
+
+    return <Component {...props} />;
+  };
+};
+
+// HOC for role-based access
+export const withRole = (Component, allowedRoles) => {
+  return function RoleProtectedComponent(props) {
+    const { user, hasAnyRole, loading } = useAuth();
+
+    if (loading) {
+      return (
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-4 border-blue-600 border-t-transparent"></div>
+        </div>
+      );
+    }
+
+    if (!user) {
+      return (
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Authentication Required</h2>
+            <a 
+              href="/login"
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            >
+              Go to Login
+            </a>
+          </div>
+        </div>
+      );
+    }
+
+    if (!hasAnyRole(allowedRoles)) {
+      return (
+        <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Access Denied</h2>
+            <p className="text-gray-600 mb-4">
+              You don't have permission to access this page.
+            </p>
+            <p className="text-gray-500 text-sm mb-4">
+              Required roles: {allowedRoles.join(', ')}
+            </p>
+            <a 
+              href="/teacher"
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            >
+              Go to Teacher Page
+            </a>
+          </div>
+        </div>
+      );
+    }
+
+    return <Component {...props} />;
+  };
 };

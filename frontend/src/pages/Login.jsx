@@ -19,7 +19,7 @@ const Login = () => {
 
   // Redirect if already logged in
   if (currentUser) {
-    return <Navigate to="/dashboard" replace />;
+    return <Navigate to="/teacher" replace />;
   }
 
   const handleInputChange = (e) => {
