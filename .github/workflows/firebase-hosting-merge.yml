@@ -22,7 +22,8 @@ jobs:
         run: |
           rm -rf dist
           rm -rf node_modules/.vite
-          npm run build
+          rm -rf node_modules/.cache
+          npm run build -- --force
         working-directory: ./frontend
         env:
           VITE_FIREBASE_API_KEY: AIzaSyCS2Xo951MdmkH-IlaTXuHGz35y82tIzxo
