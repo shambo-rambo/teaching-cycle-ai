@@ -49,7 +49,9 @@
       "Bash(npx firebase hosting:channel:deploy:*)",
       "WebFetch(domain:learning-cycle-95ee7.web.app)",
       "Bash(gcloud run services update:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(npx firebase deploy:*)",
+      "Bash(gcloud logs read:*)"
     ],
     "deny": []
   }

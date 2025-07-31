@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
 
       if (token && storedUser) {
         // Verify token is still valid
-        const response = await fetch(`${API_BASE_URL}/api/auth/verify`, {
+        const response = await fetch(`${window.APP_CONFIG?.API_BASE_URL || 'https://teaching-cycle-backend-531124404080.us-central1.run.app'}/api/auth/verify`, {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
       setLoading(true);
       setError('');
 
-      const response = await fetch('${API_BASE_URL}/api/auth/login', {
+      const response = await fetch(`${window.APP_CONFIG?.API_BASE_URL || 'https://teaching-cycle-backend-531124404080.us-central1.run.app'}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -94,7 +94,7 @@ export const AuthProvider = ({ children }) => {
       setLoading(true);
       setError('');
 
-      const response = await fetch('${API_BASE_URL}/api/auth/register', {
+      const response = await fetch(`${window.APP_CONFIG?.API_BASE_URL || 'https://teaching-cycle-backend-531124404080.us-central1.run.app'}/api/auth/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -127,7 +127,7 @@ export const AuthProvider = ({ children }) => {
     // Optional: Call logout endpoint to log the action
     const token = localStorage.getItem('token');
     if (token) {
-      fetch('${API_BASE_URL}/api/auth/logout', {
+      fetch(`${window.APP_CONFIG?.API_BASE_URL || 'https://teaching-cycle-backend-531124404080.us-central1.run.app'}/api/auth/logout`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -154,7 +154,7 @@ export const AuthProvider = ({ children }) => {
       setError('');
       setLoading(true);
 
-      const response = await fetch('${API_BASE_URL}/api/auth/google', {
+      const response = await fetch(`${window.APP_CONFIG?.API_BASE_URL || 'https://teaching-cycle-backend-531124404080.us-central1.run.app'}/api/auth/google`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
