@@ -178,18 +178,15 @@ const AppRoutes = () => {
   );
 };
 
-// Hardcoded Google Client ID for now - VERSION 2025-07-31
-const GOOGLE_CLIENT_ID = '531124404080-n3s8v09199ekh9dkq4k8poe80piru83l.apps.googleusercontent.com';
-
 function App() {
-  // Debug logging for production
-  console.log('🚀 FIXED VERSION - HARDCODED Google Client ID:', GOOGLE_CLIENT_ID);
-  console.log('ENV Google Client ID:', import.meta.env.VITE_GOOGLE_CLIENT_ID);
-  console.log('All env vars:', import.meta.env);
-  console.log('App version: 2025-07-31-FIXED');
+  // Use global config instead of environment variables
+  const clientId = window.APP_CONFIG?.GOOGLE_CLIENT_ID || '531124404080-n3s8v09199ekh9dkq4k8poe80piru83l.apps.googleusercontent.com';
+  
+  console.log('🚀 FINAL FIX - Using global config clientId:', clientId);
+  console.log('Global config loaded:', !!window.APP_CONFIG);
   
   return (
-    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId={clientId}>
       <AuthProvider>
         <Router>
           <AppRoutes />
