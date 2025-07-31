@@ -51,7 +51,8 @@
       "Bash(gcloud run services update:*)",
       "Bash(python3:*)",
       "Bash(npx firebase deploy:*)",
-      "Bash(gcloud logs read:*)"
+      "Bash(gcloud logs read:*)",
+      "Bash(gcloud builds submit:*)"
     ],
     "deny": []
   }
