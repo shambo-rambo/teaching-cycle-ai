@@ -24,6 +24,8 @@ const PORT = process.env.PORT || 3001;
 app.use(helmet());
 app.use(cors({
   origin: [
+    'https://learning-cycle-v2.web.app',
+    'https://learning-cycle-v2.firebaseapp.com',
     'https://learning-cycle-95ee7.web.app',
     'https://learning-cycle-95ee7.firebaseapp.com',
     'http://localhost:3000',
