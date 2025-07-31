@@ -11,7 +11,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: './frontend/package-lock.json'
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./frontend
+      - name: Build with environment variables
+        run: npm run build
+        working-directory: ./frontend
+        env:
+          VITE_FIREBASE_API_KEY: AIzaSyBvLQyoAzKZYPGGHfOOQgaAT2C5TKQlGj4
+          VITE_FIREBASE_AUTH_DOMAIN: learning-cycle-95ee7.firebaseapp.com
+          VITE_FIREBASE_PROJECT_ID: learning-cycle-95ee7
+          VITE_FIREBASE_STORAGE_BUCKET: learning-cycle-95ee7.appspot.com
+          VITE_FIREBASE_MESSAGING_SENDER_ID: 531124404080
+          VITE_FIREBASE_APP_ID: 1:531124404080:web:0006840312d418d24519b5
+          VITE_GOOGLE_CLIENT_ID: 531124404080-n3s8v09199ekh9dkq4k8poe80piru83l.apps.googleusercontent.com
+          VITE_API_BASE_URL: https://teaching-cycle-backend-531124404080.us-central1.run.app
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
