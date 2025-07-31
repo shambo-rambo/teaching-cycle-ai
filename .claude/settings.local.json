@@ -41,7 +41,8 @@
       "Bash(gcloud iam service-accounts add-iam-policy-binding:*)",
       "WebFetch(domain:github.com)",
       "Bash(gcloud run services describe:*)",
-      "Bash(gcloud logging read:*)"
+      "Bash(gcloud logging read:*)",
+      "Bash(gcloud projects add-iam-policy-binding:*)"
     ],
     "deny": []
   }
