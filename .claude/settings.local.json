@@ -30,7 +30,18 @@
       "Bash(chmod:*)",
       "Bash(gcloud services enable:*)",
       "Bash(gcloud secrets create:*)",
-      "Bash(gcloud secrets add-iam-policy-binding:*)"
+      "Bash(gcloud secrets add-iam-policy-binding:*)",
+      "Bash(git push:*)",
+      "Bash(gh run list:*)",
+      "Bash(gcloud run services list:*)",
+      "Bash(gcloud builds list:*)",
+      "Bash(touch:*)",
+      "Bash(gcloud iam workload-identity-pools create:*)",
+      "Bash(gcloud iam workload-identity-pools providers create-oidc:*)",
+      "Bash(gcloud iam service-accounts add-iam-policy-binding:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(gcloud run services describe:*)",
+      "Bash(gcloud logging read:*)"
     ],
     "deny": []
   }
