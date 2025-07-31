@@ -1,5 +1,6 @@
 // JWT-based Authentication Context for School Intelligence System
 import { createContext, useContext, useState, useEffect } from 'react';
+import { API_BASE_URL } from '../config/api.js';
 
 const AuthContext = createContext();
 
@@ -27,7 +28,7 @@ export const AuthProvider = ({ children }) => {
 
       if (token && storedUser) {
         // Verify token is still valid
-        const response = await fetch('http://localhost:3001/api/auth/verify', {
+        const response = await fetch(`${API_BASE_URL}/api/auth/verify`, {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -58,7 +59,7 @@ export const AuthProvider = ({ children }) => {
       setLoading(true);
       setError('');
 
-      const response = await fetch('http://localhost:3001/api/auth/login', {
+      const response = await fetch('${API_BASE_URL}/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -93,7 +94,7 @@ export const AuthProvider = ({ children }) => {
       setLoading(true);
       setError('');
 
-      const response = await fetch('http://localhost:3001/api/auth/register', {
+      const response = await fetch('${API_BASE_URL}/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -126,7 +127,7 @@ export const AuthProvider = ({ children }) => {
     // Optional: Call logout endpoint to log the action
     const token = localStorage.getItem('token');
     if (token) {
-      fetch('http://localhost:3001/api/auth/logout', {
+      fetch('${API_BASE_URL}/api/auth/logout', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -153,7 +154,7 @@ export const AuthProvider = ({ children }) => {
       setError('');
       setLoading(true);
 
-      const response = await fetch('http://localhost:3001/api/auth/google', {
+      const response = await fetch('${API_BASE_URL}/api/auth/google', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

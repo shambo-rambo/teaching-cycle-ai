@@ -1,0 +1,44 @@
+name: Deploy Backend to Cloud Run
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Google Auth
+        id: auth
+        uses: 'google-github-actions/auth@v2'
+        with:
+          workload_identity_provider: 'projects/531124404080/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions-provider'
+          service_account: 'github-action-1029388927@learning-cycle-95ee7.iam.gserviceaccount.com'
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
+
+      - name: 'Build and Push Docker Image'
+        run: |
+          gcloud builds submit --tag gcr.io/learning-cycle-95ee7/teaching-cycle-backend ./backend
+
+      - name: 'Deploy to Cloud Run'
+        run: |
+          gcloud run deploy teaching-cycle-backend \
+            --image gcr.io/learning-cycle-95ee7/teaching-cycle-backend \
+            --region us-central1 \
+            --platform managed \
+            --allow-unauthenticated \
+            --set-env-vars FIREBASE_PROJECT_ID=learning-cycle-95ee7 \
+            --set-secrets FIREBASE_SERVICE_ACCOUNT=firebase-service-account:latest \
+            --set-env-vars CORS_ORIGINS=https://learning-cycle-95ee7.web.app,https://learning-cycle-95ee7.firebaseapp.com
