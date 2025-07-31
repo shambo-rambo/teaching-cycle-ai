@@ -178,15 +178,17 @@ const AppRoutes = () => {
   );
 };
 
+// Hardcoded Google Client ID for now
+const GOOGLE_CLIENT_ID = '531124404080-n3s8v09199ekh9dkq4k8poe80piru83l.apps.googleusercontent.com';
+
 function App() {
-  const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || '531124404080-n3s8v09199ekh9dkq4k8poe80piru83l.apps.googleusercontent.com';
-  
   // Debug logging for production
-  console.log('Google Client ID:', clientId);
+  console.log('HARDCODED Google Client ID:', GOOGLE_CLIENT_ID);
+  console.log('ENV Google Client ID:', import.meta.env.VITE_GOOGLE_CLIENT_ID);
   console.log('All env vars:', import.meta.env);
   
   return (
-    <GoogleOAuthProvider clientId={clientId}>
+    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
       <AuthProvider>
         <Router>
           <AppRoutes />
