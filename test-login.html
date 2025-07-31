@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Google Login - Teaching Cycle AI</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <h1>Test Google Login</h1>
+    <p>This bypasses all cache issues</p>
+    
+    <div id="g_id_onload"
+         data-client_id="531124404080-n3s8v09199ekh9dkq4k8poe80piru83l.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
+    </div>
+    
+    <div class="g_id_signin" data-type="standard"></div>
+
+    <script>
+        function handleCredentialResponse(response) {
+            console.log('✅ Google Login Success!');
+            console.log('Token:', response.credential);
+            
+            // Send to your backend
+            fetch('https://teaching-cycle-backend-531124404080.us-central1.run.app/api/auth/google', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({token: response.credential})
+            })
+            .then(r => r.json())
+            .then(data => {
+                console.log('✅ Backend Response:', data);
+                if (data.success) {
+                    alert('Login successful! Check console for details.');
+                } else {
+                    alert('Backend error: ' + data.error);
+                }
+            })
+            .catch(e => {
+                console.error('Backend error:', e);
+                alert('Backend error: ' + e.message);
+            });
+        }
+    </script>
+</body>
+</html>
