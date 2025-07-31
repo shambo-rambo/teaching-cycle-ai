@@ -20,24 +20,23 @@ jobs:
         id: auth
         uses: 'google-github-actions/auth@v2'
         with:
-          workload_identity_provider: 'projects/531124404080/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions-provider'
-          service_account: 'github-action-1029388927@learning-cycle-95ee7.iam.gserviceaccount.com'
+          workload_identity_provider: 'projects/708925310405/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions-provider'
+          service_account: 'github-action-1029388927@learning-cycle-v2-467610.iam.gserviceaccount.com'
 
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v2'
 
       - name: 'Build and Push Docker Image'
         run: |
-          gcloud builds submit --tag gcr.io/learning-cycle-95ee7/teaching-cycle-backend ./backend
+          gcloud builds submit --tag gcr.io/learning-cycle-v2-467610/teaching-cycle-backend ./backend
 
       - name: 'Deploy to Cloud Run'
         run: |
           gcloud run deploy teaching-cycle-backend \
-            --image gcr.io/learning-cycle-95ee7/teaching-cycle-backend \
+            --image gcr.io/learning-cycle-v2-467610/teaching-cycle-backend \
             --region us-central1 \
             --platform managed \
             --allow-unauthenticated \
-            --set-env-vars "FIREBASE_PROJECT_ID=learning-cycle-95ee7" \
-            --set-secrets "FIREBASE_SERVICE_ACCOUNT=firebase-service-account:latest" \
-            --set-env-vars "CORS_ORIGINS=https://learning-cycle-95ee7.web.app,https://learning-cycle-95ee7.firebaseapp.com" \
+            --set-env-vars "FIREBASE_PROJECT_ID=learning-cycle-v2-467610" \
+            --set-env-vars "CORS_ORIGINS=https://learning-cycle-v2.web.app,https://learning-cycle-v2.firebaseapp.com" \
             --set-env-vars "GOOGLE_CLIENT_ID=708925310405-81ev12htr3c4neq6nan9abkm3oeisn0s.apps.googleusercontent.com"
