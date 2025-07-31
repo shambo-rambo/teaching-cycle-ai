@@ -1,4 +1,4 @@
-// Global configuration - no environment variables needed
+// Global configuration - Environment variables are replaced during build
 window.APP_CONFIG = {
   GOOGLE_CLIENT_ID: '708925310405-81ev12htr3c4neq6nan9abkm3oeisn0s.apps.googleusercontent.com',
   API_BASE_URL: 'https://teaching-cycle-backend-708925310405.us-central1.run.app',
