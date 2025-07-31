@@ -52,7 +52,24 @@
       "Bash(python3:*)",
       "Bash(npx firebase deploy:*)",
       "Bash(gcloud logs read:*)",
-      "Bash(gcloud builds submit:*)"
+      "Bash(gcloud builds submit:*)",
+      "WebFetch(domain:learning-cycle-v2.web.app)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(--update-env-vars CORS_ORIGINS=\"https://learning-cycle-v2.web.app,https://learning-cycle-v2.firebaseapp.com,http://localhost:3000,http://localhost:5173\" )",
+      "Bash(--region us-central1 )",
+      "Bash(--project learning-cycle-95ee7)",
+      "Bash(firebase deploy:*)",
+      "Bash(firebase use:*)",
+      "Bash(gcloud config get-value:*)",
+      "Bash(gcloud config set:*)",
+      "Bash(ls:*)",
+      "Bash(gcloud run services logs read:*)",
+      "Bash(gcloud projects describe:*)",
+      "Bash(gcloud projects list:*)",
+      "Bash(docker build:*)",
+      "Bash(gcloud iam service-accounts create:*)",
+      "Bash(gcloud iam service-accounts keys:*)",
+      "Bash(cat:*)"
     ],
     "deny": []
   }
