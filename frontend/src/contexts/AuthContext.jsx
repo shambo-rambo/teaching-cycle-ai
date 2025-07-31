@@ -154,6 +154,10 @@ export const AuthProvider = ({ children }) => {
       setError('');
       setLoading(true);
 
+      console.log('🔑 Starting Google OAuth token exchange...');
+      console.log('Token length:', googleToken?.length);
+      console.log('API URL:', window.APP_CONFIG?.API_BASE_URL);
+
       const response = await fetch(`${window.APP_CONFIG?.API_BASE_URL}/api/auth/google`, {
         method: 'POST',
         headers: {
