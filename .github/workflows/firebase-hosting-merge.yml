@@ -38,4 +38,3 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LEARNING_CYCLE_95EE7 }}
           channelId: live
           projectId: learning-cycle-95ee7
-          entryPoint: ./frontend
