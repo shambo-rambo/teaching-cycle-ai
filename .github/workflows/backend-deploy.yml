@@ -39,4 +39,5 @@ jobs:
             --allow-unauthenticated \
             --set-env-vars "FIREBASE_PROJECT_ID=learning-cycle-95ee7" \
             --set-secrets "FIREBASE_SERVICE_ACCOUNT=firebase-service-account:latest" \
-            --set-env-vars "CORS_ORIGINS=https://learning-cycle-95ee7.web.app,https://learning-cycle-95ee7.firebaseapp.com"
+            --set-env-vars "CORS_ORIGINS=https://learning-cycle-95ee7.web.app,https://learning-cycle-95ee7.firebaseapp.com" \
+            --set-env-vars "GOOGLE_CLIENT_ID=708925310405-81ev12htr3c4neq6nan9abkm3oeisn0s.apps.googleusercontent.com"

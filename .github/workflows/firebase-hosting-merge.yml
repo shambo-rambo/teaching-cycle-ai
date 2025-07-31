@@ -31,7 +31,7 @@ jobs:
           VITE_FIREBASE_STORAGE_BUCKET: learning-cycle-v2.firebasestorage.app
           VITE_FIREBASE_MESSAGING_SENDER_ID: 940623387842
           VITE_FIREBASE_APP_ID: 1:940623387842:web:7e4911cdcaa70fd4fc2f5b
-          VITE_GOOGLE_CLIENT_ID: 531124404080-uk3pq4aajr0p4u7vifuer18ab2cuol1p.apps.googleusercontent.com
+          VITE_GOOGLE_CLIENT_ID: 708925310405-81ev12htr3c4neq6nan9abkm3oeisn0s.apps.googleusercontent.com
           VITE_API_BASE_URL: https://teaching-cycle-backend-531124404080.us-central1.run.app
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
