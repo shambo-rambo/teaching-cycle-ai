@@ -179,8 +179,19 @@ const AppRoutes = () => {
 };
 
 function App() {
+  const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+  
+  // Debug logging for production
+  console.log('Google Client ID:', clientId);
+  console.log('All env vars:', import.meta.env);
+  
+  if (!clientId) {
+    console.error('VITE_GOOGLE_CLIENT_ID is not defined!');
+    return <div>Google OAuth configuration error. Please check environment variables.</div>;
+  }
+  
   return (
-    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId={clientId}>
       <AuthProvider>
         <Router>
           <AppRoutes />
