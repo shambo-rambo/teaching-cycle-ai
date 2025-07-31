@@ -47,7 +47,8 @@
       "Bash(gcloud firebase apps list:*)",
       "Bash(gcloud auth application-default print-access-token:*)",
       "Bash(npx firebase hosting:channel:deploy:*)",
-      "WebFetch(domain:learning-cycle-95ee7.web.app)"
+      "WebFetch(domain:learning-cycle-95ee7.web.app)",
+      "Bash(gcloud run services update:*)"
     ],
     "deny": []
   }

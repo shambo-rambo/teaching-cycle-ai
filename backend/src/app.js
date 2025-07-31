@@ -23,7 +23,12 @@ const PORT = process.env.PORT || 3001;
 
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CORS_ORIGINS?.split(',') || ['http://localhost:3000', 'http://localhost:5173'],
+  origin: [
+    'https://learning-cycle-95ee7.web.app',
+    'https://learning-cycle-95ee7.firebaseapp.com',
+    'http://localhost:3000',
+    'http://localhost:5173'
+  ],
   credentials: true
 }));
 app.use(express.json({ limit: '50mb' }));
