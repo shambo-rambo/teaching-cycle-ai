@@ -45,7 +45,8 @@
       "Bash(gcloud projects add-iam-policy-binding:*)",
       "Bash(gcloud run deploy:*)",
       "Bash(gcloud firebase apps list:*)",
-      "Bash(gcloud auth application-default print-access-token:*)"
+      "Bash(gcloud auth application-default print-access-token:*)",
+      "Bash(npx firebase hosting:channel:deploy:*)"
     ],
     "deny": []
   }
