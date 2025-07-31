@@ -178,14 +178,15 @@ const AppRoutes = () => {
   );
 };
 
-// Hardcoded Google Client ID for now
+// Hardcoded Google Client ID for now - VERSION 2025-07-31
 const GOOGLE_CLIENT_ID = '531124404080-n3s8v09199ekh9dkq4k8poe80piru83l.apps.googleusercontent.com';
 
 function App() {
   // Debug logging for production
-  console.log('HARDCODED Google Client ID:', GOOGLE_CLIENT_ID);
+  console.log('🚀 FIXED VERSION - HARDCODED Google Client ID:', GOOGLE_CLIENT_ID);
   console.log('ENV Google Client ID:', import.meta.env.VITE_GOOGLE_CLIENT_ID);
   console.log('All env vars:', import.meta.env);
+  console.log('App version: 2025-07-31-FIXED');
   
   return (
     <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
