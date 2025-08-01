@@ -26,6 +26,8 @@ app.use(helmet({
 }));
 app.use(cors({
   origin: [
+    'https://learning-cycle-v2-467610.web.app',
+    'https://learning-cycle-v2-467610.firebaseapp.com',
     'https://learning-cycle-v2.web.app',
     'https://learning-cycle-v2.firebaseapp.com',
     'https://learning-cycle-95ee7.web.app',
