@@ -4,8 +4,8 @@ window.APP_CONFIG = {
   API_BASE_URL: 'https://teaching-cycle-backend-708925310405.us-central1.run.app',
   FIREBASE_CONFIG: {
     apiKey: 'AIzaSyCS2Xo951MdmkH-IlaTXuHGz35y82tIzxo',
-    projectId: 'learning-cycle-v2',
-    storageBucket: 'learning-cycle-v2.firebasestorage.app',
+    projectId: 'learning-cycle-v2-467610',
+    storageBucket: 'learning-cycle-v2-467610.appspot.com',
     messagingSenderId: '940623387842',
     appId: '1:940623387842:web:7e4911cdcaa70fd4fc2f5b'
   }
