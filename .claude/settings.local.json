@@ -69,7 +69,8 @@
       "Bash(docker build:*)",
       "Bash(gcloud iam service-accounts create:*)",
       "Bash(gcloud iam service-accounts keys:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "WebFetch(domain:cloud.google.com)"
     ],
     "deny": []
   }
