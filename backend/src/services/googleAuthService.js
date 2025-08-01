@@ -8,6 +8,7 @@ dotenv.config();
 export class GoogleAuthService {
   constructor() {
     // Only Client ID is needed for web applications
+    console.log(`BACKEND_GOOGLE_CLIENT_ID: ${process.env.GOOGLE_CLIENT_ID}`);
     this.client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
     this.usersCollection = db.collection('users');
   }
