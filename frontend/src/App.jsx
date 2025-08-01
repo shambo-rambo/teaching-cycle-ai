@@ -179,8 +179,14 @@ const AppRoutes = () => {
 };
 
 function App() {
+  // Use global config instead of environment variables
+  const clientId = window.APP_CONFIG?.GOOGLE_CLIENT_ID || '708925310405-81ev12htr3c4neq6nan9abkm3oeisn0s.apps.googleusercontent.com';
+  
+  console.log('🚀 FINAL FIX - Using global config clientId:', clientId);
+  console.log('Global config loaded:', !!window.APP_CONFIG);
+  
   return (
-    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId={clientId}>
       <AuthProvider>
         <Router>
           <AppRoutes />
@@ -190,4 +196,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;// Force rebuild Thu Jul 31 15:50:56 AEST 2025

@@ -1,0 +1,43 @@
+name: Deploy Backend to Cloud Run
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Google Auth
+        id: auth
+        uses: 'google-github-actions/auth@v2'
+        with:
+          credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_LEARNING_CYCLE_V2 }}
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'
+
+      - name: 'Build and Push Docker Image'
+        run: |
+          gcloud builds submit --tag gcr.io/learning-cycle-v2-467610/teaching-cycle-backend:${{ github.sha }} ./backend --project learning-cycle-v2-467610
+
+      - name: 'Deploy to Cloud Run'
+        run: |
+          # First, set CORS_ORIGINS separately to avoid comma parsing issues
+          gcloud run deploy teaching-cycle-backend \
+            --image gcr.io/learning-cycle-v2-467610/teaching-cycle-backend:${{ github.sha }} \
+            --region us-central1 \
+            --platform managed \
+            --allow-unauthenticated \
+            --project learning-cycle-v2-467610 \
+            --update-env-vars FIREBASE_PROJECT_ID=learning-cycle-v2-467610 \
+            --update-env-vars GOOGLE_CLIENT_ID=708925310405-81ev12htr3c4neq6nan9abkm3oeisn0s.apps.googleusercontent.com \
+            --update-env-vars CORS_ORIGINS="https://learning-cycle-v2-467610.web.app\,https://learning-cycle-v2-467610.firebaseapp.com"

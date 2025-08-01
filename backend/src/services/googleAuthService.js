@@ -8,18 +8,27 @@ dotenv.config();
 export class GoogleAuthService {
   constructor() {
     // Only Client ID is needed for web applications
+    console.log(`BACKEND_GOOGLE_CLIENT_ID: ${process.env.GOOGLE_CLIENT_ID}`);
     this.client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
     this.usersCollection = db.collection('users');
   }
 
   async verifyGoogleToken(token) {
     try {
+      console.log('🔍 DEBUG: Starting Google token verification');
+      console.log('🔍 DEBUG: Expected client ID:', process.env.GOOGLE_CLIENT_ID);
+      console.log('🔍 DEBUG: Token length:', token?.length);
+      console.log('🔍 DEBUG: Token starts with:', token?.substring(0, 50) + '...');
+
       const ticket = await this.client.verifyIdToken({
         idToken: token,
         audience: process.env.GOOGLE_CLIENT_ID,
       });
 
       const payload = ticket.getPayload();
+      console.log('✅ DEBUG: Token verification successful');
+      console.log('✅ DEBUG: User email:', payload.email);
+      
       return {
         success: true,
         userData: {
@@ -31,7 +40,8 @@ export class GoogleAuthService {
         }
       };
     } catch (error) {
-      console.error('Google token verification failed:', error);
+      console.error('❌ DEBUG: Google token verification failed:', error.message);
+      console.error('❌ DEBUG: Full error:', error);
       return {
         success: false,
         error: 'Invalid Google token'
