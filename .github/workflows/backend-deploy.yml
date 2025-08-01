@@ -37,4 +37,4 @@ jobs:
             --platform managed \
             --allow-unauthenticated \
             --project learning-cycle-v2-467610 \
-            --set-env-vars "FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }}^CORS_ORIGINS=https://learning-cycle-v2.web.app,https://learning-cycle-v2.firebaseapp.com^GOOGLE_CLIENT_ID=${{ secrets.GOOGLE_CLIENT_ID }}"
+            --set-env-vars "FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }},CORS_ORIGINS='https://learning-cycle-v2.web.app,https://learning-cycle-v2.firebaseapp.com',GOOGLE_CLIENT_ID=${{ secrets.GOOGLE_CLIENT_ID }}"
