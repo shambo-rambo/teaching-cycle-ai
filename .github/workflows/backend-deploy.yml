@@ -31,13 +31,13 @@ jobs:
 
       - name: 'Deploy to Cloud Run'
         run: |
-          # Deploy with individual environment variables to avoid parsing issues
+          # Deploy with proper escaping for CORS origins
           gcloud run deploy teaching-cycle-backend \
             --image gcr.io/learning-cycle-v2-467610/teaching-cycle-backend:${{ github.sha }} \
             --region us-central1 \
             --platform managed \
             --allow-unauthenticated \
             --project learning-cycle-v2-467610 \
-            --update-env-vars="FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }}" \
-            --update-env-vars="GOOGLE_CLIENT_ID=${{ secrets.GOOGLE_CLIENT_ID }}" \
-            --update-env-vars="CORS_ORIGINS=https://learning-cycle-v2-467610.web.app,https://learning-cycle-v2-467610.firebaseapp.com"
+            --update-env-vars FIREBASE_PROJECT_ID="${{ secrets.FIREBASE_PROJECT_ID }}" \
+            --update-env-vars GOOGLE_CLIENT_ID="${{ secrets.GOOGLE_CLIENT_ID }}" \
+            --update-env-vars CORS_ORIGINS="https://learning-cycle-v2-467610.web.app,https://learning-cycle-v2-467610.firebaseapp.com"
